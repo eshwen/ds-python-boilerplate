@@ -1,0 +1,25 @@
+# Containers
+docker
+
+# Pipelines
+build
+pre-commit
+
+# Testing
+pytest
+pytest-asyncio
+pytest-mock
+coverage
+
+# Formatting
+black
+mypy
+
+# Linting
+flake8
+pylint
+
+# Documentation
+pydocstyle
+sphinx
+sphinx_rtd_theme
