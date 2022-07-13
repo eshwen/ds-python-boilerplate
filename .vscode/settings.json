@@ -36,5 +36,9 @@
 
     "markdownlint.config": {
         "MD033": false
-      }
+      },
+
+    "editor.rulers": [
+        120
+    ]
 }
