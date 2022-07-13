@@ -1,0 +1,40 @@
+{
+    "python.terminal.activateEnvironment": true,
+
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E712,W503"
+    ],
+
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length 120"
+    ],
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+
+    "isort.args": [
+        "--profile", "black",
+        "-w", "120"
+    ],
+
+    "autoDocstring.docstringFormat": "google",
+
+    "markdownlint.config": {
+        "MD033": false
+      }
+}
