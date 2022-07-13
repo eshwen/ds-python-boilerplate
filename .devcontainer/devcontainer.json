@@ -1,0 +1,25 @@
+{
+  "name": "Development Dockerfile",
+  "context": "..",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.isort",
+    "njpwerner.autodocstring",
+
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+
+    "DavidAnson.vscode-markdownlint",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-yaml"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "workspaceFolder": "/app",
+  "userEnvProbe": "none"
+}
