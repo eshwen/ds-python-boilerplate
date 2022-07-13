@@ -29,6 +29,21 @@ See <https://github.com/eshwen/macOS-setup> for more useful setup tips.
 
 In Visual Studio Code, open this project as a folder. Then a prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be built.
 
+The devcontainer encompasses the following:
+
+- Building the Docker container that contains a recent Python image
+- Installing the project dependencies
+- Installing VS Code workspace extensions
+- Applying custom settings to aforementioned extensions
+
+## Pipelines
+
+Several pipelines are included to execute automatically on various triggers:
+
+- [build.yml](.github/workflows/build.yml) (to build the project)
+- [docstring-health.yml](./github/workflows/docstring-health.yml) (to check the validity of Python docstrings)
+- [dependabot.yml](.github/dependabot.yml) (to check for updates and vulnerabilities in dependencies, the Docker container, and the other pipelines)
+
 ## Helpful articles
 
 - Python versions in Docker: <https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d>
