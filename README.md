@@ -27,7 +27,11 @@ See <https://github.com/eshwen/macOS-setup> for more useful setup tips.
 
 ### Development Container
 
-In Visual Studio Code, open this project as a folder. Then a prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be built.
+In Visual Studio Code
+
+1. Install the **Remote - Containers** extension (`ms-vscode-remote.remote-containers`)
+2. Open this project as a folder
+3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be built.
 
 The devcontainer encompasses the following:
 
