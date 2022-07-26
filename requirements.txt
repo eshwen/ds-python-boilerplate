@@ -10,6 +10,10 @@ pandas
 scipy
 openpyxl
 
+# Data validation
+pydantic
+great-expectations
+
 # Stats
 statsmodels
 
