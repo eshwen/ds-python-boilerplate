@@ -99,7 +99,7 @@ Helpful articles
 ------------
 
 .. |Documentation| image:: https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs
-   :target: https://https://eshwen.github.io/ds-python-boilerplate/index.html
+   :target: https://eshwen.github.io/ds-python-boilerplate/index.html
 .. |Python 3.10.5| image:: https://img.shields.io/badge/python-3.10.5-blue.svg
    target:: https://www.python.org/downloads/release/python-3105/
 .. |Pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
