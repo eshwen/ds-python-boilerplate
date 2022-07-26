@@ -1,6 +1,5 @@
-
-ds-python-boilerplate
-=====================
+README
+======
 
 Boilerplate for data science projects in Python.
 
