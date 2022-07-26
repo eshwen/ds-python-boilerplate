@@ -80,6 +80,12 @@ API documentation is built with Sphinx using the Read The Docs theme. To build i
 
 Then open the corresponding HTML file(s) in ``docs/_build/html/``.
 
+**Warning**: If copying `build-docs.sh <scripts/build-docs.sh>`_ to another project, ensure the copy is executable. Do this with
+
+.. code:: bash
+
+   chmod +x <path>/build-docs.sh
+
 
 Helpful articles
 ----------------
