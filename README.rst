@@ -1,6 +1,10 @@
 README
 ======
 
+|Documentation| |Pre-commit| |Code style: black|
+
+|Python 3.10.5| |Docker|
+
 Boilerplate for data science projects in Python.
 
 .. contents:: **Table of Contents**
@@ -91,3 +95,16 @@ Helpful articles
 
 * Python versions in Docker: https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d
 * Emoji suggestions for git: https://gitmoji.dev/
+
+------------
+
+.. |Documentation| image:: https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs
+   :target: https://https://eshwen.github.io/ds-python-boilerplate/index.html
+.. |Python 3.10.5| image:: https://img.shields.io/badge/python-3.10.5-blue.svg
+   target:: https://www.python.org/downloads/release/python-3105/
+.. |Pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   target:: :file:`.pre-commit-config.yaml`
+.. |Code style: black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   target:: https://github.com/psf/black
+.. |Docker| image:: https://badgen.net/badge/icon/docker?icon=docker&label
+   target:: https://docker.com/
