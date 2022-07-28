@@ -18,19 +18,23 @@ jobs:
 
       - name: Run mypy
         run: mypy my_project/
+        if: ${{ always() }}
 
       - name: Run Tests
         run: pytest -v -s --junitxml=junit/test-results.xml
+        if: ${{ always() }}
 
       - name: Run Coverage
         run: |
           coverage run --source="my_project" -m pytest
           coverage json
           coverage report --fail-under=80
+        if: ${{ always() }}
 
       - name: Run Lint
         run: |
           flake8 . --show-source --statistics --max-line-length=120
+        if: ${{ always() }}
 
       # --match-dir argument ignores files in tests/ as they're not needed in documentation
       # --match argument ignores __init__.py files
