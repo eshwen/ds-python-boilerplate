@@ -32,7 +32,7 @@
         "-w", "120"
     ],
 
-    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.docstringFormat": "google-notypes",  // Types aren't required if type hinting is used
 
     "markdownlint.config": {
         "MD033": false
