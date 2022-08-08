@@ -3,7 +3,7 @@ README
 
 |Build status| |CodeQL| |Documentation| |Pre-commit|
 
-|Python 3.10.5| |Docker| |Code style: black|
+|Python 3.10| |Docker| |Code style: black|
 
 Boilerplate for data science projects in Python.
 
@@ -113,8 +113,8 @@ General Python tips
    :target: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml
 .. |Documentation| image:: https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs
    :target: https://eshwen.github.io/ds-python-boilerplate/index.html
-.. |Python 3.10.5| image:: https://img.shields.io/badge/python-3.10.5-blue.svg
-   :target: https://www.python.org/downloads/release/python-3105/
+.. |Python 3.10| image:: https://img.shields.io/badge/python-3.10-blue.svg
+   :target: https://www.python.org/downloads/release/python-3106/
 .. |Pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: :file:`.pre-commit-config.yaml`
 .. |Code style: black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
