@@ -12,6 +12,7 @@ openpyxl
 
 # Data validation
 pydantic
+pandera
 great-expectations
 
 # Stats
@@ -21,6 +22,8 @@ statsmodels
 SQLAlchemy
 
 # APIs
+fastapi
+uvicorn
 requests
 
 # Machine learning
