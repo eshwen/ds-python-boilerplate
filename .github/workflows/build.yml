@@ -20,13 +20,6 @@ jobs:
         run: mypy my_project/
         if: ${{ always() }}
 
-      - name: Run Tests and Coverage
-        run: pytest -v -s --cov my_project/
-        if: ${{ always() }}
-
-      - name: Upload coverage report to Codecov
-        uses: codecov/codecov-action@v3
-
       - name: Run Lint
         run: |
           flake8 . --show-source --statistics --max-line-length=120
@@ -40,3 +33,10 @@ jobs:
           pip install pydocstyle==6.1.1
           python -m pydocstyle --count --convention google --add-ignore D301 --match-dir '(?!(tests)).*' --match '(?!__init__).*\.py'
         if: ${{ always() }}
+
+      - name: Run Tests and Coverage
+        run: pytest -v -s --cov my_project/
+        if: ${{ always() }}
+
+      - name: Upload coverage report to Codecov
+        uses: codecov/codecov-action@v3
