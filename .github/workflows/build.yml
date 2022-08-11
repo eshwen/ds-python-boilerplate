@@ -20,15 +20,11 @@ jobs:
         run: mypy my_project/
         if: ${{ always() }}
 
-      - name: Run Tests
-        run: pytest -v -s --junitxml=junit/test-results.xml
+      - name: Run Tests and Coverage
+        run: pytest -v -s --cov my_project/
         if: ${{ always() }}
 
-      - name: Run Coverage
-        run: pytest --cov my_project/
-        if: ${{ always() }}
-
-      - name: Upload coverage reports to Codecov
+      - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v3
 
       - name: Run Lint
