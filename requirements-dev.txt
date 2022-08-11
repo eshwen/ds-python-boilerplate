@@ -9,7 +9,7 @@ pre-commit
 pytest
 pytest-asyncio
 pytest-mock
-coverage
+pytest-cov
 
 # Formatting
 black
