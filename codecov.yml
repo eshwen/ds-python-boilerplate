@@ -1,0 +1,9 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 90%    # the required coverage value
+        threshold: 1%  # the leniency in hitting the target
+
+codecov:
+  require_ci_to_pass: false
