@@ -1,7 +1,7 @@
 README
 ======
 
-|Build status| |CodeQL| |Documentation| |Pre-commit|
+|Build status| |CodeQL| |Coverage| |Documentation| |Pre-commit|
 
 |Python 3.10| |Docker| |Code style: black|
 
@@ -111,6 +111,8 @@ General Python tips
    :target: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/build.yml
 .. |CodeQL| image:: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg
    :target: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml
+.. |Coverage| image:: https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU 
+   :target: https://codecov.io/gh/eshwen/ds-python-boilerplate
 .. |Documentation| image:: https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs
    :target: https://eshwen.github.io/ds-python-boilerplate/index.html
 .. |Python 3.10| image:: https://img.shields.io/badge/python-3.10-blue.svg
