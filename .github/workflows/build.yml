@@ -25,11 +25,11 @@ jobs:
         if: ${{ always() }}
 
       - name: Run Coverage
-        run: |
-          coverage run --source="my_project" -m pytest
-          coverage json
-          coverage report --fail-under=80
+        run: pytest --cov my_project/
         if: ${{ always() }}
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
 
       - name: Run Lint
         run: |
