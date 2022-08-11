@@ -1,7 +1,9 @@
 README
 ======
 
-|Build status| |CodeQL| |Coverage| |Documentation| |Pre-commit|
+|Build status| |CodeQL| |Coverage|
+
+|Documentation| |Pre-commit|
 
 |Python 3.10| |Docker| |Code style: black|
 
