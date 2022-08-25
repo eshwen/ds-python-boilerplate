@@ -71,6 +71,8 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/_source/modules.rst
+docs/_source/my_project.*
 
 # PyBuilder
 target/
@@ -129,7 +131,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Documentation build and source files
-docs/_build/
-docs/_source/modules.rst
-docs/_source/my_project.*
+# PyCharm
+.idea/
