@@ -106,6 +106,8 @@ General Python tips
 
 * Type hint functions and methods
 
+* Run an async coroutine with `asyncio.run(<call to coroutine>)`
+
 
 ------------
 
