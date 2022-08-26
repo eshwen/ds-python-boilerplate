@@ -10,6 +10,8 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import re
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.abspath('../..'))
@@ -21,8 +23,11 @@ project = 'my-project'
 copyright = '2022, Eshwen Bhal'
 author = 'Eshwen Bhal'
 
-version = '0.0.1'
-release = '0.0.1'
+# Use the latest tag as version number
+_latest_tag = subprocess.run(['git', 'describe', '--tags'], capture_output=True)
+_cleaned_tag = re.findall(r"(^v?\d+.\d+?.?\d+).*", _latest_tag.stdout.decode())[0]
+version = _cleaned_tag
+release = version
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
