@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.autosectionlabel',  # Automatic section labels in reST files (i.e., READMEs) for cross-referencing
     'sphinx.ext.githubpages',  # Automatically create .nojekyll file for deployment on GitHub Pages
     'sphinx_rtd_dark_mode',  # Dark mode toggle
+    'sphinx_github_changelog'  # Automatic changelog
 ]
 
 # Add any paths that contain templates here, relative to this directory.
