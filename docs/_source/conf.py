@@ -24,11 +24,11 @@ copyright = '2022, Eshwen Bhal'
 author = 'Eshwen Bhal'
 
 # Use the latest tag as version number
-_latest_tag = subprocess.run('/usr/bin/git describe --tags', shell=True, capture_output=True)
-_decoded_tag = _latest_tag.stdout.decode()
-_cleaned_tag = re.findall(r"(^v?\d+.\d+?.?\d+).*", _decoded_tag)[0]
-version = _cleaned_tag
-release = _decoded_tag
+# _latest_tag = subprocess.run('/usr/bin/git describe --tags', shell=True, capture_output=True)
+# _decoded_tag = _latest_tag.stdout.decode()
+# _cleaned_tag = re.findall(r"(^v?\d+.\d+?.?\d+).*", _decoded_tag)[0]
+# version = _cleaned_tag
+# release = _decoded_tag
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.autosectionlabel',  # Automatic section labels in reST files (i.e., READMEs) for cross-referencing
     'sphinx.ext.githubpages',  # Automatically create .nojekyll file for deployment on GitHub Pages
     'sphinx_rtd_dark_mode',  # Dark mode toggle
+    'sphinx_github_changelog'  # Automatic changelog
 ]
 
 # Add any paths that contain templates here, relative to this directory.

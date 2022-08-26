@@ -4,6 +4,9 @@ on:
     branches:
       - main
 
+env:
+  SPHINX_GITHUB_CHANGELOG_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # For Sphinx GitHub Changelog extension
+
 jobs:
 
   docs:
