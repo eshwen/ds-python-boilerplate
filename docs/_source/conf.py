@@ -24,7 +24,7 @@ copyright = '2022, Eshwen Bhal'
 author = 'Eshwen Bhal'
 
 # Use the latest tag as version number
-_latest_tag = subprocess.run(['/usr/bin/git', 'describe', '--tags'], capture_output=True)
+_latest_tag = subprocess.run('git describe --tags', shell=True, capture_output=True)
 _cleaned_tag = re.findall(r"(^v?\d+.\d+?.?\d+).*", _latest_tag.stdout.decode())[0]
 version = _cleaned_tag
 release = version
