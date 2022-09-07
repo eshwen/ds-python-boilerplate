@@ -36,7 +36,9 @@ extensions = [
     'sphinx.ext.autosectionlabel',  # Automatic section labels in reST files (i.e., READMEs) for cross-referencing
     'sphinx.ext.githubpages',  # Automatically create .nojekyll file for deployment on GitHub Pages
     'sphinx_rtd_dark_mode',  # Dark mode toggle
-    'sphinx_github_changelog'  # Automatic changelog
+    'sphinx_github_changelog',  # Automatic changelog
+    'sphinx_copybutton',  # Adds a 'copy' button inside code blocks
+    'sphinx_toggleprompt',  # Adds a toggle for viewing output and leading '>>>' prompts in code blocks
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -96,3 +98,8 @@ autodoc_preserve_defaults = True
 # https://github.com/MrDogeBro/sphinx_rtd_dark_mode
 
 default_dark_mode = False
+
+# -- Options for sphinx-toggleprompt extension -------------------------------
+# https://github.com/jurasofish/sphinx-toggleprompt
+
+toggleprompt_offset_right = 35

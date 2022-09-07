@@ -92,6 +92,17 @@ Then open the corresponding HTML file(s) in ``docs/_build/html/``.
    chmod +x <path>/build-docs.sh
 
 
+Extensions
+~~~~~~~~~~
+
+- ``sphinx-toggleprompt``: Toggles the leading ``>>>`` Python prompts and output in code blocks, e.g.,
+
+    .. code:: python
+
+       >>> print('Hello world!')
+       Hello world!
+
+
 Helpful articles
 ----------------
 
