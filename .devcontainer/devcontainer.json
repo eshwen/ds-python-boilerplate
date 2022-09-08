@@ -14,6 +14,7 @@
 
     "esbenp.prettier-vscode",
     "eamodio.gitlens",
+    "ms-azuretools.vscode-docker",
 
     "DavidAnson.vscode-markdownlint",
     "mechatroner.rainbow-csv",
