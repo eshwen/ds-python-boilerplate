@@ -21,3 +21,13 @@ repos:
     hooks:
       - id: isort
         name: isort (python)
+
+  - repo: https://github.com/python-poetry/poetry
+    rev: '1.2.0'
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+      - id: poetry-export
+        args: [--without-hashes, --without, "dev,test,docs", -f, requirements.txt, -o, requirements.txt]
+      - id: poetry-export
+        args: [--without-hashes, --only, "dev,test,docs", -f, requirements.txt, -o, requirements-dev.txt]

@@ -56,6 +56,64 @@ The devcontainer encompasses the following:
 * Applying custom settings to aforementioned extensions
 
 
+Poetry
+^^^^^^
+
+
+Install Poetry
+~~~~~~~~~~~~~~
+
+First, install poetry. This can be done through
+
+* The official installer: https://python-poetry.org/docs/#installation
+* Homebrew (if you're on a Mac):
+
+   .. code-block:: bash
+
+      brew install poetry
+
+* ``pip``:
+
+   .. code-block:: bash
+
+      pip install poetry
+
+
+Install the project
+~~~~~~~~~~~~~~~~~~~
+
+To install everything from this project's Poetry configuration, run
+
+.. code-block:: bash
+
+   poetry install --with docs
+
+To only install the core dependencies, instead run
+
+.. code-block:: bash
+
+   poetry install --without dev,test,docs 
+
+
+Creating your own configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To create your own Poetry configuration in ``pyproject.toml``, run
+
+.. code-block:: bash
+
+   poetry init
+
+and follow the instructions. Then to port any dependencies from ``requirements.txt`` and ``requirements-dev.txt``, run
+
+.. code-block:: bash
+
+   cat requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add
+   cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add --group dev
+
+Dependencies can be segmented into different groups. See `pyproject.toml`_.
+
+
 Pipelines
 ---------
 
@@ -138,3 +196,5 @@ General Python tips
    :target: https://github.com/psf/black
 .. |Docker| image:: https://badgen.net/badge/icon/docker?icon=docker&label
    :target: https://docker.com/
+
+.. _pyproject.toml: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
