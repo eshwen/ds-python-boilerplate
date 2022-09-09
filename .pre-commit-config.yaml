@@ -1,15 +1,15 @@
 default_language_version:
   python: python3.10
 
-default_stages: [commit, push]
+default_stages: [ commit, push ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
     hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
 
   - repo: https://github.com/psf/black
     rev: 22.6.0
@@ -28,6 +28,6 @@ repos:
       - id: poetry-check
       - id: poetry-lock
       - id: poetry-export
-        args: [--without-hashes, --without, "dev,test,docs", -f, requirements.txt, -o, requirements.txt]
+        args: [ --without-hashes, -f, requirements.txt, -o, requirements.txt ]
       - id: poetry-export
-        args: [--without-hashes, --only, "dev,test,docs", -f, requirements.txt, -o, requirements-dev.txt]
+        args: [ --without-hashes, --only, "dev,test,docs", -f, requirements.txt, -o, requirements-dev.txt ]
