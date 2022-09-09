@@ -18,7 +18,7 @@ Programs
 ^^^^^^^^
 
 * Docker
-* Visual Studio Code
+* Visual Studio Code/PyCharm
 * GitHub Desktop (optional)
 
 
@@ -33,7 +33,7 @@ macOS installation
    # Homebrew
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    brew install --cask docker
-   brew install --cask visual-studio-code
+   brew install --cask visual-studio-code  # or brew install --cask pycharm
    brew install --cask github
 
 See https://github.com/eshwen/macOS-setup for more useful setup tips.
@@ -88,19 +88,31 @@ To ensure Poetry is up to date, run
 Install the project
 ~~~~~~~~~~~~~~~~~~~
 
-To install everything from this project's Poetry configuration, run
+* Via the command line:
 
-.. code-block:: bash
+    To install everything from this project's Poetry configuration, run
 
-   poetry install --with docs
+    .. code-block:: bash
 
-To only install the core dependencies, instead run
+       poetry install --with docs
 
-.. code-block:: bash
+    To only install the core dependencies, instead run
 
-   poetry install --without dev,test,docs 
+    .. code-block:: bash
 
-It will create a ``virtualenv`` environment for you, so you don't need to run it in conjunction with another environment manager, such as conda.
+       poetry install --without dev,test,docs
+
+    It will create a ``virtualenv`` environment for you, so you don't need to run it in conjunction with another environment manager, such as conda.
+
+* In PyCharm:
+
+    #. Open the project
+    #. Click **Add New Interpreter** -> **Add Local Interpreter...** -> **Poetry Environment**
+    #. Check **Poetry Environment**
+    #. For the **Base Interpreter**, the default option may do
+        * Otherwise, you can select your favourite from whatever tool you installed Python with. For your currently-active install, type ``which python`` to get the executable path
+        * If you installed Poetry with Homebrew, it came bundled a recent Python version. The executable path would be something like ``/opt/homebrew/bin/python3.10`` or ``/opt/homebrew/bin/python3``
+        * If you use ``pyenv``, activate it and type ``pyenv which python`` for the executable path
 
 
 Creating your own configuration
