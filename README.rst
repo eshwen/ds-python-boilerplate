@@ -137,17 +137,20 @@ Conda
    * Homebrew (if you're on Mac):
 
        .. code-block:: bash
+
           brew install --cask miniconda
 
 #. Then initialise conda:
 
     .. code-block:: bash
+
        conda init "$(basename "${SHELL}")"
        <exit and reopen terminal>
 
 #. Create your environment:
 
     .. code-block:: bash
+
        conda create -y -n my_project
        conda activate my_project
        conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
@@ -157,6 +160,7 @@ Conda
 #. And finally, install the requirements:
 
     .. code-block:: bash
+
        cd <root dir of projects>
        pip install -r requirements.txt
        pip install -r requirements-dev.txt
