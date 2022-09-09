@@ -3,6 +3,7 @@ FROM python:3.10
 RUN apt-get update
 RUN apt-get -y install git
 RUN pip install poetry
+RUN poetry self update
 
 WORKDIR /app
 ENV PYTHONPATH /app
