@@ -21,7 +21,7 @@ pylint
 
 # Documentation
 pydocstyle
-sphinx!=5.1.0
+sphinx
 sphinx_rtd_theme
 sphinx-rtd-dark-mode
 sphinx-github-changelog
