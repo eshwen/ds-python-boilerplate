@@ -113,6 +113,13 @@ and follow the instructions. Then to port any dependencies from ``requirements.t
 
 Dependencies can be segmented into different groups. See `pyproject.toml`_.
 
+It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt`` and ``requirements-dev.txt`` if needed, e.g.,
+
+.. code-block:: bash
+
+   poetry export --without-hashes -f requirements.txt -o requirements.txt
+   poetry export --without-hashes --only dev -f requirements.txt -o requirements-dev.txt
+
 
 Pipelines
 ---------
