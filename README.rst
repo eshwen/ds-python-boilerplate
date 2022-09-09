@@ -63,7 +63,7 @@ Poetry
 Install Poetry
 ~~~~~~~~~~~~~~
 
-First, install poetry. This can be done through
+First, install Poetry. This can be done through
 
 * The official installer: https://python-poetry.org/docs/#installation
 * Homebrew (if you're on a Mac):
@@ -77,6 +77,12 @@ First, install poetry. This can be done through
    .. code-block:: bash
 
       pip install poetry
+
+To ensure Poetry is up to date, run
+
+.. code-block:: bash
+
+   poetry self update
 
 
 Install the project
@@ -93,6 +99,8 @@ To only install the core dependencies, instead run
 .. code-block:: bash
 
    poetry install --without dev,test,docs 
+
+It will create a ``virtualenv`` environment for you, so you don't need to run it in conjunction with another environment manager, such as conda.
 
 
 Creating your own configuration
