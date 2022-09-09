@@ -129,6 +129,38 @@ It is recommended to maintain dependencies with Poetry, and export them to ``req
    poetry export --without-hashes --only dev -f requirements.txt -o requirements-dev.txt
 
 
+Conda
+^^^^^
+
+#. For a lightweight experience, install ``miniconda``. This can be done through
+
+   * Homebrew (if you're on Mac):
+
+      .. code-block:: bash
+         brew install --cask miniconda
+
+#. Then initialise conda:
+
+   .. code-block:: bash
+      conda init "$(basename "${SHELL}")"
+      <exit and reopen terminal>
+
+#. Create your environment:
+
+   .. code-block:: bash
+      # Create environment
+      conda create -y -n my_project
+      conda activate my_project
+      conda config --set auto_activate_base false
+      conda install -y python=3.10
+      pip install --upgrade pip
+
+#. And finally, install the requirements:
+    cd <root dir of projects>
+    pip install -r requirements.txt
+    pip install -r requirements-dev.txt
+
+
 Pipelines
 ---------
 
