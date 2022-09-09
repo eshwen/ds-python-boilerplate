@@ -68,15 +68,15 @@ First, install Poetry. This can be done through
 * The official installer: https://python-poetry.org/docs/#installation
 * Homebrew (if you're on a Mac):
 
-   .. code-block:: bash
+    .. code-block:: bash
 
-      brew install poetry
+       brew install poetry
 
 * ``pip``:
 
-   .. code-block:: bash
+    .. code-block:: bash
 
-      pip install poetry
+       pip install poetry
 
 To ensure Poetry is up to date, run
 
@@ -136,29 +136,30 @@ Conda
 
    * Homebrew (if you're on Mac):
 
-      .. code-block:: bash
-         brew install --cask miniconda
+       .. code-block:: bash
+          brew install --cask miniconda
 
 #. Then initialise conda:
 
-   .. code-block:: bash
-      conda init "$(basename "${SHELL}")"
-      <exit and reopen terminal>
+    .. code-block:: bash
+       conda init "$(basename "${SHELL}")"
+       <exit and reopen terminal>
 
 #. Create your environment:
 
-   .. code-block:: bash
-      # Create environment
-      conda create -y -n my_project
-      conda activate my_project
-      conda config --set auto_activate_base false
-      conda install -y python=3.10
-      pip install --upgrade pip
+    .. code-block:: bash
+       conda create -y -n my_project
+       conda activate my_project
+       conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
+       conda install -y python=3.10
+       pip install --upgrade pip
 
 #. And finally, install the requirements:
-    cd <root dir of projects>
-    pip install -r requirements.txt
-    pip install -r requirements-dev.txt
+
+    .. code-block:: bash
+       cd <root dir of projects>
+       pip install -r requirements.txt
+       pip install -r requirements-dev.txt
 
 
 Pipelines
