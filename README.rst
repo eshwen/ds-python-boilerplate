@@ -84,6 +84,11 @@ To ensure Poetry is up to date, run
 
    poetry self update
 
+Then create the ``virtualenv`` environment with
+
+.. code-block:: bash
+
+   poetry shell
 
 Install the project
 ~~~~~~~~~~~~~~~~~~~
@@ -109,10 +114,7 @@ Install the project
     #. Open the project
     #. Click **Add New Interpreter** -> **Add Local Interpreter...** -> **Poetry Environment**
     #. Check **Poetry Environment**
-    #. For the **Base Interpreter**, the default option may do
-        * Otherwise, you can select your favourite from whatever tool you installed Python with. For your currently-active install, type ``which python`` to get the executable path
-        * If you installed Poetry with Homebrew, it came bundled a recent Python version. The executable path would be something like ``/opt/homebrew/bin/python3.10`` or ``/opt/homebrew/bin/python3``
-        * If you use ``pyenv``, activate it and type ``pyenv which python`` for the executable path
+    #. For the **Base Interpreter**, the default option will probably do as Poetry will create a ``virtualenv`` environment to install everything inside
 
 
 Creating your own configuration
