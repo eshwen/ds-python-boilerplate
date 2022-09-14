@@ -73,3 +73,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eshwen
+      name: eshwen on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/eshwen-bhal-phd-714557195/
+      name: Eshwen Bhal on LinkedIn
