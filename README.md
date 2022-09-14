@@ -46,13 +46,6 @@ Or, to render it live on a local server, run
 mkdocs serve
 ```
 
-**Warning**: If copying [build-docs.sh](https://github.com/eshwen/ds-python-boilerplate/blob/main/scripts/build-docs.sh)
-to another project, ensure the copy is executable. Do this with
-
-```shell
-chmod +x <path>/build-docs.sh
-```
-
 #### Extensions
 
 ## Helpful articles
