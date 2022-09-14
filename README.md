@@ -46,6 +46,8 @@ Or, to render it live on a local server, run
 mkdocs serve
 ```
 
+For a Sphinx implementation of documentation, see <https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1>.
+
 #### Extensions
 
 ## Helpful articles
