@@ -21,9 +21,8 @@ pylint
 
 # Documentation
 pydocstyle
-sphinx
-sphinx_rtd_theme
-sphinx-rtd-dark-mode
-sphinx-github-changelog
-sphinx-copybutton
-sphinx-toggleprompt
+mkdocs
+pymdown-extensions
+mkdocs-material
+mkdocstrings[python]
+mkgendocs
