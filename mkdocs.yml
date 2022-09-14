@@ -27,6 +27,8 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tracking
+    - navigation.sections
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
