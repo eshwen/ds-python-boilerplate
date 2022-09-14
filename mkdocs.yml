@@ -7,7 +7,18 @@ nav:
   - Getting Started: getting-started.md
 
 plugins:
-  - mkdocstrings
+  - mkdocstrings:
+      custom_templates: templates
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: true
+          import:
+            - https://numpy.org/doc/stable/objects.inv
+            - https://docs.python.org/3/objects.inv
+            - https://pandas.pydata.org/pandas-docs/stable/objects.inv
+            - https://docs.sqlalchemy.org/en/14/objects.inv
   - search:
       lang: en
 
