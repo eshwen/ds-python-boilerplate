@@ -1,7 +1,0 @@
-ds-python-boilerplate
-=====================
-
-.. toctree::
-   :maxdepth: 4
-
-   my_project
