@@ -17,8 +17,10 @@ Boilerplate for data science projects in Python.
 
 Several pipelines are included to execute automatically on various triggers:
 
-* [build.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml) (to build the project)
-* [dependabot.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml) (to check for updates and vulnerabilities in dependencies, the Docker container, and the other pipelines)
+* [build.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml) (to build the
+  project)
+* [dependabot.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml) (to check for
+  updates and vulnerabilities in dependencies, the Docker container, and the other pipelines)
 
 ## Documentation
 
@@ -30,7 +32,7 @@ python -m pydocstyle --count --convention google --add-ignore D301,D212,D107 --m
 
 ### API documentation
 
-API documentation is built with MkDocs using the Material theme. To build it locally, run
+API documentation is built with MkDocs using the Material theme. To build a static copy locally, run
 
 ```shell
 mkdocs build
@@ -38,7 +40,14 @@ mkdocs build
 
 Then open the homepage HTML file under `site/index.html`.
 
-**Warning**: If copying [build-docs.sh](https://github.com/eshwen/ds-python-boilerplate/blob/main/scripts/build-docs.sh) to another project, ensure the copy is executable. Do this with
+Or, to render it live on a local server, run
+
+```shell
+mkdocs serve
+```
+
+**Warning**: If copying [build-docs.sh](https://github.com/eshwen/ds-python-boilerplate/blob/main/scripts/build-docs.sh)
+to another project, ensure the copy is executable. Do this with
 
 ```shell
 chmod +x <path>/build-docs.sh
@@ -48,7 +57,8 @@ chmod +x <path>/build-docs.sh
 
 ## Helpful articles
 
-- Python versions in Docker: https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d
+- Python versions in
+  Docker: https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d
 - Emoji suggestions for git: https://gitmoji.dev/
 
 ## General Python tips
