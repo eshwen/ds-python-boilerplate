@@ -59,13 +59,17 @@ theme:
 markdown_extensions:
   - toc:
       permalink: ⚓︎
+  - attr_list
   - pymdownx.magiclink
   - pymdownx.snippets:
       check_paths: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      linenums_style: pymdownx-inline
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
