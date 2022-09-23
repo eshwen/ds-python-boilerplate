@@ -40,6 +40,6 @@ def do_a_dataframe_thing(df: pd.DataFrame, arr: np.ndarray | None = None) -> pd.
          A dataframe with some magical operation applied to it.
 
     """
-    if arr.size > 0:
+    if arr is not None and arr.size > 0:
         return df[arr]
     return df
