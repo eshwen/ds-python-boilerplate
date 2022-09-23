@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "ds-python-boilerplate"
-version = "0.1.1"
+version = "0.2.1"
 description = "Boilerplate for data science projects in Python"
 authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
-readme = "README.rst"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "~3.10"
