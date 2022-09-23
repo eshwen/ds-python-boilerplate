@@ -25,7 +25,7 @@ def hello_world() -> str:
     return "Hello World!"
 
 
-def do_a_dataframe_thing(df: pd.DataFrame, arr: np.array | None = None) -> pd.DataFrame:
+def do_a_dataframe_thing(df: pd.DataFrame, arr: np.ndarray | None = None) -> pd.DataFrame:
     """An example of documentation with references to external libraries.
 
     Args:
