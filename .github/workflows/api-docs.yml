@@ -16,4 +16,5 @@ jobs:
 
       - name: Build docs
         run: |
+          git fetch
           mkdocs gh-deploy
