@@ -140,13 +140,13 @@ poetry export --without-hashes --only dev -f requirements.txt -o requirements-de
 
 1. For a lightweight experience, install `miniconda`. This can be done through
 
-   === "Homebrew (on :material-apple:)"
+    === "Homebrew (on :material-apple:)"
 
         ```shell
         brew install --cask miniconda
         ```
 
-   === "Other"
+    === "Other"
 
         Figure it out :material-emoticon-wink-outline:
 
