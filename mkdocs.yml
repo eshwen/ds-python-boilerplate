@@ -3,7 +3,12 @@ repo_url: https://github.com/eshwen/ds-python-boilerplate
 repo_name: eshwen/ds-python-boilerplate
 
 nav:
-  - Home: index.md
+  - Home:
+      - Homepage: index.md
+      - Pipelines: pipelines.md
+      - Documentation: documentation.md
+      - Helpful Articles: helpful-articles.md
+      - General Python Tips: general-python-tips.md
   - Getting Started: getting-started.md
   - Code Reference:
       - my_project:
