@@ -16,3 +16,7 @@ def test_do_a_dataframe_thing():
     arr_in = np.array([])
     df_out_with_arr = hello_world.do_a_dataframe_thing(df_in, arr_in)
     pd.testing.assert_frame_equal(df_in, df_out_with_arr)
+
+    arr_in_len = np.array([True, False])
+    df_out_with_arr_len = hello_world.do_a_dataframe_thing(df_in, arr_in_len)
+    pd.testing.assert_frame_equal(df_out_with_arr_len, pd.DataFrame({'foo': ['bar']}))
