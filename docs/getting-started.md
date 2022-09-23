@@ -20,7 +20,6 @@
     ```
     See <https://github.com/eshwen/macOS-setup> for more useful setup tips.
 
-
 === "Other"
 
     Find the links on for these programs on the web :material-emoticon-wink-outline:
@@ -112,7 +111,8 @@ poetry shell
 
 ### Creating your own configuration
 
-To create your own Poetry configuration in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml), run
+To create your own Poetry configuration
+in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml), run
 
 ```shell
 poetry init
@@ -125,9 +125,11 @@ cat requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add
 cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add --group dev
 ```
 
-Dependencies can be segmented into different groups. See [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml).
+Dependencies can be segmented into different groups.
+See [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml).
 
-It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt`` and ``requirements-dev.txt`` if needed, e.g.,
+It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt``
+and ``requirements-dev.txt`` if needed, e.g.,
 
 ```shell
 poetry export --without-hashes -f requirements.txt -o requirements.txt
@@ -138,13 +140,13 @@ poetry export --without-hashes --only dev -f requirements.txt -o requirements-de
 
 1. For a lightweight experience, install `miniconda`. This can be done through
 
-    === "Homebrew (on :material-apple:)"
+   === "Homebrew (on :material-apple:)"
 
         ```shell
         brew install --cask miniconda
         ```
 
-    === "Other"
+   === "Other"
 
         Figure it out :material-emoticon-wink-outline:
 
@@ -163,7 +165,7 @@ poetry export --without-hashes --only dev -f requirements.txt -o requirements-de
     conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
     conda install -y python=3.10
     pip install --upgrade pip
-   ```
+    ```
 
 4. And finally, install the requirements:
 
