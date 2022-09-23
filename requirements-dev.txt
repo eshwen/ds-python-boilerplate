@@ -26,3 +26,4 @@ pymdown-extensions
 mkdocs-material
 mkdocstrings[python]
 mkgendocs
+pandas-stubs
