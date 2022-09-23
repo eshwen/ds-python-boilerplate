@@ -26,8 +26,7 @@ def hello_world() -> str:
 
 
 def do_a_dataframe_thing(df: pd.DataFrame, arr: np.array | None = None) -> pd.DataFrame:
-    """
-    An example of documentation with references to external libraries.
+    """An example of documentation with references to external libraries.
 
     Args:
         df: Input dataframe.
