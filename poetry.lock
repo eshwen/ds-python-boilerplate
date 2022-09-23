@@ -1936,6 +1936,20 @@ tornado = ">=6.1.0"
 test = ["pre-commit", "pytest (>=6.0)", "pytest-timeout"]
 
 [[package]]
+name = "termynal"
+version = "0.2.0"
+description = ""
+category = "dev"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+markdown = "*"
+
+[package.extras]
+mkdocs = ["mkdocs"]
+
+[[package]]
 name = "tinycss2"
 version = "1.1.1"
 description = "A tiny CSS parser"
@@ -2171,7 +2185,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.10"
-content-hash = "b492348c6a1f6a8160a06b65adaadad9a0520822b3b1ba2eb2fd8e312539a137"
+content-hash = "9dc5630716577aed799d593ed4beabc5574b253bff66ebb4e18bbba64d34e61f"
 
 [metadata.files]
 anyio = [
@@ -3687,6 +3701,10 @@ tenacity = [
 terminado = [
     {file = "terminado-0.15.0-py3-none-any.whl", hash = "sha256:0d5f126fbfdb5887b25ae7d9d07b0d716b1cc0ccaacc71c1f3c14d228e065197"},
     {file = "terminado-0.15.0.tar.gz", hash = "sha256:ab4eeedccfcc1e6134bfee86106af90852c69d602884ea3a1e8ca6d4486e9bfe"},
+]
+termynal = [
+    {file = "termynal-0.2.0-py3-none-any.whl", hash = "sha256:1d8f73c9c21414253e812f1684431cf7eda5d9f4539aa7479e055b5cac33873f"},
+    {file = "termynal-0.2.0.tar.gz", hash = "sha256:b83642fff7a5b93bb08aa3655754e0410f124f2e75cd34ce1b161a90fc621f8e"},
 ]
 tinycss2 = [
     {file = "tinycss2-1.1.1-py3-none-any.whl", hash = "sha256:fe794ceaadfe3cf3e686b22155d0da5780dd0e273471a51846d0a02bc204fec8"},
