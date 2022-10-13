@@ -41,9 +41,6 @@ pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
 
-[tool.poetry.group.docs]
-optional = true
-
 [tool.poetry.group.docs.dependencies]
 pydocstyle = "*"
 mkdocs = "*"
