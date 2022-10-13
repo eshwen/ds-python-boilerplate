@@ -39,6 +39,8 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../termynal.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -404,8 +406,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extensions" class="md-nav__link">
-    Extensions
+  <a href="#extensions-and-plugins" class="md-nav__link">
+    Extensions and plugins
   </a>
   
 </li>
@@ -591,8 +593,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extensions" class="md-nav__link">
-    Extensions
+  <a href="#extensions-and-plugins" class="md-nav__link">
+    Extensions and plugins
   </a>
   
 </li>
@@ -635,7 +637,25 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>mkdocs serve
 </code></pre></div>
 <p>For a Sphinx implementation of documentation, see <a href="https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1">https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1</a>.</p>
-<h3 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">⚓︎</a></h3>
+<h3 id="extensions-and-plugins">Extensions and plugins<a class="headerlink" href="#extensions-and-plugins" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li><a href="https://github.com/daxartio/termynal">termynal</a>: animated code blocks similar to the FastAPI docs<ul>
+<li>Installed as a Python package
+  in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a></li>
+<li>Added to the <code>plugins</code> section
+  of <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml">mkdocs.yml</a></li>
+</ul>
+</li>
+</ul>
+<!-- termynal -->
+
+<p>
+<div class="termy" data-termynal>
+<span data-ty="input">python hello_world.py</span>
+<span data-ty><a id="__codelineno-3-2" name="__codelineno-3-2"></a><a href="#__codelineno-3-2"><span class="linenos" data-linenos="2 "></span></a>---&gt; Transmitting greeting...</span>
+<span data-ty><a id="__codelineno-3-3" name="__codelineno-3-3"></a><a href="#__codelineno-3-3"><span class="linenos" data-linenos="3 "></span></a>Hello world!</span>
+<span data-ty></span>
+</div></p>
 <p>TODO: Add extension and plugin descriptions.</p>
 
 
@@ -730,6 +750,8 @@
     
     
       <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+        <script src="../termynal.js"></script>
       
     
   </body>

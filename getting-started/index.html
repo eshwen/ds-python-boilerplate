@@ -39,6 +39,8 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../termynal.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -796,15 +798,18 @@ See <a href="https://github.com/eshwen/macOS-setup">https://github.com/eshwen/ma
 </div>
 </div>
 <h3 id="creating-your-own-configuration">Creating your own configuration<a class="headerlink" href="#creating-your-own-configuration" title="Permanent link">⚓︎</a></h3>
-<p>To create your own Poetry configuration in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>, run</p>
+<p>To create your own Poetry configuration
+in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos="1 "></span></a>poetry init
 </code></pre></div>
 <p>and follow the instructions. Then to port any dependencies from <code>requirements.txt</code> and <code>requirements-dev.txt</code>, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><a href="#__codelineno-8-1"><span class="linenos" data-linenos="1 "></span></a>cat requirements.txt <span class="p">|</span> grep -E <span class="s1">&#39;^[^# ]&#39;</span> <span class="p">|</span> cut -d<span class="o">=</span> -f1 <span class="p">|</span> xargs -n <span class="m">1</span> poetry add
 <a id="__codelineno-8-2" name="__codelineno-8-2"></a><a href="#__codelineno-8-2"><span class="linenos" data-linenos="2 "></span></a>cat requirements-dev.txt <span class="p">|</span> grep -E <span class="s1">&#39;^[^# ]&#39;</span> <span class="p">|</span> cut -d<span class="o">=</span> -f1 <span class="p">|</span> xargs -n <span class="m">1</span> poetry add --group dev
 </code></pre></div>
-<p>Dependencies can be segmented into different groups. See <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
-<p>It is recommended to maintain dependencies with Poetry, and export them to <code>requirements.txt</code> and <code>requirements-dev.txt</code> if needed, e.g.,</p>
+<p>Dependencies can be segmented into different groups.
+See <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
+<p>It is recommended to maintain dependencies with Poetry, and export them to <code>requirements.txt</code>
+and <code>requirements-dev.txt</code> if needed, e.g.,</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><a href="#__codelineno-9-1"><span class="linenos" data-linenos="1 "></span></a>poetry <span class="nb">export</span> --without-hashes -f requirements.txt -o requirements.txt
 <a id="__codelineno-9-2" name="__codelineno-9-2"></a><a href="#__codelineno-9-2"><span class="linenos" data-linenos="2 "></span></a>poetry <span class="nb">export</span> --without-hashes --only dev -f requirements.txt -o requirements-dev.txt
 </code></pre></div>
@@ -832,18 +837,18 @@ See <a href="https://github.com/eshwen/macOS-setup">https://github.com/eshwen/ma
 </li>
 <li>
 <p>Create your environment:</p>
-<p><code>shell
-conda create -y -n my_project
-conda activate my_project
-conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
-conda install -y python=3.10
-pip install --upgrade pip</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><a href="#__codelineno-12-1"><span class="linenos" data-linenos="1 "></span></a>conda create -y -n my_project
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><a href="#__codelineno-12-2"><span class="linenos" data-linenos="2 "></span></a>conda activate my_project
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><a href="#__codelineno-12-3"><span class="linenos" data-linenos="3 "></span></a>conda config --set auto_activate_base <span class="nb">false</span>  <span class="c1"># Don&#39;t automatically activate base env when opening terminal</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><a href="#__codelineno-12-4"><span class="linenos" data-linenos="4 "></span></a>conda install -y <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><a href="#__codelineno-12-5"><span class="linenos" data-linenos="5 "></span></a>pip install --upgrade pip
+</code></pre></div>
 </li>
 <li>
 <p>And finally, install the requirements:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><a href="#__codelineno-12-1"><span class="linenos" data-linenos="1 "></span></a><span class="nb">cd</span> &lt;root dir of project&gt;
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a><a href="#__codelineno-12-2"><span class="linenos" data-linenos="2 "></span></a>pip install -r requirements.txt
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a><a href="#__codelineno-12-3"><span class="linenos" data-linenos="3 "></span></a>pip install -r requirements-dev.txt
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><a href="#__codelineno-13-1"><span class="linenos" data-linenos="1 "></span></a><span class="nb">cd</span> &lt;root dir of project&gt;
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><a href="#__codelineno-13-2"><span class="linenos" data-linenos="2 "></span></a>pip install -r requirements.txt
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><a href="#__codelineno-13-3"><span class="linenos" data-linenos="3 "></span></a>pip install -r requirements-dev.txt
 </code></pre></div>
 </li>
 </ol>
@@ -940,6 +945,8 @@ pip install --upgrade pip</code></p>
     
     
       <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+        <script src="../termynal.js"></script>
       
     
   </body>
