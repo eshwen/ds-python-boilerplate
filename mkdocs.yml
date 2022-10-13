@@ -30,6 +30,7 @@ plugins:
   - search:
       lang: en
   - autorefs
+  - termynal
 
 theme:
   name: material
