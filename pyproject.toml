@@ -52,6 +52,7 @@ mkdocs-material = "^8.5.0"
 mkdocstrings = { version = "^0.19.0", extras = ["python"] }
 mkgendocs = "^0.9.2"
 pandas-stubs = "^1.4.4.220919"
+termynal = "^0.2.0"
 
 [build-system]
 requires = ["poetry-core"]

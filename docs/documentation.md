@@ -24,6 +24,20 @@ mkdocs serve
 
 For a Sphinx implementation of documentation, see <https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1>.
 
-### Extensions
+### Extensions and plugins
+
+- [termynal](https://github.com/daxartio/termynal): animated code blocks similar to the FastAPI docs
+    - Installed as a Python package
+      in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml)
+    - Added to the `plugins` section
+      of [mkdocs.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml)
+
+<!-- termynal -->
+
+```bash
+$ python hello_world.py
+---> Transmitting greeting...
+Hello world!
+```
 
 TODO: Add extension and plugin descriptions.
