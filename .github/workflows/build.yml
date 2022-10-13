@@ -3,7 +3,7 @@ name: build
 on:
   push:
   pull_request:
-    types: [opened, reopened]
+    types: [ opened, reopened ]
 
 
 jobs:
@@ -17,25 +17,19 @@ jobs:
       - uses: ./.github/actions/builder
 
       - name: Run mypy
-        run: mypy my_project/
+        run: ./scripts/type-check-code.sh
         if: ${{ always() }}
 
       - name: Run Lint
-        run: |
-          flake8 . --show-source --statistics --max-line-length=120
+        run: ./scripts/lint-code.sh
         if: ${{ always() }}
 
-      # --match-dir argument ignores files in tests/ as they're not needed in documentation
-      # --match argument ignores __init__.py files
-      # D301 complains when a docstring has a backslash and isn't a raw string
       - name: Python Docstring Checker
-        run: |
-          pip install pydocstyle==6.1.1
-          python -m pydocstyle --count --convention google --add-ignore D301 --match-dir '(?!(tests)).*' --match '(?!__init__).*\.py'
+        run: ./scripts/check-docstrings.sh
         if: ${{ always() }}
 
       - name: Run Tests and Coverage
-        run: pytest -v -s --cov my_project/
+        run: ./scripts/unit-test-code.sh
         if: ${{ always() }}
 
       - name: Upload coverage report to Codecov
