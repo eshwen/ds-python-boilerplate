@@ -91,7 +91,7 @@ poetry shell
     To install everything from this project's Poetry configuration, run
     
     ```shell
-    poetry install --with docs
+    poetry install
     ```
     
     To only install the core dependencies, instead run
