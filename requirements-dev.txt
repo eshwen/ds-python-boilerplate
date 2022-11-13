@@ -17,7 +17,7 @@ mypy
 
 # Linting
 flake8
-pylint
+flake8-pyproject
 
 # Documentation
 pydocstyle
