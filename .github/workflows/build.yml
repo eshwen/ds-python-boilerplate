@@ -24,6 +24,10 @@ jobs:
         run: ./scripts/lint-code.sh
         if: ${{ always() }}
 
+      - name: Run Formatting
+        run: black --diff --color .
+        if: ${{ always() }}
+
       - name: Python Docstring Checker
         run: ./scripts/check-docstrings.sh
         if: ${{ always() }}
