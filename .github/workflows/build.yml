@@ -28,6 +28,10 @@ jobs:
         run: black --diff --color my_project/
         if: ${{ always() }}
 
+      - name: Run Import Sorting
+        run: isort --check my_project/ tests/
+        if: ${{ always() }}
+
       - name: Python Docstring Checker
         run: ./scripts/check-docstrings.sh
         if: ${{ always() }}
