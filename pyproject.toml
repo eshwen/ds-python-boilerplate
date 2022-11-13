@@ -29,10 +29,10 @@ voila = "*"
 [tool.poetry.group.dev.dependencies]
 docker = "*"
 build = "*"
-pre-commit = "*"
-black = "*"
-mypy = "*"
-flake8 = "*"
+pre-commit = "^2.20.0"
+black = "^22.10.0"
+mypy = "^0.982"
+flake8 = "^5.0.4"
 pylint = "*"
 
 [tool.poetry.group.test.dependencies]
@@ -43,9 +43,9 @@ pytest-cov = "*"
 
 [tool.poetry.group.docs.dependencies]
 pydocstyle = "*"
-mkdocs = "*"
+mkdocs = "^1.4.0"
 pymdown-extensions = "*"
-mkdocs-material = "*"
+mkdocs-material = "^8.5.10"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
 pandas-stubs = "*"
