@@ -25,7 +25,7 @@ jobs:
         if: ${{ always() }}
 
       - name: Run Formatting
-        run: black --diff --color .
+        run: black --diff --color my_project/
         if: ${{ always() }}
 
       - name: Python Docstring Checker
