@@ -13,6 +13,7 @@ pytest-cov
 
 # Formatting
 black
+isort
 mypy
 
 # Linting
