@@ -1,3 +1,7 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "ds-python-boilerplate"
 version = "0.2.1"
@@ -51,6 +55,6 @@ mkgendocs = "*"
 pandas-stubs = "*"
 termynal = "*"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.black]
+target-version = ['py310']
+line-length = 120

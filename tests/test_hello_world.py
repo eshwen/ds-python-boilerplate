@@ -9,7 +9,7 @@ def test_hello_world():
 
 
 def test_do_a_dataframe_thing():
-    df_in = pd.DataFrame({'foo': ['bar', 'baz']})
+    df_in = pd.DataFrame({"foo": ["bar", "baz"]})
     df_out_bare = hello_world.do_a_dataframe_thing(df_in)
     pd.testing.assert_frame_equal(df_in, df_out_bare)
 
@@ -19,4 +19,4 @@ def test_do_a_dataframe_thing():
 
     arr_in_len = np.array([True, False])
     df_out_with_arr_len = hello_world.do_a_dataframe_thing(df_in, arr_in_len)
-    pd.testing.assert_frame_equal(df_out_with_arr_len, pd.DataFrame({'foo': ['bar']}))
+    pd.testing.assert_frame_equal(df_out_with_arr_len, pd.DataFrame({"foo": ["bar"]}))
