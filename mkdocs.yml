@@ -7,6 +7,8 @@ nav:
       - Homepage: index.md
       - Pipelines: pipelines.md
       - Documentation: documentation.md
+      - Linting and Formatting: linting-formatting.md
+      - Testing: testing.md
       - Helpful Articles: helpful-articles.md
       - General Python Tips: general-python-tips.md
   - Getting Started: getting-started.md

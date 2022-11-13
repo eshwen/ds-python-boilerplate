@@ -13,11 +13,12 @@ pytest-cov
 
 # Formatting
 black
+isort
 mypy
 
 # Linting
 flake8
-pylint
+flake8-pyproject
 
 # Documentation
 pydocstyle

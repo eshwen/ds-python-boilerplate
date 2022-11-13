@@ -1,6 +1,10 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "ds-python-boilerplate"
-version = "0.2.1"
+version = "0.5.0"
 description = "Boilerplate for data science projects in Python"
 authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
@@ -31,12 +35,13 @@ docker = "*"
 build = "*"
 pre-commit = "^2.20.0"
 black = "^22.10.0"
+isort = "^5.10.1"
 mypy = "^0.982"
 flake8 = "^5.0.4"
-pylint = "*"
+flake8-pyproject = "^1.1.0.post0"
 
 [tool.poetry.group.test.dependencies]
-pytest = "*"
+pytest = "^7.2.0"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
@@ -51,6 +56,44 @@ mkgendocs = "*"
 pandas-stubs = "*"
 termynal = "*"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.black]
+target-version = ['py310']
+line-length = 120
+
+[tool.isort]
+py_version = 310
+line_length = 120
+src_paths = ["my_project", "tests"]
+profile = "black"
+color_output = true
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.flake8]
+max-line-length = 120
+count = true
+show-source = true
+statistics = true
+per-file-ignores = [
+    '__init__.py:F401',
+]
+
+[tool.pydocstyle]
+
+convention = "google"
+add-ignore = [
+    'D301',  # D301 complains when a docstring has a backslash and isn't a raw string
+    'D107',  # D107 complains when there is no docstring in an __init__ method
+]
+match = '(?!__init__).*\.py' # ignores __init__.py files
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-v -s --cov"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
