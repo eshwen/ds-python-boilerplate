@@ -21,7 +21,7 @@ jobs:
         if: ${{ always() }}
 
       - name: Run Lint
-        run: ./scripts/lint-code.sh
+        run: flake8 my_project/ tests/
         if: ${{ always() }}
 
       - name: Run Formatting
