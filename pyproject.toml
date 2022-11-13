@@ -80,3 +80,12 @@ statistics = true
 per-file-ignores = [
     '__init__.py:F401',
 ]
+
+[tool.pydocstyle]
+
+convention = "google"
+add-ignore = [
+    'D301',  # D301 complains when a docstring has a backslash and isn't a raw string
+    'D107',  # D107 complains when there is no docstring in an __init__ method
+]
+match = '(?!__init__).*\.py' # ignores __init__.py files
