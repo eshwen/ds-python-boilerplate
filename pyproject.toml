@@ -38,6 +38,7 @@ black = "^22.10.0"
 isort = "^5.10.1"
 mypy = "^0.982"
 flake8 = "^5.0.4"
+flake8-pyproject = "^1.1.0.post0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "*"
@@ -70,3 +71,12 @@ color_output = true
 python_version = "3.10"
 warn_return_any = true
 warn_unused_configs = true
+
+[tool.flake8]
+max-line-length = 120
+count = true
+show-source = true
+statistics = true
+per-file-ignores = [
+    '__init__.py:F401',
+]
