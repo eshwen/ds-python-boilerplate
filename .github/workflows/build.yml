@@ -37,7 +37,7 @@ jobs:
         if: ${{ always() }}
 
       - name: Run Tests and Coverage
-        run: ./scripts/unit-test-code.sh
+        run: pytest my_project/
         if: ${{ always() }}
 
       - name: Upload coverage report to Codecov
