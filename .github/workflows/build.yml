@@ -33,7 +33,7 @@ jobs:
         if: ${{ always() }}
 
       - name: Python Docstring Checker
-        run: ./scripts/check-docstrings.sh
+        run: pydocstyle --count my_project/
         if: ${{ always() }}
 
       - name: Run Tests and Coverage
