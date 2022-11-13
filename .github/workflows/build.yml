@@ -25,7 +25,7 @@ jobs:
         if: ${{ always() }}
 
       - name: Run Formatting
-        run: black --diff --color my_project/
+        run: black --diff --color my_project/ tests/
         if: ${{ always() }}
 
       - name: Run Import Sorting
