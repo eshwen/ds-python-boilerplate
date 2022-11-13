@@ -41,7 +41,7 @@ flake8 = "^5.0.4"
 flake8-pyproject = "^1.1.0.post0"
 
 [tool.poetry.group.test.dependencies]
-pytest = "*"
+pytest = "^7.2.0"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
@@ -89,3 +89,11 @@ add-ignore = [
     'D107',  # D107 complains when there is no docstring in an __init__ method
 ]
 match = '(?!__init__).*\.py' # ignores __init__.py files
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-v -s --cov"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
