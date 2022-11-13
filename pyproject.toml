@@ -66,3 +66,8 @@ line_length = 120
 src_paths = ["my_project", "tests"]
 profile = "black"
 color_output = true
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
