@@ -17,7 +17,7 @@ jobs:
       - uses: ./.github/actions/builder
 
       - name: Run mypy
-        run: ./scripts/type-check-code.sh
+        run: mypy my_project/ tests/
         if: ${{ always() }}
 
       - name: Run Lint
