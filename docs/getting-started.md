@@ -72,13 +72,19 @@ First, install Poetry. This can be done through
     pip install poetry
     ```
 
-To ensure Poetry is up to date, run
+To ensure Poetry is up-to-date, run
 
 ```shell
 poetry self update
 ```
 
-Then create the `virtualenv` environment with
+Then, navigate to the project's root directory, and create the `virtualenv` environment with
+
+```shell
+poetry env use 3.10
+```
+
+In future sessions (on the CLI), you can enter the environment by navigating to the project's root directory and running
 
 ```shell
 poetry shell
@@ -100,14 +106,13 @@ poetry shell
     poetry install --without dev,test,docs
     ```
     
-    It will create a `virtualenv` environment for you, so you don't need to run it in conjunction with another environment manager, such as conda.
+    Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another environment manager, such as conda.
 
 === ":simple-pycharm: PyCharm"
 
     1. Open the project
     2. Click **Add New Interpreter** -> **Add Local Interpreter...** -> **Poetry Environment**
-    3. Check **Poetry Environment**
-    4. For the **Base Interpreter**, the default option will probably do as Poetry will create a `virtualenv` environment to install everything inside
+    3. Check **Existing environment**. The environment you just created should appear in the dropdown menu
 
 ### Creating your own configuration
 
@@ -140,13 +145,13 @@ poetry export --without-hashes --only dev -f requirements.txt -o requirements-de
 
 1. For a lightweight experience, install `miniconda`. This can be done through
 
-    === "Homebrew (on :material-apple:)"
+   === "Homebrew (on :material-apple:)"
 
         ```shell
         brew install --cask miniconda
         ```
 
-    === "Other"
+   === "Other"
 
         Figure it out :material-emoticon-wink-outline:
 
