@@ -116,8 +116,7 @@ poetry shell
 
 ### Creating your own configuration
 
-To create your own Poetry configuration
-in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml), run
+To create your own Poetry configuration in [pyproject.toml], run
 
 ```shell
 poetry init
@@ -130,8 +129,7 @@ cat requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add
 cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add --group dev
 ```
 
-Dependencies can be segmented into different groups.
-See [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml).
+Dependencies can be segmented into different groups. See [pyproject.toml].
 
 It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt``
 and ``requirements-dev.txt`` if needed, e.g.,
@@ -179,3 +177,5 @@ poetry export --without-hashes --only dev -f requirements.txt -o requirements-de
     pip install -r requirements.txt
     pip install -r requirements-dev.txt
     ```
+
+[pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
