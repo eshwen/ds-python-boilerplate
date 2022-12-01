@@ -90,6 +90,40 @@ In future sessions (on the CLI), you can enter the environment by navigating to 
 poetry shell
 ```
 
+#### Decoupling Python and Poetry installs
+
+When installing Poetry, it will usually bundle a Python install. But when using Homebrew, it tends to automatically
+update Poetry and the Python dependency. If it upgrades the minor Python version - like 3.10 -> 3.11 - it can break an
+existing environment.
+
+As such, it is best practice to decouple the Python install from Poetry. [`pyenv`](https://github.com/pyenv/pyenv) is a
+great, simple tool to manage Python installations.
+installs
+
+=== "Homebrew (on :material-apple:)"
+
+   ```shell
+   brew install pyenv
+   ```
+
+=== Other supported OS
+
+See <https://github.com/pyenv/pyenv#installation>.
+
+Then install a specific Python version. The executable path can be found with
+
+```shell
+pyenv which python
+```
+
+which can be used as the interpreter for the Poetry environment with
+
+```shell
+poetry env use "$(pyenv which python)"
+```
+
+Now you should have a static path to a specific Python install.
+
 ### Install the project
 
 === ":octicons-terminal-24: Command line"
