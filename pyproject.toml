@@ -11,21 +11,47 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "~3.10"
+
+# Package setup
 setuptools = "*"
 wheel = "*"
+
+# Terminal colours
 colorama = "*"
+
+# Data processing
 pandas = "*"
+scipy = "*"
 openpyxl = "*"
+
+# Machine learning
+#tensorflow-macos = "*"
+scikit-learn = "*"
+
+# Data validation
 pydantic = "*"
 pandera = "*"
+
+# SQL databases
 SQLAlchemy = "*"
+
+# APIs
 fastapi = "*"
 uvicorn = "*"
 requests = "*"
+
+# Stats
+statsmodels = "*"
+
+# Visualisation
 matplotlib = "*"
 seaborn = "*"
 plotly = "*"
+
+# Configs
 PyYAML = "*"
+
+# Jupyter notebooks
 jupyterlab = "*"
 notebook = "*"
 voila = "*"

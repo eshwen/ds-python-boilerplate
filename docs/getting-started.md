@@ -173,17 +173,23 @@ poetry export --without-hashes -f requirements.txt -o requirements.txt
 poetry export --without-hashes --only dev -f requirements.txt -o requirements-dev.txt
 ```
 
+This repo separates development dependencies into dev, tests, and docs groups. To export these, run
+
+```shell
+poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requirements-dev.txt
+```
+
 ## Conda
 
 1. For a lightweight experience, install `miniconda`. This can be done through
 
-   === "Homebrew (on :material-apple:)"
+    === "Homebrew (on :material-apple:)"
 
         ```shell
         brew install --cask miniconda
         ```
 
-   === "Other"
+    === "Other"
 
         Figure it out :material-emoticon-wink-outline:
 
