@@ -1,12 +1,15 @@
 # Linting and formatting
 
-Both linting and formatting are important for usable, readable code. They're often afterthoughts, but it's easy to configure and simply run tools to keep your code in tip-top shape.
+Both linting and formatting are important for usable, readable code. They're often afterthoughts, but it's easy to
+configure and simply run tools to keep your code in tip-top shape.
 
-All the tools are documented below, and configured under the corresponding sections in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml).
+All the tools are documented below, and configured under the corresponding sections in [pyproject.toml].
 
 ## flake8
 
-[Flake8](<https://flake8.pycqa.org/en/latest/>) is widely-used linter with high configurability. Though it does not allow configuration with [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml), a third-party package [Flake8-pyproject](https://github.com/john-hen/Flake8-pyproject) makes this possible.
+[Flake8](<https://flake8.pycqa.org/en/latest/>) is widely-used linter with high configurability. Though it does not
+allow configuration with [pyproject.toml], a third-party
+package [Flake8-pyproject](https://github.com/john-hen/Flake8-pyproject) makes this possible.
 
 Run with
 
@@ -59,3 +62,5 @@ Run with
 ```shell
 pydocstyle --count my_project/
 ```
+
+[pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
