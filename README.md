@@ -1,7 +1,5 @@
 # README
 
-<div align="center">
-
 [![Documentation](https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs)](https://eshwen.github.io/ds-python-boilerplate/index.html)
 
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3107/)
@@ -17,7 +15,5 @@
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml)
 
 [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://docker.com/)
-
-</div>
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
