@@ -98,17 +98,16 @@ existing environment.
 
 As such, it is best practice to decouple the Python install from Poetry. [`pyenv`](https://github.com/pyenv/pyenv) is a
 great, simple tool to manage Python installations.
-installs
 
 === "Homebrew (on :material-apple:)"
 
-   ```shell
-   brew install pyenv
-   ```
+    ```shell
+    brew install pyenv
+    ```
 
-=== Other supported OS
+=== "Other supported OS"
 
-See <https://github.com/pyenv/pyenv#installation>.
+    See <https://github.com/pyenv/pyenv#installation>.
 
 Then install a specific Python version. The executable path can be found with
 
