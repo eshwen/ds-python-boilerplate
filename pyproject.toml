@@ -76,7 +76,7 @@ pytest-cov = "*"
 pydocstyle = "*"
 mkdocs = "^1.4.0"
 pymdown-extensions = "*"
-mkdocs-material = "^8.5.10"
+mkdocs-material = "^9.0.15"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
 pandas-stubs = "*"
