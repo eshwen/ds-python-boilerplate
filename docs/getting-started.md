@@ -123,6 +123,10 @@ poetry env use "$(pyenv which python)"
 
 Now you should have a static path to a specific Python install.
 
+??? tip
+
+    Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
+
 ### Install the project
 
 === ":octicons-terminal-24: Command line"
