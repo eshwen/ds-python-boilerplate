@@ -1,5 +1,7 @@
 # README
 
+<div align="center">
+
 [![Build status](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/build.yml)
 [![CodeQL](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml)
 [![Coverage](https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU)](https://codecov.io/gh/eshwen/ds-python-boilerplate)
@@ -15,5 +17,7 @@
 [![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
 
 [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://docker.com/)
+
+</div>
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
