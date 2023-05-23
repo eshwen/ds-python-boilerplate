@@ -65,7 +65,7 @@ mypy = "^0.982"
 ruff = "^0.0.254"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.2.0"
+pytest = "^7.3.1"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
