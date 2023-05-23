@@ -51,7 +51,7 @@ pywin32==306 ; python_version >= "3.10" and python_version < "3.11" and sys_plat
 pyyaml-env-tag==0.1 ; python_version >= "3.10" and python_version < "3.11"
 pyyaml==6.0 ; python_version >= "3.10" and python_version < "3.11"
 regex==2023.3.23 ; python_version >= "3.10" and python_version < "3.11"
-requests==2.28.2 ; python_version >= "3.10" and python_version < "3.11"
+requests==2.31.0 ; python_version >= "3.10" and python_version < "3.11"
 ruff==0.0.254 ; python_version >= "3.10" and python_version < "3.11"
 setuptools==67.6.1 ; python_version >= "3.10" and python_version < "3.11"
 six==1.16.0 ; python_version >= "3.10" and python_version < "3.11"
