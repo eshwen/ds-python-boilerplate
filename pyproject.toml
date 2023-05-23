@@ -36,9 +36,9 @@ pandera = "*"
 SQLAlchemy = "*"
 
 # APIs
-fastapi = "*"
+fastapi = "^0.95.2"
 uvicorn = "*"
-requests = "*"
+requests = "^2.31.0"
 
 # Stats
 statsmodels = "*"
