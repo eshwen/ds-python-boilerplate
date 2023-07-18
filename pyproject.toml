@@ -52,8 +52,8 @@ plotly = "*"
 PyYAML = "*"
 
 # Jupyter notebooks
+jupyter = "*"
 jupyterlab = "*"
-notebook = "*"
 voila = "*"
 
 [tool.poetry.group.dev.dependencies]
