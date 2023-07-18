@@ -39,6 +39,18 @@ To instead just show what `black` would change, run
 black --diff my_project/ tests/
 ```
 
+### File watchers in PyCharm
+
+PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for transparently
+formatting code.
+
+To include `black` as a file watcher, go to **Settings** -> **Tools** -> **File Watchers** and import
+the [watchers.xml]. This will automatically apply formatting to Python files and Jupyter notebooks. You may need to edit
+the **Program** path to point to your `black` executable.
+
+Otherwise, to set it up yourself, follow the instructions
+at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
+
 ## mypy
 
 [mypy](https://mypy.readthedocs.io/en/stable/) is a tool to check object types, such as correct type hinting.
@@ -50,3 +62,5 @@ mypy my_project/ tests/
 ```
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
+
+[watchers.xml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pycharm/watchers.xml
