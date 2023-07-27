@@ -51,6 +51,8 @@ the **Program** path to point to your `black` executable.
 Otherwise, to set it up yourself, follow the instructions
 at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
 
+**Update**: `black` is integrated into PyCharm as of v2023.2. Go to **Settings** -> **Tools** -> **Black** to configure.
+
 ## mypy
 
 [mypy](https://mypy.readthedocs.io/en/stable/) is a tool to check object types, such as correct type hinting.
