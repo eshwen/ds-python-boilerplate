@@ -62,7 +62,7 @@ build = "*"
 pre-commit = "^2.20.0"
 black = { version = "^22.10.0", extras = ["jupyter"] }
 mypy = "^0.982"
-ruff = "^0.0.254"
+ruff = "^0.0.282"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
