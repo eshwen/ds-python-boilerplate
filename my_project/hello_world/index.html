@@ -13,7 +13,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.17">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
@@ -681,6 +681,7 @@
 
 
 
+
 <div class="doc doc-object doc-function">
 
 
@@ -694,6 +695,8 @@
   <div class="doc doc-contents ">
   
       <p>An example of documentation with references to external libraries.</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -711,7 +714,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/stable/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>Input dataframe.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input dataframe.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -721,7 +728,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="numpy" href="https://numpy.org/doc/stable/reference/index.html#module-numpy">np</a>.<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a> | None</code>
           </td>
-          <td><p>Input array.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Input array.</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -729,11 +740,13 @@
     </tbody>
   </table>
 
-<details class="see-also">
+<details class="see-also" open>
   <summary>See Also</summary>
   <p>An explicit reference to a dataframe: <a class="autorefs autorefs-external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame">pandas.DataFrame</a> for an explicit reference.
 Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array">numpy.array</a>.</p>
 </details>
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -747,14 +760,18 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
           <td>
                 <code><a class="autorefs autorefs-external" title="pandas" href="https://pandas.pydata.org/pandas-docs/stable/index.html#module-pandas">pd</a>.<a class="autorefs autorefs-external" title="pandas.DataFrame" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame">DataFrame</a></code>
           </td>
-          <td><p>A dataframe with some magical operation applied to it.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dataframe with some magical operation applied to it.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
 
-      <details class="quote">
-        <summary>Source code in <code>my_project/hello_world.py</code></summary>
-        <div class="highlight"><pre><span></span><code><a id="__codelineno-0-28" name="__codelineno-0-28"></a><a href="#__codelineno-0-28"><span class="linenos" data-linenos="28 "></span></a><span class="k">def</span> <span class="nf">do_a_dataframe_thing</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">arr</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+          <details class="quote">
+            <summary>Source code in <code>my_project/hello_world.py</code></summary>
+            <div class="highlight"><pre><span></span><code><a id="__codelineno-0-28" name="__codelineno-0-28"></a><a href="#__codelineno-0-28"><span class="linenos" data-linenos="28 "></span></a><span class="k">def</span> <span class="nf">do_a_dataframe_thing</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">arr</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29"></a><a href="#__codelineno-0-29"><span class="linenos" data-linenos="29 "></span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;An example of documentation with references to external libraries.</span>
 <a id="__codelineno-0-30" name="__codelineno-0-30"></a><a href="#__codelineno-0-30"><span class="linenos" data-linenos="30 "></span></a>
 <a id="__codelineno-0-31" name="__codelineno-0-31"></a><a href="#__codelineno-0-31"><span class="linenos" data-linenos="31 "></span></a><span class="sd">    Args:</span>
@@ -773,10 +790,11 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
 <a id="__codelineno-0-44" name="__codelineno-0-44"></a><a href="#__codelineno-0-44"><span class="linenos" data-linenos="44 "></span></a>        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">arr</span><span class="p">]</span>
 <a id="__codelineno-0-45" name="__codelineno-0-45"></a><a href="#__codelineno-0-45"><span class="linenos" data-linenos="45 "></span></a>    <span class="k">return</span> <span class="n">df</span>
 </code></pre></div>
-      </details>
+          </details>
   </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -792,6 +810,8 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
   
       <p>Returns "Hello World!" when called.</p>
 
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -805,28 +825,32 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
 <td><code>str</code></td>          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>The string 'Hello world!'.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The string 'Hello world!'.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="o">&gt;&gt;&gt;</span> <span class="n">hello_world</span><span class="p">()</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a><span class="s1">&#39;Hello World!&#39;</span>
 </code></pre></div>
 </details>
-<details class="note">
+<details class="note" open>
   <summary>Note</summary>
   <p>This is an example of a note.</p>
 </details>
-<details class="warning">
+<details class="warning" open>
   <summary>Warning</summary>
   <p>This is an example of a warning.</p>
 </details>
-      <details class="quote">
-        <summary>Source code in <code>my_project/hello_world.py</code></summary>
-        <div class="highlight"><pre><span></span><code><a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="k">def</span> <span class="nf">hello_world</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+          <details class="quote">
+            <summary>Source code in <code>my_project/hello_world.py</code></summary>
+            <div class="highlight"><pre><span></span><code><a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="k">def</span> <span class="nf">hello_world</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns &quot;Hello World!&quot; when called.</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a><a href="#__codelineno-0-8"><span class="linenos" data-linenos=" 8 "></span></a>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a><a href="#__codelineno-0-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="sd">    Returns:</span>
@@ -847,7 +871,7 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a><a href="#__codelineno-0-24"><span class="linenos" data-linenos="24 "></span></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25"></a><a href="#__codelineno-0-25"><span class="linenos" data-linenos="25 "></span></a>    <span class="k">return</span> <span class="s2">&quot;Hello World!&quot;</span>
 </code></pre></div>
-      </details>
+          </details>
   </div>
 
 </div>
@@ -916,10 +940,10 @@ Or a numpy array: <a class="autorefs autorefs-external" href="https://numpy.org/
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="../../termynal.js"></script>
