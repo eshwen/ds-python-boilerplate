@@ -29,14 +29,14 @@ openpyxl = "*"
 scikit-learn = "*"
 
 # Data validation
-pydantic = "*"
+pydantic = { version = "^2.3.0", extras=["settings"] }
 pandera = "*"
 
 # SQL databases
 SQLAlchemy = "*"
 
 # APIs
-fastapi = "^0.95.2"
+fastapi = "^0.100.0"
 uvicorn = "*"
 requests = "^2.31.0"
 
