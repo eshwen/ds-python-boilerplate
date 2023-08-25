@@ -29,14 +29,14 @@ openpyxl = "*"
 scikit-learn = "*"
 
 # Data validation
-pydantic = "*"
+pydantic = { version = "^2.3.0", extras=["settings"] }
 pandera = "*"
 
 # SQL databases
 SQLAlchemy = "*"
 
 # APIs
-fastapi = "^0.95.2"
+fastapi = "^0.100.0"
 uvicorn = "*"
 requests = "^2.31.0"
 
@@ -61,8 +61,11 @@ docker = "*"
 build = "*"
 pre-commit = "^2.20.0"
 black = { version = "^22.10.0", extras = ["jupyter"] }
-mypy = "^0.982"
 ruff = "^0.0.254"
+
+# Type hinting
+mypy = "^0.982"
+pandas-stubs = "*"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
@@ -76,7 +79,6 @@ pymdown-extensions = "*"
 mkdocs-material = "^9.1.17"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
-pandas-stubs = "*"
 termynal = "*"
 
 [tool.black]
