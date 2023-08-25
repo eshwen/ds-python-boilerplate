@@ -12,10 +12,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "~3.10"
 
-# Package setup
-setuptools = "*"
-wheel = "*"
-
 # Terminal colours
 colorama = "*"
 
