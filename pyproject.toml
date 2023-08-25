@@ -16,9 +16,7 @@ python = "~3.10"
 colorama = "*"
 
 # Data processing
-pandas = "*"
-scipy = "*"
-openpyxl = "*"
+pandas = {version = "^2.0.3", extras=["performance", "visualisation", "computation", "excel", "sql-other"]}
 
 # Machine learning
 #tensorflow-macos = "*"
@@ -61,7 +59,7 @@ ruff = "^0.0.254"
 
 # Type hinting
 mypy = "^0.982"
-pandas-stubs = "*"
+pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
