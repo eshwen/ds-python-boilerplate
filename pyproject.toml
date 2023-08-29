@@ -55,7 +55,7 @@ docker = "*"
 build = "*"
 pre-commit = "^2.20.0"
 black = { version = "^22.10.0", extras = ["jupyter"] }
-ruff = "^0.0.254"
+ruff = "^0.0.285"
 
 # Type hinting
 mypy = "^0.982"
