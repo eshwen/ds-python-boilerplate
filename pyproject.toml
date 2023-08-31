@@ -53,7 +53,7 @@ voila = "*"
 [tool.poetry.group.dev.dependencies]
 docker = "*"
 build = "*"
-pre-commit = "^2.20.0"
+pre-commit = "^3.3.3"
 black = { version = "^22.10.0", extras = ["jupyter"] }
 ruff = "^0.0.285"
 
