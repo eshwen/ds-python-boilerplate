@@ -11,7 +11,7 @@
     ```shell
     # Rosetta for compatibility with Intel
     softwareupdate --install-rosetta
-    
+
     # Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install --cask docker
@@ -44,7 +44,7 @@
     1. Under the interpreters tab on the bottom row, hit **Add New Interpreter** -> **On Docker...**
         1. If the **Docker server** is blank, in the dropdown menu click **Create new...** -> **Ok**
         2. Select the correct Dockerfile
-        3. Set the **Context folder** to `.` 
+        3. Set the **Context folder** to `.`
         3. Uncheck the box **Rebuild image automatically every time before running code**
         4. Optionally, add an image tag to identify it later
     2. Hit **Next** and let the container build
@@ -132,17 +132,17 @@ Now you should have a static path to a specific Python install.
 === ":octicons-terminal-24: Command line"
 
     To install everything from this project's Poetry configuration, run
-    
+
     ```shell
     poetry install
     ```
-    
+
     To only install the core dependencies, instead run
-    
+
     ```shell
     poetry install --without dev,test,docs
     ```
-    
+
     Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another environment manager, such as conda.
 
 === ":simple-pycharm: PyCharm"
