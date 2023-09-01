@@ -63,6 +63,29 @@ Run with
 mypy my_project/ tests/
 ```
 
+## pre-commit
+
+[pre-commit] is a tool to run hooks before commits and pushes. When attempting to commit/push, the hooks will run in the
+background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
+you can try again.
+
+The [.pre-commit-config.yaml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml) file contains hooks to run `ruff` and `black` to fix Python linting and formatting errors, respectively. Additional hooks will run general formatting checks on other file types and `poetry export`.
+
+To use pre-commit, install the hooks with
+
+```shell
+pre-commit install
+```
+
+Then, when committing through PyCharm/GitHub Desktop/CLI, they should automatically run. Alternatively, run them
+manually with
+
+```shell
+pre-commit run -a
+```
+
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
 [watchers.xml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pycharm/watchers.xml
+
+[pre-commit]: https://pre-commit.com/
