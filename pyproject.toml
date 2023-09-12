@@ -147,14 +147,9 @@ asyncio_mode = "auto"
 branch = true
 source = ["my_project"]
 omit = [
-    "tests/*",
-    "*/__init__.py"
+    "__init__.py"
 ]
 
 [tool.coverage.report]
-omit = [
-    "tests/*",
-    "*/__init__.py",
-]
 show_missing = true
 fail_under = 90
