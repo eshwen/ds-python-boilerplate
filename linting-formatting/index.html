@@ -844,7 +844,15 @@ at <a href="https://black.readthedocs.io/en/stable/integrations/editors.html">ht
 <p><a href="https://pre-commit.com/">pre-commit</a> is a tool to run hooks before commits and pushes. When attempting to commit/push, the hooks will run in the
 background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
 you can try again.</p>
-<p>The <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a> file contains hooks to run <code>ruff</code> and <code>black</code> to fix Python linting and formatting errors, respectively. Additional hooks will run general formatting checks on other file types and <code>poetry export</code>.</p>
+<p>The <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a> file
+contains hooks to run</p>
+<ul>
+<li>built-in <code>pre-commit</code> checks</li>
+<li><code>ruff</code> for linting (fixes fixable issues)</li>
+<li><code>black</code> for formatting (fixes fixable issues)</li>
+<li><code>mypy</code> type hinting errors</li>
+<li><code>poetry</code> status (<code>poetry.lock</code> and requirements files are up-to-date)</li>
+</ul>
 <p>To use pre-commit, install the hooks with</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos="1 "></span></a>pre-commit<span class="w"> </span>install
 </code></pre></div>
