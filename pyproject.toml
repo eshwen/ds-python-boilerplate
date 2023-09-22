@@ -58,7 +58,7 @@ black = { version = "^22.10.0", extras = ["jupyter"] }
 ruff = "^0.0.285"
 
 # Type hinting
-mypy = "^0.982"
+mypy = "^1.5.1"
 pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.test.dependencies]

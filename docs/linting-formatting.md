@@ -69,7 +69,14 @@ mypy my_project/ tests/
 background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
 you can try again.
 
-The [.pre-commit-config.yaml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml) file contains hooks to run `ruff` and `black` to fix Python linting and formatting errors, respectively. Additional hooks will run general formatting checks on other file types and `poetry export`.
+The [.pre-commit-config.yaml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml) file
+contains hooks to run
+
+- built-in `pre-commit` checks
+- `ruff` for linting (fixes fixable issues)
+- `black` for formatting (fixes fixable issues)
+- `mypy` type hinting errors
+- `poetry` status (`poetry.lock` and requirements files are up-to-date)
 
 To use pre-commit, install the hooks with
 
