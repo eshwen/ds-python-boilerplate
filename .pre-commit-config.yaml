@@ -1,3 +1,5 @@
+exclude: 'mkdocs.yml'
+
 default_language_version:
   python: python3.10
 
