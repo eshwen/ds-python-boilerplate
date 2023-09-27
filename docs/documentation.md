@@ -23,11 +23,9 @@ For a Sphinx implementation of documentation, see <https://github.com/eshwen/ds-
 
 ### Extensions and plugins
 
-- [termynal](https://github.com/daxartio/termynal): animated code blocks similar to the FastAPI docs
-    - Installed as a Python package
-      in [pyproject.toml](https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml)
-    - Added to the `plugins` section
-      of [mkdocs.yml](https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml)
+- [termynal]: animated code blocks similar to the FastAPI docs
+    - Installed as a Python package in [pyproject.toml]
+    - Added to the `plugins` section of [mkdocs.yml]
 
 <!-- termynal -->
 
@@ -38,3 +36,9 @@ Hello world!
 ```
 
 TODO: Add extension and plugin descriptions.
+
+[termynal]: https://github.com/daxartio/termynal
+
+[pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
+
+[mkdocs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml
