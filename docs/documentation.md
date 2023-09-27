@@ -35,6 +35,15 @@ $ python hello_world.py
 Hello world!
 ```
 
+- [mkdocstrings]: automatically generate API documentation from docstrings, like Sphinx's `autodoc`
+    - Installed as a Python package in [pyproject.toml]
+    - Added to the `plugins` section of [mkdocs.yml]
+    - Used alongside `mkdocs-gen-files` to automatically generate pages for all Python files in the repo
+        - The script [gen_ref_pages.py] generates the Markdown files to populate the API docs
+    - Used alongside `mkdocs-literate-nav` to pipe the navigation of the API docs to Markdown instead of YAML
+    - Used alongside `mkdocs-section-index` map the `__init__.py` files in each directory to the corresponding
+      section's `index.md`
+
 TODO: Add extension and plugin descriptions.
 
 [termynal]: https://github.com/daxartio/termynal
@@ -42,3 +51,7 @@ TODO: Add extension and plugin descriptions.
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
 [mkdocs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml
+
+[mkdocstrings]: https://mkdocstrings.github.io/
+
+[gen_ref_pages.py]: https://github.com/eshwen/ds-python-boilerplate/blob/main/docs/gen_ref_pages.py
