@@ -1,10 +1,7 @@
 # Documentation
 
-This repository uses Google-Style for documentation. Run `pydocstyle` to check the format of docstrings:
-
-```shell
-python -m pydocstyle --count --convention google --add-ignore D301,D212,D107 --match-dir '(?!(tests)).*' --match '(?!__init__).*\.py'
-```
+This repository uses Google-Style for docstrings. They are checked automatically by `ruff`.
+See [linting and formatting](linting-formatting.md) for more information.
 
 ## API documentation
 
