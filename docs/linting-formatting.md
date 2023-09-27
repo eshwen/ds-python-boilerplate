@@ -73,6 +73,8 @@ The [.pre-commit-config.yaml](https://github.com/eshwen/ds-python-boilerplate/bl
 contains hooks to run
 
 - built-in `pre-commit` checks
+- Automatic use of the walrus operator
+- `pyupgrade` to use new Python syntax
 - `ruff` for linting (fixes fixable issues)
 - `black` for formatting (fixes fixable issues)
 - `mypy` type hinting errors
