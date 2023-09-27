@@ -12,9 +12,7 @@ nav:
       - Helpful Articles: helpful-articles.md
       - General Python Tips: general-python-tips.md
   - Getting Started: getting-started.md
-  - Code Reference:
-      - my_project:
-          - hello_world: my_project/hello_world.md
+  - Code Reference: reference/
 
 plugins:
   - mkdocstrings:
@@ -33,6 +31,12 @@ plugins:
       lang: en
   - autorefs
   - termynal
+  - gen-files:
+      scripts:
+        - docs/gen_ref_pages.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - section-index
 
 theme:
   name: material
@@ -67,6 +71,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+extra_css:
+  - css/code_select.css
 
 markdown_extensions:
   - toc:
