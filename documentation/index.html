@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../css/code_select.css">
+    
       <link rel="stylesheet" href="../termynal.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -265,23 +267,14 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
-        <a href="../my_project/hello_world/" class="md-tabs__link">
+        <a href="../reference/my_project/" class="md-tabs__link">
           
   
   Code Reference
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -645,16 +638,24 @@
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/my_project/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     my_project
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
@@ -669,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../my_project/hello_world/" class="md-nav__link">
+      <a href="../reference/my_project/hello_world/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,30 +764,41 @@
 
 
 <h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">⚓︎</a></h1>
-<p>This repository uses Google-Style for documentation. Run <code>pydocstyle</code> to check the format of docstrings:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>python<span class="w"> </span>-m<span class="w"> </span>pydocstyle<span class="w"> </span>--count<span class="w"> </span>--convention<span class="w"> </span>google<span class="w"> </span>--add-ignore<span class="w"> </span>D301,D212,D107<span class="w"> </span>--match-dir<span class="w"> </span><span class="s1">&#39;(?!(tests)).*&#39;</span><span class="w"> </span>--match<span class="w"> </span><span class="s1">&#39;(?!__init__).*\.py&#39;</span>
-</code></pre></div>
+<p>This repository uses Google-Style for docstrings. They are checked automatically by <code>ruff</code>.
+See <a href="../linting-formatting/">linting and formatting</a> for more information.</p>
 <h2 id="api-documentation">API documentation<a class="headerlink" href="#api-documentation" title="Permanent link">⚓︎</a></h2>
 <p>API documentation is built with MkDocs using the Material theme. To build a static copy locally, run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>mkdocs<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>mkdocs<span class="w"> </span>build
 </code></pre></div>
 <p>Then open the homepage HTML file under <code>site/index.html</code>.</p>
 <p>Or, to render it live on a local server, run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>mkdocs<span class="w"> </span>serve
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>mkdocs<span class="w"> </span>serve
 </code></pre></div>
 <p>For a Sphinx implementation of documentation, see <a href="https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1">https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1</a>.</p>
 <h3 id="extensions-and-plugins">Extensions and plugins<a class="headerlink" href="#extensions-and-plugins" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><a href="https://github.com/daxartio/termynal">termynal</a>: animated code blocks similar to the FastAPI docs<ul>
-<li>Installed as a Python package
-  in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a></li>
-<li>Added to the <code>plugins</code> section
-  of <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml">mkdocs.yml</a></li>
+<li>Installed as a Python package in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a></li>
+<li>Added to the <code>plugins</code> section of <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml">mkdocs.yml</a></li>
 </ul>
 </li>
 </ul>
 <div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty="input" data-ty-prompt="$">python hello_world.py</span><span data-ty>---&gt; Transmitting greeting...<br>Hello world!<br></span></div>
 
+<ul>
+<li><a href="https://mkdocstrings.github.io/">mkdocstrings</a>: automatically generate API documentation from docstrings, like Sphinx's <code>autodoc</code><ul>
+<li>Installed as a Python package in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a></li>
+<li>Added to the <code>plugins</code> section of <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml">mkdocs.yml</a></li>
+<li>Used alongside <code>mkdocs-gen-files</code> to automatically generate pages for all Python files in the repo<ul>
+<li>The script <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/docs/gen_ref_pages.py">gen_ref_pages.py</a> generates the Markdown files to populate the API docs</li>
+</ul>
+</li>
+<li>Used alongside <code>mkdocs-literate-nav</code> to pipe the navigation of the API docs to Markdown instead of YAML</li>
+<li>Used alongside <code>mkdocs-section-index</code> map the <code>__init__.py</code> files in each directory to the corresponding
+  section's <code>index.md</code></li>
+</ul>
+</li>
+</ul>
 <p>TODO: Add extension and plugin descriptions.</p>
 
 
@@ -845,7 +857,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
