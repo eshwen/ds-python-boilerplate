@@ -74,6 +74,9 @@ mkdocs-material = "^9.1.17"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
 termynal = "*"
+mkdocs-gen-files = "*"
+mkdocs-literate-nav = "*"
+mkdocs-section-index = "*"
 
 [tool.black]
 target-version = ['py310']
