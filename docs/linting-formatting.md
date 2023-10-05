@@ -8,7 +8,7 @@ All the tools are documented below, and configured under the corresponding secti
 ## Ruff
 
 [Ruff] is modern linter written in Rust. It's incredibly fast, and reimplements traditional linters and code checkers
-like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring  checking).
+like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring checking).
 
 To only check your code, run
 
