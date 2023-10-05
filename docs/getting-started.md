@@ -30,7 +30,8 @@
 
     1. Install the **Remote - Containers** extension (`ms-vscode-remote.remote-containers`)
     2. Open this project as a folder
-    3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be built.
+    3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be
+       built.
 
     The devcontainer encompasses the following:
 
@@ -125,7 +126,8 @@ Now you should have a static path to a specific Python install.
 
 ??? tip
 
-    Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
+    Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if
+    you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
 
 ### Install the project
 
@@ -143,7 +145,8 @@ Now you should have a static path to a specific Python install.
     poetry install --without dev,test,docs
     ```
 
-    Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another environment manager, such as conda.
+    Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another
+    environment manager, such as conda.
 
 === ":simple-pycharm: PyCharm"
 
@@ -208,10 +211,12 @@ poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requi
     ```shell
     conda create -y -n my_project
     conda activate my_project
-    conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
+    conda config --set auto_activate_base false  # (1)
     conda install -y python=3.10
     pip install --upgrade pip
     ```
+
+    1. Stops automatically activating the `base` env when opening the terminal.
 
 4. And finally, install the requirements:
 
