@@ -50,6 +50,9 @@ jupyter = "*"
 jupyterlab = "*"
 voila = "*"
 
+# Stubs
+pandas-stubs = "^2.0.3"
+
 [tool.poetry.group.dev.dependencies]
 docker = "*"
 build = "*"
@@ -59,7 +62,6 @@ ruff = "^0.0.285"
 
 # Type hinting
 mypy = "^1.5.1"
-pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
