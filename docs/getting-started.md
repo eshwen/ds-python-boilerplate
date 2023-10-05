@@ -97,8 +97,8 @@ When installing Poetry, it will usually bundle a Python install. But when using 
 update Poetry and the Python dependency. If it upgrades the minor Python version - like 3.10 -> 3.11 - it can break an
 existing environment.
 
-As such, it is best practice to decouple the Python install from Poetry. [`pyenv`](https://github.com/pyenv/pyenv) is a
-great, simple tool to manage Python installations.
+As such, it is best practice to decouple the Python install from Poetry. [pyenv] is a great, simple tool to manage
+Python installations.
 
 === ":simple-homebrew: Homebrew (on :material-apple:)"
 
@@ -231,3 +231,5 @@ poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requi
     ```
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
+
+[pyenv]: https://github.com/pyenv/pyenv
