@@ -56,17 +56,17 @@
 
 First, install Poetry. This can be done through
 
-=== "Official installer"
+=== ":simple-poetry: Official installer"
 
     See <https://python-poetry.org/docs/#installation>
 
-=== "Homebrew (on :material-apple:)"
+=== ":simple-homebrew: Homebrew (on :material-apple:)"
 
     ```shell
     brew install poetry
     ```
 
-=== "pip"
+=== ":simple-pypi: pip"
 
     ```shell
     pip install poetry
@@ -99,7 +99,7 @@ existing environment.
 As such, it is best practice to decouple the Python install from Poetry. [`pyenv`](https://github.com/pyenv/pyenv) is a
 great, simple tool to manage Python installations.
 
-=== "Homebrew (on :material-apple:)"
+=== ":simple-homebrew: Homebrew (on :material-apple:)"
 
     ```shell
     brew install pyenv
