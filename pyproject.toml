@@ -49,8 +49,6 @@ PyYAML = "*"
 pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.dev.dependencies]
-docker = "*"
-build = "*"
 pre-commit = "^3.3.3"
 black = { version = "^22.10.0", extras = ["jupyter"] }
 ruff = "^0.0.285"
