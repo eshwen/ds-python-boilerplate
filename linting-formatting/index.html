@@ -473,17 +473,17 @@
       
         <li class="md-nav__item">
   <a href="#ruff" class="md-nav__link">
-    ruff
+    Ruff
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#black" class="md-nav__link">
-    black
+    Black
   </a>
   
-    <nav class="md-nav" aria-label="black">
+    <nav class="md-nav" aria-label="Black">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -500,7 +500,7 @@
       
         <li class="md-nav__item">
   <a href="#mypy" class="md-nav__link">
-    mypy
+    Mypy
   </a>
   
 </li>
@@ -748,17 +748,17 @@
       
         <li class="md-nav__item">
   <a href="#ruff" class="md-nav__link">
-    ruff
+    Ruff
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#black" class="md-nav__link">
-    black
+    Black
   </a>
   
-    <nav class="md-nav" aria-label="black">
+    <nav class="md-nav" aria-label="Black">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -775,7 +775,7 @@
       
         <li class="md-nav__item">
   <a href="#mypy" class="md-nav__link">
-    mypy
+    Mypy
   </a>
   
 </li>
@@ -809,18 +809,17 @@
 <p>Both linting and formatting are important for usable, readable code. They're often afterthoughts, but it's easy to
 configure and simply run tools to keep your code in tip-top shape.</p>
 <p>All the tools are documented below, and configured under the corresponding sections in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
-<h2 id="ruff">ruff<a class="headerlink" href="#ruff" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://beta.ruff.rs/docs/">ruff</a> is modern linter written in Rust. It's incredibly fast, and reimplements
-traditional linters and code checkers like <code>flake8</code>, <code>isort</code> (automatic import sorting), and <code>pydocstyle</code> (docstring
-checking).</p>
+<h2 id="ruff">Ruff<a class="headerlink" href="#ruff" title="Permanent link">⚓︎</a></h2>
+<p><a href="https://beta.ruff.rs/docs/">Ruff</a> is modern linter written in Rust. It's incredibly fast, and reimplements traditional linters and code checkers
+like <code>flake8</code>, <code>isort</code> (automatic import sorting), and <code>pydocstyle</code> (docstring checking).</p>
 <p>To only check your code, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>ruff<span class="w"> </span>my_project/<span class="w"> </span>tests/
 </code></pre></div>
 <p>To automatically fix any issues, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>ruff<span class="w"> </span>--fix<span class="w"> </span>my_project/<span class="w"> </span>tests/
 </code></pre></div>
-<h2 id="black">black<a class="headerlink" href="#black" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://black.readthedocs.io/en/stable/index.html">black</a> is a widely-used tool to ensure consistently-formatted code.</p>
+<h2 id="black">Black<a class="headerlink" href="#black" title="Permanent link">⚓︎</a></h2>
+<p><a href="https://black.readthedocs.io/en/stable/index.html">Black</a> is a widely-used tool to ensure consistently-formatted code.</p>
 <p>To automatically reformat your code, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>black<span class="w"> </span>my_project/<span class="w"> </span>tests/
 </code></pre></div>
@@ -836,8 +835,8 @@ the <strong>Program</strong> path to point to your <code>black</code> executable
 <p>Otherwise, to set it up yourself, follow the instructions
 at <a href="https://black.readthedocs.io/en/stable/integrations/editors.html">https://black.readthedocs.io/en/stable/integrations/editors.html</a>.</p>
 <p><strong>Update</strong>: <code>black</code> is integrated into PyCharm as of v2023.2. Go to <strong>Settings</strong> -&gt; <strong>Tools</strong> -&gt; <strong>Black</strong> to configure.</p>
-<h2 id="mypy">mypy<a class="headerlink" href="#mypy" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://mypy.readthedocs.io/en/stable/">mypy</a> is a tool to check object types, such as correct type hinting.</p>
+<h2 id="mypy">Mypy<a class="headerlink" href="#mypy" title="Permanent link">⚓︎</a></h2>
+<p><a href="https://mypy.readthedocs.io/en/stable/">Mypy</a> is a tool to check object types, such as correct type hinting.</p>
 <p>Run with</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>mypy<span class="w"> </span>my_project/<span class="w"> </span>tests/
 </code></pre></div>
@@ -845,8 +844,7 @@ at <a href="https://black.readthedocs.io/en/stable/integrations/editors.html">ht
 <p><a href="https://pre-commit.com/">pre-commit</a> is a tool to run hooks before commits and pushes. When attempting to commit/push, the hooks will run in the
 background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
 you can try again.</p>
-<p>The <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a> file
-contains hooks to run</p>
+<p>The <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a> file contains hooks to run</p>
 <ul>
 <li>built-in <code>pre-commit</code> checks</li>
 <li>Automatic use of the walrus operator</li>
@@ -920,7 +918,7 @@ manually with</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
