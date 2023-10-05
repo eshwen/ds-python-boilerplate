@@ -171,8 +171,12 @@ cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry ad
 
 Dependencies can be segmented into different groups. See [pyproject.toml].
 
-It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt``
+It is recommended to maintain dependencies with Poetry, and export them (1) to ``requirements.txt``
 and ``requirements-dev.txt`` if needed, e.g.,
+{ .annotate }
+
+1. Check out [linting-formatting.md#pre-commit](linting-formatting.md#pre-commit) for a pre-commit hook to do this
+   automatically.
 
 ```shell
 poetry export --without-hashes -f requirements.txt -o requirements.txt
