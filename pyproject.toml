@@ -45,11 +45,6 @@ plotly = "*"
 # Configs
 PyYAML = "*"
 
-# Jupyter notebooks
-jupyter = "*"
-jupyterlab = "*"
-voila = "*"
-
 # Stubs
 pandas-stubs = "^2.0.3"
 
@@ -62,6 +57,11 @@ ruff = "^0.0.285"
 
 # Type hinting
 mypy = "^1.5.1"
+
+# Jupyter notebooks
+jupyter = "*"
+jupyterlab = "*"
+voila = "*"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
