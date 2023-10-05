@@ -5,11 +5,10 @@ configure and simply run tools to keep your code in tip-top shape.
 
 All the tools are documented below, and configured under the corresponding sections in [pyproject.toml].
 
-## ruff
+## Ruff
 
-[ruff](<https://beta.ruff.rs/docs/>) is modern linter written in Rust. It's incredibly fast, and reimplements
-traditional linters and code checkers like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring
-checking).
+[Ruff] is modern linter written in Rust. It's incredibly fast, and reimplements traditional linters and code checkers
+like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring checking).
 
 To only check your code, run
 
@@ -23,9 +22,9 @@ To automatically fix any issues, run
 ruff --fix my_project/ tests/
 ```
 
-## black
+## Black
 
-[black](https://black.readthedocs.io/en/stable/index.html) is a widely-used tool to ensure consistently-formatted code.
+[Black] is a widely-used tool to ensure consistently-formatted code.
 
 To automatically reformat your code, run
 
@@ -53,9 +52,9 @@ at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
 
 **Update**: `black` is integrated into PyCharm as of v2023.2. Go to **Settings** -> **Tools** -> **Black** to configure.
 
-## mypy
+## Mypy
 
-[mypy](https://mypy.readthedocs.io/en/stable/) is a tool to check object types, such as correct type hinting.
+[Mypy] is a tool to check object types, such as correct type hinting.
 
 Run with
 
@@ -69,8 +68,7 @@ mypy my_project/ tests/
 background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
 you can try again.
 
-The [.pre-commit-config.yaml](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml) file
-contains hooks to run
+The [.pre-commit-config.yaml] file contains hooks to run
 
 - built-in `pre-commit` checks
 - Automatic use of the walrus operator
@@ -98,3 +96,11 @@ pre-commit run -a
 [watchers.xml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pycharm/watchers.xml
 
 [pre-commit]: https://pre-commit.com/
+
+[Ruff]: https://beta.ruff.rs/docs/
+
+[Black]: https://black.readthedocs.io/en/stable/index.html
+
+[Mypy]: https://mypy.readthedocs.io/en/stable/
+
+[.pre-commit-config.yaml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml

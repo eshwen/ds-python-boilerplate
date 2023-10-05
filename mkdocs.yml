@@ -45,6 +45,7 @@ theme:
     - navigation.tracking
     - navigation.sections
     - content.code.copy
+    - content.code.annotate
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -79,6 +80,8 @@ markdown_extensions:
   - toc:
       permalink: ⚓︎
   - attr_list
+  - md_in_html
+  - admonition
   - pymdownx.magiclink
   - pymdownx.snippets:
       check_paths: true

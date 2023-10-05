@@ -30,7 +30,8 @@
 
     1. Install the **Remote - Containers** extension (`ms-vscode-remote.remote-containers`)
     2. Open this project as a folder
-    3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be built.
+    3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be
+       built.
 
     The devcontainer encompasses the following:
 
@@ -56,17 +57,17 @@
 
 First, install Poetry. This can be done through
 
-=== "Official installer"
+=== ":simple-poetry: Official installer"
 
     See <https://python-poetry.org/docs/#installation>
 
-=== "Homebrew (on :material-apple:)"
+=== ":simple-homebrew: Homebrew (on :material-apple:)"
 
     ```shell
     brew install poetry
     ```
 
-=== "pip"
+=== ":simple-pypi: pip"
 
     ```shell
     pip install poetry
@@ -96,10 +97,10 @@ When installing Poetry, it will usually bundle a Python install. But when using 
 update Poetry and the Python dependency. If it upgrades the minor Python version - like 3.10 -> 3.11 - it can break an
 existing environment.
 
-As such, it is best practice to decouple the Python install from Poetry. [`pyenv`](https://github.com/pyenv/pyenv) is a
-great, simple tool to manage Python installations.
+As such, it is best practice to decouple the Python install from Poetry. [pyenv] is a great, simple tool to manage
+Python installations.
 
-=== "Homebrew (on :material-apple:)"
+=== ":simple-homebrew: Homebrew (on :material-apple:)"
 
     ```shell
     brew install pyenv
@@ -125,7 +126,8 @@ Now you should have a static path to a specific Python install.
 
 ??? tip
 
-    Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
+    Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if
+    you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
 
 ### Install the project
 
@@ -143,7 +145,8 @@ Now you should have a static path to a specific Python install.
     poetry install --without dev,test,docs
     ```
 
-    Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another environment manager, such as conda.
+    Since it will create a `virtualenv` environment for you, you don't need to run it in conjunction with another
+    environment manager, such as conda.
 
 === ":simple-pycharm: PyCharm"
 
@@ -168,8 +171,12 @@ cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry ad
 
 Dependencies can be segmented into different groups. See [pyproject.toml].
 
-It is recommended to maintain dependencies with Poetry, and export them to ``requirements.txt``
+It is recommended to maintain dependencies with Poetry, and export them (1) to ``requirements.txt``
 and ``requirements-dev.txt`` if needed, e.g.,
+{ .annotate }
+
+1. Check out [linting-formatting.md#pre-commit](linting-formatting.md#pre-commit) for a pre-commit hook to do this
+   automatically.
 
 ```shell
 poetry export --without-hashes -f requirements.txt -o requirements.txt
@@ -208,10 +215,12 @@ poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requi
     ```shell
     conda create -y -n my_project
     conda activate my_project
-    conda config --set auto_activate_base false  # Don't automatically activate base env when opening terminal
+    conda config --set auto_activate_base false  # (1)
     conda install -y python=3.10
     pip install --upgrade pip
     ```
+
+    1. Stops automatically activating the `base` env when opening the terminal.
 
 4. And finally, install the requirements:
 
@@ -222,3 +231,5 @@ poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requi
     ```
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
+
+[pyenv]: https://github.com/pyenv/pyenv

@@ -45,21 +45,21 @@ plotly = "*"
 # Configs
 PyYAML = "*"
 
-# Jupyter notebooks
-jupyter = "*"
-jupyterlab = "*"
-voila = "*"
+# Stubs
+pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.dev.dependencies]
-docker = "*"
-build = "*"
 pre-commit = "^3.3.3"
 black = { version = "^22.10.0", extras = ["jupyter"] }
 ruff = "^0.0.285"
 
 # Type hinting
 mypy = "^1.5.1"
-pandas-stubs = "^2.0.3"
+
+# Jupyter notebooks
+jupyter = "*"
+jupyterlab = "*"
+voila = "*"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"

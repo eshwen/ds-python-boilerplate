@@ -1,4 +1,8 @@
-exclude: 'mkdocs.yml'
+exclude: |
+  (?x)^(
+    tests/.*\.py|
+    mkdocs.yml
+  )$
 
 default_language_version:
   python: python3.10
