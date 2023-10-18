@@ -24,7 +24,7 @@ scikit-learn = "*"
 
 # Data validation
 pydantic = { version = "^2.3.0", extras=["settings"] }
-pandera = "*"
+pandera = { version = "^0.17.2", extras=["mypy"] }
 
 # SQL databases
 SQLAlchemy = "*"
@@ -86,6 +86,10 @@ line-length = 120
 python_version = "3.10"
 warn_return_any = true
 warn_unused_configs = true
+
+plugins = [
+    'pandera.mypy'
+]
 
 [tool.ruff]
 target-version = "py310"
