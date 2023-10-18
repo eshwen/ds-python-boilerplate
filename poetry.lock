@@ -2669,13 +2669,13 @@ types-pytz = ">=2022.1.1"
 
 [[package]]
 name = "pandera"
-version = "0.15.1"
+version = "0.17.2"
 description = "A light-weight and flexible data validation and testing tool for statistical data objects."
 optional = false
-python-versions = ">=3.7,<3.12"
+python-versions = ">=3.7"
 files = [
-    {file = "pandera-0.15.1-py3-none-any.whl", hash = "sha256:1cf13c06068d64edb1630b0e50d6588243b7c202d7ce00d968fe3d6bef7684f8"},
-    {file = "pandera-0.15.1.tar.gz", hash = "sha256:1cc70f5f182f5b4bd2e248f49372fcd88eba8423b8604ea9e1ebd64222730a41"},
+    {file = "pandera-0.17.2-py3-none-any.whl", hash = "sha256:8e4e7b279c62f6d4b5109801544bf8d46e1c9fdf7ceceb8fedd5f3dad0c1bea1"},
+    {file = "pandera-0.17.2.tar.gz", hash = "sha256:67515984f855ba14d12443f893b5ff90ae6796f613d5f3df43abad406a48c373"},
 ]
 
 [package.dependencies]
@@ -2683,6 +2683,7 @@ multimethod = "*"
 numpy = ">=1.19.0"
 packaging = ">=20.0"
 pandas = ">=1.2.0"
+pandas-stubs = {version = "*", optional = true, markers = "extra == \"mypy\""}
 pydantic = "*"
 typeguard = ">=3.0.2"
 typing-inspect = ">=0.6.0"
@@ -4826,4 +4827,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.10"
-content-hash = "febb9bc6c9f99eaf6549bb406384525669029298e52df8b1d0475d983c472ffa"
+content-hash = "372e43d0bfcc6866d62205e5c75cac6d7d10ef4d0bd454188496e7b482f1ab7f"
