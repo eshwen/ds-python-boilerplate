@@ -1,6 +1,5 @@
 exclude: |
   (?x)^(
-    tests/.*\.py|
     mkdocs.yml
   )$
 
