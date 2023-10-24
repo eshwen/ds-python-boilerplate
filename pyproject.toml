@@ -110,7 +110,8 @@ select = [
     "PL",
     "PTH",
     "NPY",
-    "RUF"
+    "RUF",
+    "UP"
 ]
 
 ignore = [
