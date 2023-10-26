@@ -10,10 +10,10 @@ nav:
       - See Also: see-also.md
   - Getting Started: getting-started.md
   - Tooling:
-    - Pipelines: tooling/pipelines.md
-    - Documentation: tooling/documentation.md
     - Quality: tooling/quality.md
     - Testing: tooling/testing.md
+    - Documentation: tooling/documentation.md
+    - Pipelines: tooling/pipelines.md
   - Code Reference: reference/
   - Changelog: changelog.md
 
