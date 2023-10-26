@@ -78,6 +78,7 @@ termynal = "*"
 mkdocs-gen-files = "*"
 mkdocs-literate-nav = "*"
 mkdocs-section-index = "*"
+git-changelog = "*"
 
 [tool.black]
 target-version = ['py310']
