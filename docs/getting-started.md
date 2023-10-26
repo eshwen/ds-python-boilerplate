@@ -175,7 +175,7 @@ It is recommended to maintain dependencies with Poetry, and export them (1) to `
 and ``requirements-dev.txt`` if needed, e.g.,
 { .annotate }
 
-1. Check out [linting-formatting.md#pre-commit](linting-formatting.md#pre-commit) for a pre-commit hook to do this
+1. Check out [linting-formatting.md#pre-commit](tooling/linting-formatting.md#pre-commit) for a pre-commit hook to do this
    automatically.
 
 ```shell

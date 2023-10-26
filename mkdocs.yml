@@ -5,14 +5,15 @@ repo_name: eshwen/ds-python-boilerplate
 nav:
   - Home:
       - Homepage: index.md
-      - Pipelines: pipelines.md
-      - Documentation: documentation.md
-      - Linting and Formatting: linting-formatting.md
-      - Testing: testing.md
       - Helpful Articles: helpful-articles.md
       - General Python Tips: general-python-tips.md
       - See Also: see-also.md
   - Getting Started: getting-started.md
+  - Tooling:
+    - Pipelines: tooling/pipelines.md
+    - Documentation: tooling/documentation.md
+    - Linting and Formatting: tooling/linting-formatting.md
+    - Testing: tooling/testing.md
   - Code Reference: reference/
   - Changelog: changelog.md
 
