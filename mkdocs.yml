@@ -12,7 +12,7 @@ nav:
   - Tooling:
     - Pipelines: tooling/pipelines.md
     - Documentation: tooling/documentation.md
-    - Linting and Formatting: tooling/linting-formatting.md
+    - Quality: tooling/quality.md
     - Testing: tooling/testing.md
   - Code Reference: reference/
   - Changelog: changelog.md

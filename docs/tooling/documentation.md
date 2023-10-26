@@ -1,7 +1,7 @@
 # Documentation
 
 This repository uses Google-Style for docstrings. They are checked automatically by `ruff`.
-See [linting and formatting](linting-formatting.md) for more information.
+See [quality](quality.md) for more information.
 
 ## API documentation
 

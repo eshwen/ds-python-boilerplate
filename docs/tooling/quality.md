@@ -1,7 +1,7 @@
-# Linting and formatting
+# Quality
 
-Both linting and formatting are important for usable, readable code. They're often afterthoughts, but it's easy to
-configure and simply run tools to keep your code in tip-top shape.
+Quality checks are important for usable, readable code. They're often afterthoughts, but it's easy to configure and
+simply run tools to keep your code in tip-top shape.
 
 All the tools are documented below, and configured under the corresponding sections in [pyproject.toml].
 
