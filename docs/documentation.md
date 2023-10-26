@@ -8,14 +8,18 @@ See [linting and formatting](linting-formatting.md) for more information.
 API documentation is built with MkDocs using the Material theme. To build a static copy locally, run
 
 ```shell
+git-changelog -p github -o CHANGELOG.md  # (1)
 mkdocs build
 ```
+
+1. This generates the changelog.
 
 Then open the homepage HTML file under `site/index.html`.
 
 Or, to render it live on a local server, run
 
 ```shell
+git-changelog -p github -o CHANGELOG.md
 mkdocs serve
 ```
 
