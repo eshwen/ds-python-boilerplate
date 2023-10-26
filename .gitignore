@@ -136,3 +136,6 @@ dmypy.json
 
 # Ruff
 .ruff_cache/
+
+# Auto-generated changelog
+CHANGELOG.md
