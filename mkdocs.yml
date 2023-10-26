@@ -13,6 +13,7 @@ nav:
       - General Python Tips: general-python-tips.md
   - Getting Started: getting-started.md
   - Code Reference: reference/
+  - Changelog: changelog.md
 
 plugins:
   - mkdocstrings:

@@ -16,5 +16,6 @@ jobs:
 
       - name: Build docs
         run: |
-          git fetch
+          git fetch --unshallow
+          git-changelog -p github -o CHANGELOG.md
           mkdocs gh-deploy
