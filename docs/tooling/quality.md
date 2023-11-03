@@ -25,7 +25,7 @@ ruff --fix my_project/ tests/
 ### PyCharm integration
 
 You can also install the [Ruff plugin for PyCharm] to run it automatically on file changes. In **Preferences** |
-**Tools** |**Ruff**, configure it as you like.
+**Tools** | **Ruff**, configure it as you like.
 
 To aid in documentation, in PyCharm go to **Preferences** | **Tools** | **Python Integrated Tools**. Under
 **Docstrings**, select the docstring format as Google.
