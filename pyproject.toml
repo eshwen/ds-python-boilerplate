@@ -71,7 +71,7 @@ pytest-cov = "*"
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.0"
 pymdown-extensions = "*"
-mkdocs-material = "^9.1.17"
+mkdocs-material = "^9.4.1"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
 termynal = "*"
