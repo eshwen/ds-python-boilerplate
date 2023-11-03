@@ -84,8 +84,8 @@ The [.pre-commit-config.yaml] file contains hooks to run
 - Automatic use of the walrus operator
 - `ruff` for linting (fixes fixable issues)
 - `black` for formatting (fixes fixable issues)
-- `mypy` type hinting errors
-- `poetry` status (`poetry.lock` and requirements files are up-to-date)
+- `mypy` type-hinting errors
+- `poetry` dependency status (`poetry.lock` and requirements files are up-to-date)
 
 To use pre-commit, install the hooks with
 
