@@ -22,6 +22,14 @@ To automatically fix any issues, run
 ruff --fix my_project/ tests/
 ```
 
+### PyCharm integration
+
+You can also install the [Ruff plugin for PyCharm] to run it automatically on file changes. In **Preferences** |
+**Tools** |**Ruff**, configure it as you like.
+
+To aid in documentation, in PyCharm go to **Preferences** | **Tools** | **Python Integrated Tools**. Under
+**Docstrings**, select the docstring format as Google.
+
 ## Black
 
 [Black] is a widely-used tool to ensure consistently-formatted code.
@@ -38,19 +46,21 @@ To instead just show what `black` would change, run
 black --diff my_project/ tests/
 ```
 
-### File watchers in PyCharm
+### PyCharm integration
 
-PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for transparently
-formatting code.
+`black` is integrated into PyCharm as of v2023.2. Go to **Settings** | **Tools** | **Black** to configure.
 
-To include `black` as a file watcher, go to **Settings** -> **Tools** -> **File Watchers** and import
-the [watchers.xml]. This will automatically apply formatting to Python files and Jupyter notebooks. You may need to edit
-the **Program** path to point to your `black` executable.
+??? note "For older versions"
+
+    PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for
+    transparently formatting code.
+
+    To include `black` as a file watcher, go to **Settings** | **Tools** | **File Watchers** and import the
+    [watchers.xml]. This will automatically apply formatting to Python files and Jupyter notebooks. You may need to
+    edit the **Program** path to point to your `black` executable.
 
 Otherwise, to set it up yourself, follow the instructions
 at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
-
-**Update**: `black` is integrated into PyCharm as of v2023.2. Go to **Settings** -> **Tools** -> **Black** to configure.
 
 ## Mypy
 
@@ -104,3 +114,5 @@ pre-commit run -a
 [Mypy]: https://mypy.readthedocs.io/en/stable/
 
 [.pre-commit-config.yaml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml
+
+[Ruff plugin for PyCharm]: https://plugins.jetbrains.com/plugin/20574-ruff
