@@ -929,16 +929,21 @@
 <h1 id="pipelines">Pipelines<a class="headerlink" href="#pipelines" title="Permanent link">⚓︎</a></h1>
 <p>Several pipelines are included to execute automatically on various triggers:</p>
 <ul>
-<li>What: Build the Python project</li>
+<li>What: Build the Python project<ul>
 <li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml">build.yml</a></li>
 <li>When: On PR creation and subsequent pushes</li>
-<li>What: Build the API documentation</li>
+</ul>
+</li>
+<li>What: Build the API documentation<ul>
 <li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a></li>
 <li>When: On the creation of a new tag (i.e., a new GitHub Release)</li>
-<li>What: Check for dependency updates and vulnerabilities</li>
+</ul>
+</li>
+<li>What: Check for dependency updates and vulnerabilities<ul>
 <li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml">dependabot.yml</a></li>
 <li>When: On a schedule (check the file)</li>
-<li>To check for updates and vulnerabilities in dependencies, the Docker container, and the other pipelines</li>
+</ul>
+</li>
 </ul>
 <p>TODO: Add documentation and CodeQL pipelines.
 TODO: Flesh out dependabot more (package sets, etc.)
