@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ds-python-boilerplate"
-version = "0.10.1"
+version = "0.10.2"
 description = "Boilerplate for data science projects in Python"
 authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
