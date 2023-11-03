@@ -8,7 +8,11 @@ nav:
       - Helpful Articles: helpful-articles.md
       - General Python Tips: general-python-tips.md
       - See Also: see-also.md
-  - Getting Started: getting-started.md
+  - Getting Started:
+      - Installation: getting-started/getting-started.md
+      - Poetry: getting-started/poetry.md
+      - Conda: getting-started/conda.md
+      - Development Container: getting-started/dev-container.md
   - Tooling:
     - Quality: tooling/quality.md
     - Testing: tooling/testing.md
