@@ -16,7 +16,7 @@ python = "~3.10"
 colorama = "*"
 
 # Data processing
-pandas = {version = "^2.0.3", extras=["performance", "visualisation", "computation", "excel", "sql-other"]}
+pandas = {version = "^2.1.2", extras=["performance", "visualisation", "computation", "excel", "sql-other"]}
 
 # Machine learning
 #tensorflow-macos = "*"
