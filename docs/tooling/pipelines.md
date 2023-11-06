@@ -11,6 +11,9 @@ Several pipelines are included to execute automatically on various triggers:
 - What: Check for dependency updates and vulnerabilities
     - Where: [dependabot.yml]
     - When: On a schedule (check the file)
+- What: Update the draft of the next release
+    - Where: [release-drafter.yml]
+    - When: On pushes to `main`
 
 TODO: Add documentation and CodeQL pipelines.
 TODO: Flesh out dependabot more (package sets, etc.)
@@ -22,3 +25,5 @@ does `chmod +x` on them if they are copying them over so they're executable with
 [build.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml
 
 [dependabot.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml
+
+[release-drafter.yml]:  https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter.yml
