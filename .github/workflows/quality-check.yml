@@ -11,12 +11,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check quality
-        uses: eshwen/adrenaline/.github/workflows/python-quality-check.yml@v0.1.1
-        with:
-          python-version: 3.10
-          path: 'my_project/'
+    uses: eshwen/adrenaline/.github/workflows/python-quality-check.yml@v0.1.1
+    with:
+      python-version: 3.10
+      path: 'my_project/'

@@ -10,15 +10,11 @@ concurrency:
 
 jobs:
   docs:
-    runs-on: ubuntu-latest
     permissions:
       contents: 'write'
       actions: 'write'
 
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: eshwen/adrenaline/.github/workflows/api-docs-build.yml@v0.1.1
-        with:
-          python-version: 3.10
-          changelog: 'CHANGELOG.md'
+    uses: eshwen/adrenaline/.github/workflows/api-docs-build.yml@v0.1.1
+    with:
+      python-version: 3.10
+      changelog: 'CHANGELOG.md'
