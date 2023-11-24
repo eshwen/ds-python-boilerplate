@@ -17,7 +17,7 @@ jobs:
       - name: Test
         uses: eshwen/adrenaline/test-python@v0.2.2
         with:
-          python-version: 3.10
+          python-version: '3.10'
           path: 'my_project/'
 
       - name: Upload coverage report to Codecov
