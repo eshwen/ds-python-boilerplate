@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: lint-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   lint:
     uses: eshwen/adrenaline/.github/workflows/python-quality-check.yml@v0.2.4
