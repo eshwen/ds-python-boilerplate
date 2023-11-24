@@ -9,7 +9,6 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
 
-[![Build status](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/build.yml)
 [![CodeQL](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml)
 [![Coverage](https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU)](https://codecov.io/gh/eshwen/ds-python-boilerplate)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml)
