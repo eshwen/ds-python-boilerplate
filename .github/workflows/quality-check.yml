@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint:
-    uses: eshwen/adrenaline/.github/workflows/python-quality-check.yml@v0.2.3
+    uses: eshwen/adrenaline/.github/workflows/python-quality-check.yml@v0.2.4
     with:
       python-version: '3.10'
       path: 'my_project/'
