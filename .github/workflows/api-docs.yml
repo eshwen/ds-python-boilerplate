@@ -1,8 +1,9 @@
 name: API documentation
+
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types:
+      - published
 
 concurrency:
   group: docs-${{ github.head_ref || github.ref }}
