@@ -928,32 +928,49 @@
 
 <h1 id="pipelines">Pipelines<a class="headerlink" href="#pipelines" title="Permanent link">⚓︎</a></h1>
 <p>Several pipelines are included to execute automatically on various triggers:</p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>When</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Check code with <code>black</code>, <code>ruff</code>, and <code>mypy</code></td>
+<td>On PR creation and subsequent pushes</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/quality-check.yml">quality-check.yml</a></td>
+</tr>
+<tr>
+<td>Unit test with <code>pytest</code></td>
+<td>On PR creation and subsequent pushes</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/test.yml">test.yml</a></td>
+</tr>
+<tr>
+<td>Build the API documentation</td>
+<td>On the creation of a new release</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a></td>
+</tr>
+<tr>
+<td>Check for dependency updates and vulnerabilities</td>
+<td>On a schedule (check the file)</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml">dependabot.yml</a></td>
+</tr>
+<tr>
+<td>Update the draft of the next release</td>
+<td>On pushes to <code>main</code></td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter.yml">release-drafter.yml</a></td>
+</tr>
+</tbody>
+</table>
+<details class="note">
+<summary>TODO</summary>
 <ul>
-<li>What: Build the Python project<ul>
-<li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml">build.yml</a></li>
-<li>When: On PR creation and subsequent pushes</li>
+<li>Add CodeQL pipeline.</li>
+<li>Flesh out dependabot more (package sets, etc.)</li>
 </ul>
-</li>
-<li>What: Build the API documentation<ul>
-<li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a></li>
-<li>When: On the creation of a new tag (i.e., a new GitHub Release)</li>
-</ul>
-</li>
-<li>What: Check for dependency updates and vulnerabilities<ul>
-<li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml">dependabot.yml</a></li>
-<li>When: On a schedule (check the file)</li>
-</ul>
-</li>
-<li>What: Update the draft of the next release<ul>
-<li>Where: <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter.yml">release-drafter.yml</a></li>
-<li>When: On pushes to <code>main</code></li>
-</ul>
-</li>
-</ul>
-<p>TODO: Add documentation and CodeQL pipelines.
-TODO: Flesh out dependabot more (package sets, etc.)
-TODO: Flesh out build.yml more (coverage, unit tests, etc., and paths to scripts for local running - ensuring user
-does <code>chmod +x</code> on them if they are copying them over so they're executable with <code>./</code>).</p>
+</details>
 
 
 
