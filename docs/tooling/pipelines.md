@@ -2,27 +2,22 @@
 
 Several pipelines are included to execute automatically on various triggers:
 
-- What: Build the Python project
-    - Where: [build.yml]
-    - When: On PR creation and subsequent pushes
-- What: Build the API documentation
-    - Where: [api-docs.yml]
-    - When: On the creation of a new tag (i.e., a new GitHub Release)
-- What: Check for dependency updates and vulnerabilities
-    - Where: [dependabot.yml]
-    - When: On a schedule (check the file)
-- What: Update the draft of the next release
-    - Where: [release-drafter.yml]
-    - When: On pushes to `main`
+| What                                             | When                                 | How                   |
+|--------------------------------------------------|--------------------------------------|-----------------------|
+| Check code with `black`, `ruff`, and `mypy`      | On PR creation and subsequent pushes | [quality-check.yml]   |
+| Unit test with `pytest`                          | On PR creation and subsequent pushes | [test.yml]            |
+| Build the API documentation                      | On the creation of a new release     | [api-docs.yml]        |
+| Check for dependency updates and vulnerabilities | On a schedule (check the file)       | [dependabot.yml]      |
+| Update the draft of the next release             | On pushes to `main`                  | [release-drafter.yml] |
 
-TODO: Add documentation and CodeQL pipelines.
+TODO: Add CodeQL pipeline.
 TODO: Flesh out dependabot more (package sets, etc.)
-TODO: Flesh out build.yml more (coverage, unit tests, etc., and paths to scripts for local running - ensuring user
-does `chmod +x` on them if they are copying them over so they're executable with `./`).
 
 [api-docs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml
 
-[build.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/build.yml
+[quality-check.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/quality-check.yml
+
+[test.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/test.yml
 
 [dependabot.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml
 
