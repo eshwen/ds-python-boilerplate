@@ -3,8 +3,8 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "ds-python-boilerplate"
-version = "0.6.1"
+name = "my_project"
+version = "0.10.2"
 description = "Boilerplate for data science projects in Python"
 authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
@@ -24,7 +24,7 @@ scikit-learn = "*"
 
 # Data validation
 pydantic = "^2.3.0"
-pydantic-settings = "^2.0.3"
+pydantic-settings = "^2.1.0"
 pandera = { version = "^0.17.2", extras=["mypy"] }
 
 # SQL databases
@@ -51,7 +51,7 @@ pandas-stubs = "^2.0.3"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
-black = { version = "^22.10.0", extras = ["jupyter"] }
+black = { version = "^23.10.1", extras = ["jupyter"] }
 ruff = "^0.0.285"
 
 # Type hinting
@@ -71,7 +71,7 @@ pytest-cov = "*"
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.0"
 pymdown-extensions = "*"
-mkdocs-material = "^9.1.17"
+mkdocs-material = "^9.4.1"
 mkdocstrings = { version = "*", extras = ["python"] }
 mkgendocs = "*"
 termynal = "*"

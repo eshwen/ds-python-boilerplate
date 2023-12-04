@@ -1,59 +1,6 @@
-# Installation
+# Poetry
 
-## Programs
-
-- Docker
-- Visual Studio Code/PyCharm
-- GitHub Desktop (optional)
-
-=== ":material-apple: macOS"
-
-    ```shell
-    # Rosetta for compatibility with Intel
-    softwareupdate --install-rosetta
-
-    # Homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install --cask docker
-    brew install --cask visual-studio-code  # or brew install --cask pycharm
-    brew install --cask github
-    ```
-    See <https://github.com/eshwen/macOS-setup> for more useful setup tips.
-
-=== "Other"
-
-    Find the links on for these programs on the web :material-emoticon-wink-outline:
-
-## Development Container
-
-=== ":material-microsoft-visual-studio-code: Visual Studio Code"
-
-    1. Install the **Remote - Containers** extension (`ms-vscode-remote.remote-containers`)
-    2. Open this project as a folder
-    3. A prompt should appear to open it in a container. Ensure Docker is installed and running so the container can be
-       built.
-
-    The devcontainer encompasses the following:
-
-    - Building the Docker container that contains a recent Python image
-    - Installing the project dependencies
-    - Installing VS Code workspace extensions
-    - Applying custom settings to aforementioned extensions
-
-=== ":simple-pycharm: PyCharm"
-
-    1. Under the interpreters tab on the bottom row, hit **Add New Interpreter** -> **On Docker...**
-        1. If the **Docker server** is blank, in the dropdown menu click **Create new...** -> **Ok**
-        2. Select the correct Dockerfile
-        3. Set the **Context folder** to `.`
-        3. Uncheck the box **Rebuild image automatically every time before running code**
-        4. Optionally, add an image tag to identify it later
-    2. Hit **Next** and let the container build
-    3. On the final page, the default interpreter should be sufficient
-
-## Poetry
-
-### Install Poetry
+## Install Poetry
 
 First, install Poetry. This can be done through
 
@@ -91,7 +38,7 @@ In future sessions (on the CLI), you can enter the environment by navigating to 
 poetry shell
 ```
 
-#### Decoupling Python and Poetry installs
+### Decoupling Python and Poetry installs
 
 When installing Poetry, it will usually bundle a Python install. But when using Homebrew, it tends to automatically
 update Poetry and the Python dependency. If it upgrades the minor Python version - like 3.10 -> 3.11 - it can break an
@@ -129,7 +76,7 @@ Now you should have a static path to a specific Python install.
     Run `poetry config virtualenvs.in-project true` to store the virtualenv in the project directory. This is useful if
     you want full visibility of the environment, instead of it being hidden elsewhere on your filesystem.
 
-### Install the project
+## Install the project
 
 === ":octicons-terminal-24: Command line"
 
@@ -154,7 +101,7 @@ Now you should have a static path to a specific Python install.
     2. Click **Add New Interpreter** -> **Add Local Interpreter...** -> **Poetry Environment**
     3. Check **Existing environment**. The environment you just created should appear in the dropdown menu
 
-### Creating your own configuration
+## Creating your own configuration
 
 To create your own Poetry configuration in [pyproject.toml], run
 
@@ -175,7 +122,7 @@ It is recommended to maintain dependencies with Poetry, and export them (1) to `
 and ``requirements-dev.txt`` if needed, e.g.,
 { .annotate }
 
-1. Check out [linting-formatting.md#pre-commit](linting-formatting.md#pre-commit) for a pre-commit hook to do this
+1. Check out [quality#pre-commit](../tooling/quality.md#pre-commit) for a pre-commit hook to do this
    automatically.
 
 ```shell
@@ -188,47 +135,6 @@ This repo separates development dependencies into dev, tests, and docs groups. T
 ```shell
 poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requirements-dev.txt
 ```
-
-## Conda
-
-1. For a lightweight experience, install `miniconda`. This can be done through
-
-    === "Homebrew (on :material-apple:)"
-
-        ```shell
-        brew install --cask miniconda
-        ```
-
-    === "Other"
-
-        Figure it out :material-emoticon-wink-outline:
-
-2. Then initialise conda:
-
-    ```shell
-    conda init "$(basename "${SHELL}")"
-    <exit and reopen terminal>
-    ```
-
-3. Create your environment:
-
-    ```shell
-    conda create -y -n my_project
-    conda activate my_project
-    conda config --set auto_activate_base false  # (1)
-    conda install -y python=3.10
-    pip install --upgrade pip
-    ```
-
-    1. Stops automatically activating the `base` env when opening the terminal.
-
-4. And finally, install the requirements:
-
-    ```shell
-    cd <root dir of project>
-    pip install -r requirements.txt
-    pip install -r requirements-dev.txt
-    ```
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
