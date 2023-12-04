@@ -50,7 +50,7 @@ black --diff my_project/ tests/
 
 `black` is integrated into PyCharm as of v2023.2. Go to **Settings** | **Tools** | **Black** to configure.
 
-??? note "For older versions"
+??? tip "For older versions"
 
     PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for
     transparently formatting code.
