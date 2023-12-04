@@ -10,8 +10,10 @@ Several pipelines are included to execute automatically on various triggers:
 | Check for dependency updates and vulnerabilities | On a schedule (check the file)       | [dependabot.yml]      |
 | Update the draft of the next release             | On pushes to `main`                  | [release-drafter.yml] |
 
-TODO: Add CodeQL pipeline.
-TODO: Flesh out dependabot more (package sets, etc.)
+??? note "TODO"
+
+    - Add CodeQL pipeline.
+    - Flesh out dependabot more (package sets, etc.)
 
 [api-docs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml
 
