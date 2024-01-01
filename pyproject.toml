@@ -47,7 +47,7 @@ plotly = "*"
 PyYAML = "*"
 
 # Stubs
-pandas-stubs = "^2.0.3"
+pandas-stubs = "^2.1.4"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
