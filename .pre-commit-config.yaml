@@ -10,7 +10,7 @@ default_stages: [ pre-commit, pre-push, commit, push ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
@@ -27,25 +27,25 @@ repos:
       - id: auto-walrus
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.0.285'  # Must match requirements-dev.txt
+    rev: 'v0.1.9'  # Must match requirements-dev.txt
     hooks:
       - id: ruff
         args: [ --fix, --exit-non-zero-on-fix ]
 
   - repo: https://github.com/psf/black
-    rev: 22.12.0  # Must match requirements-dev.txt
+    rev: 23.12.1  # Must match requirements-dev.txt
     hooks:
       - id: black
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.5.1  # Must match requirements-dev.txt
+    rev: v1.8.0  # Must match requirements-dev.txt
     hooks:
       - id: mypy
         additional_dependencies:
           - 'pandera~=0.17.2'  # Must match requirements.txt
 
   - repo: https://github.com/python-poetry/poetry
-    rev: '1.6.1'
+    rev: '1.7.0'
     hooks:
       - id: poetry-check
       - id: poetry-lock
