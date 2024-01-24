@@ -43,6 +43,7 @@ repos:
       - id: mypy
         additional_dependencies:
           - 'pandera~=0.17.2'  # Must match requirements.txt
+          - 'pydantic~=2.3.0'  # Must match requirements.txt
 
   - repo: https://github.com/python-poetry/poetry
     rev: '1.7.0'
