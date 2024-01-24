@@ -2,7 +2,7 @@
 
 [![Documentation](https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs)](https://eshwen.github.io/ds-python-boilerplate/index.html)
 
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue?logo=Python&logoColor=yellow&link=https%3A%2F%2Fwww.python.org%2F)](https://www.python.org/downloads/release/python-31013/)
+[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue?logo=Python&logoColor=yellow&link=https%3A%2F%2Fwww.python.org%2F)](https://python.org)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://docker.com/)
 
