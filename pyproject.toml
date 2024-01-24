@@ -25,7 +25,7 @@ scikit-learn = "*"
 # Data validation
 pydantic = "^2.3.0"
 pydantic-settings = "^2.1.0"
-pandera = { version = "^0.17.2", extras = ["mypy"] }
+pandera = "^0.17.2"
 
 # SQL databases
 SQLAlchemy = "*"
@@ -46,9 +46,6 @@ plotly = "*"
 # Configs
 PyYAML = "*"
 
-# Stubs
-pandas-stubs = "^2.1.4"
-
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
 black = { version = "^23.12.1", extras = ["jupyter"] }
@@ -56,6 +53,7 @@ ruff = "^0.1.9"
 
 # Type hinting
 mypy = "^1.8.0"
+pandera = { version = "^0.17.2", extras = ["mypy"] }
 
 # Jupyter notebooks
 jupyter = "*"
@@ -90,7 +88,8 @@ warn_return_any = true
 warn_unused_configs = true
 
 plugins = [
-    'pandera.mypy'
+    'pandera.mypy',
+    'pydantic.mypy'
 ]
 
 [tool.ruff]
