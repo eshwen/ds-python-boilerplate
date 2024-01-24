@@ -25,7 +25,7 @@ scikit-learn = "*"
 # Data validation
 pydantic = "^2.3.0"
 pydantic-settings = "^2.1.0"
-pandera = { version = "^0.17.2", extras = ["mypy"] }
+pandera = "^0.17.2"
 
 # SQL databases
 SQLAlchemy = "*"
@@ -46,9 +46,6 @@ plotly = "*"
 # Configs
 PyYAML = "*"
 
-# Stubs
-pandas-stubs = "^2.1.4"
-
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
 black = { version = "^23.12.1", extras = ["jupyter"] }
@@ -56,6 +53,7 @@ ruff = "^0.1.9"
 
 # Type hinting
 mypy = "^1.8.0"
+pandera = { version = "^0.17.2", extras = ["mypy"] }
 
 # Jupyter notebooks
 jupyter = "*"
@@ -70,15 +68,15 @@ pytest-cov = "*"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.0"
-pymdown-extensions = "*"
+pymdown-extensions = "^10.3"
 mkdocs-material = "^9.4.1"
-mkdocstrings = { version = "*", extras = ["python"] }
-mkgendocs = "*"
-termynal = "*"
-mkdocs-gen-files = "*"
-mkdocs-literate-nav = "*"
-mkdocs-section-index = "*"
-git-changelog = "*"
+mkdocstrings = { version = "^0.24.0", extras = ["python"] }
+mkgendocs = "^0.9.2"
+termynal = "^0.11.0"
+mkdocs-gen-files = "^0.5.0"
+mkdocs-literate-nav = "^0.6.1"
+mkdocs-section-index = "^0.3.8"
+git-changelog = "^2.4.0"
 
 [tool.black]
 target-version = ['py310']
@@ -90,7 +88,8 @@ warn_return_any = true
 warn_unused_configs = true
 
 plugins = [
-    'pandera.mypy'
+    'pandera.mypy',
+    'pydantic.mypy'
 ]
 
 [tool.ruff]

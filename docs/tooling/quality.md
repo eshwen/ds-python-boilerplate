@@ -64,13 +64,43 @@ at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
 
 ## Mypy
 
-[Mypy] is a tool to check object types, such as correct type hinting.
+[Mypy] is a static type checker, examining object relationships and ensuring that they're used correctly (i.e., that
+type hints are correct).
 
 Run with
 
 ```shell
-mypy my_project/ tests/
+mypy my_project/
 ```
+
+### Stubs
+
+Some third-party libraries do not have type hints. In these cases, we can use stubs. These are _`.pyi` files_ that
+provide (among other things) a statically-typed skeleton for the library. These should be automatically picked up by
+Mypy, and should complain if the necessary stubs aren't installed. Further information on stubs can be found in the
+Mypy docs: <https://mypy.readthedocs.io/en/stable/stubs.html>.
+
+If you need to install any stub packages, add them to the developer dependencies. You may also need to add them to the
+Mypy hook if you're using pre-commit (see [.pre-commit-config.yaml]).
+
+??? tip
+
+    Run the hook first, and see if it complains about any missing stubs. If you include a Mypy plugin (like
+    `pydantic.mypy`) under `[tool.mypy]` in [pyproject.toml], you will likely need to add the package for the hook.
+
+### Typing extensions
+
+Some libraries have type hints, but they are incomplete. In these cases, we can use typing extensions. These provide
+_Python objects_ that can be used to type hint the missing functionality. For example, `boto3`:
+
+```python
+import boto3
+import mypy_boto3_s3
+
+resource: mypy_boto3_s3.S3ServiceResource = boto3.resource("s3", ...)
+```
+
+Since we directly import these packages, they should be installed as normal dependencies.
 
 ## pre-commit
 
