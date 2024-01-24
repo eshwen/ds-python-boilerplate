@@ -749,6 +749,26 @@
     Mypy
   </a>
   
+    <nav class="md-nav" aria-label="Mypy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stubs" class="md-nav__link">
+    Stubs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typing-extensions" class="md-nav__link">
+    Typing extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1045,6 +1065,26 @@
     Mypy
   </a>
   
+    <nav class="md-nav" aria-label="Mypy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stubs" class="md-nav__link">
+    Stubs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typing-extensions" class="md-nav__link">
+    Typing extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1111,10 +1151,32 @@ edit the <strong>Program</strong> path to point to your <code>black</code> execu
 <p>Otherwise, to set it up yourself, follow the instructions
 at <a href="https://black.readthedocs.io/en/stable/integrations/editors.html">https://black.readthedocs.io/en/stable/integrations/editors.html</a>.</p>
 <h2 id="mypy">Mypy<a class="headerlink" href="#mypy" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://mypy.readthedocs.io/en/stable/">Mypy</a> is a tool to check object types, such as correct type hinting.</p>
+<p><a href="https://mypy.readthedocs.io/en/stable/">Mypy</a> is a static type checker, examining object relationships and ensuring that they're used correctly (i.e., that
+type hints are correct).</p>
 <p>Run with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>mypy<span class="w"> </span>my_project/<span class="w"> </span>tests/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>mypy<span class="w"> </span>my_project/
 </code></pre></div>
+<h3 id="stubs">Stubs<a class="headerlink" href="#stubs" title="Permanent link">⚓︎</a></h3>
+<p>Some third-party libraries do not have type hints. In these cases, we can use stubs. These are <em><code>.pyi</code> files</em> that
+provide (among other things) a statically-typed skeleton for the library. These should be automatically picked up by
+Mypy, and should complain if the necessary stubs aren't installed. Further information on stubs can be found in the
+Mypy docs: <a href="https://mypy.readthedocs.io/en/stable/stubs.html">https://mypy.readthedocs.io/en/stable/stubs.html</a>.</p>
+<p>If you need to install any stub packages, add them to the developer dependencies. You may also need to add them to the
+Mypy hook if you're using pre-commit (see <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a>).</p>
+<details class="tip">
+<summary>Tip</summary>
+<p>Run the hook first, and see if it complains about any missing stubs. If you include a Mypy plugin (like
+<code>pydantic.mypy</code>) under <code>[tool.mypy]</code> in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>, you will likely need to add the package for the hook.</p>
+</details>
+<h3 id="typing-extensions">Typing extensions<a class="headerlink" href="#typing-extensions" title="Permanent link">⚓︎</a></h3>
+<p>Some libraries have type hints, but they are incomplete. In these cases, we can use typing extensions. These provide
+<em>Python objects</em> that can be used to type hint the missing functionality. For example, <code>boto3</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos="1 "></span></a><span class="kn">import</span> <span class="nn">boto3</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><a href="#__codelineno-5-2"><span class="linenos" data-linenos="2 "></span></a><span class="kn">import</span> <span class="nn">mypy_boto3_s3</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><a href="#__codelineno-5-3"><span class="linenos" data-linenos="3 "></span></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><a href="#__codelineno-5-4"><span class="linenos" data-linenos="4 "></span></a><span class="n">resource</span><span class="p">:</span> <span class="n">mypy_boto3_s3</span><span class="o">.</span><span class="n">S3ServiceResource</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">resource</span><span class="p">(</span><span class="s2">&quot;s3&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</code></pre></div>
+<p>Since we directly import these packages, they should be installed as normal dependencies.</p>
 <h2 id="pre-commit">pre-commit<a class="headerlink" href="#pre-commit" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://pre-commit.com/">pre-commit</a> is a tool to run hooks before commits and pushes. When attempting to commit/push, the hooks will run in the
 background on the modified files. If issues are detected, the hooks will block the action and attempt to fix them, then
@@ -1129,11 +1191,11 @@ you can try again.</p>
 <li><code>poetry</code> dependency status (<code>poetry.lock</code> and requirements files are up-to-date)</li>
 </ul>
 <p>To use pre-commit, install the hooks with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos="1 "></span></a>pre-commit<span class="w"> </span>install
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><a href="#__codelineno-6-1"><span class="linenos" data-linenos="1 "></span></a>pre-commit<span class="w"> </span>install
 </code></pre></div>
 <p>Then, when committing through PyCharm/GitHub Desktop/CLI, they should automatically run. Alternatively, run them
 manually with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><a href="#__codelineno-6-1"><span class="linenos" data-linenos="1 "></span></a>pre-commit<span class="w"> </span>run<span class="w"> </span>-a
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos="1 "></span></a>pre-commit<span class="w"> </span>run<span class="w"> </span>-a
 </code></pre></div>
 
 
