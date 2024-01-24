@@ -25,11 +25,12 @@
     conda create -y -n my_project
     conda activate my_project
     conda config --set auto_activate_base false  # (1)
-    conda install -y python=3.10
+    conda install -y python=3.10  # (2)
     pip install --upgrade pip
     ```
 
     1. Stops automatically activating the `base` env when opening the terminal.
+    2. This project also supports 3.11 and 3.12 if you want to use those instead.
 
 4. And finally, install the requirements:
 
