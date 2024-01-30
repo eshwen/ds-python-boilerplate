@@ -48,8 +48,7 @@ PyYAML = "*"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
-black = { version = "^23.12.1", extras = ["jupyter"] }
-ruff = "^0.1.9"
+ruff = "^0.1.15"
 
 # Type hinting
 mypy = "^1.8.0"
@@ -77,10 +76,6 @@ mkdocs-gen-files = "^0.5.0"
 mkdocs-literate-nav = "^0.6.1"
 mkdocs-section-index = "^0.3.8"
 git-changelog = "^2.4.0"
-
-[tool.black]
-target-version = ['py310']
-line-length = 120
 
 [tool.mypy]
 python_version = "3.10"
@@ -135,6 +130,12 @@ extend-exclude = [
     "D103", # D103 complains when there is no docstring in a function
 ]
 
+[tool.ruff.format]
+# Like Black
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
 
 [tool.ruff.pydocstyle]
 convention = "google"

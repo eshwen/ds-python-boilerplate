@@ -22,6 +22,20 @@ To automatically fix any issues, run
 ruff --fix my_project/ tests/
 ```
 
+Ruff now contains a formatter to replace [Black]. It ensures consistently-formatted, highly readable code.
+
+To automatically format your code, run
+
+```shell
+ruff format my_project/ tests/
+```
+
+To instead just show what `ruff` would change, run
+
+```shell
+ruff format --diff my_project/ tests/
+```
+
 ### PyCharm integration
 
 You can also install the [Ruff plugin for PyCharm] to run it automatically on file changes. In **Preferences** |
@@ -29,38 +43,6 @@ You can also install the [Ruff plugin for PyCharm] to run it automatically on fi
 
 To aid in documentation, in PyCharm go to **Preferences** | **Tools** | **Python Integrated Tools**. Under
 **Docstrings**, select the docstring format as Google.
-
-## Black
-
-[Black] is a widely-used tool to ensure consistently-formatted code.
-
-To automatically reformat your code, run
-
-```shell
-black my_project/ tests/
-```
-
-To instead just show what `black` would change, run
-
-```shell
-black --diff my_project/ tests/
-```
-
-### PyCharm integration
-
-`black` is integrated into PyCharm as of v2023.2. Go to **Settings** | **Tools** | **Black** to configure.
-
-??? tip "For older versions"
-
-    PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for
-    transparently formatting code.
-
-    To include `black` as a file watcher, go to **Settings** | **Tools** | **File Watchers** and import the
-    [watchers.xml]. This will automatically apply formatting to Python files and Jupyter notebooks. You may need to
-    edit the **Program** path to point to your `black` executable.
-
-Otherwise, to set it up yourself, follow the instructions
-at <https://black.readthedocs.io/en/stable/integrations/editors.html>.
 
 ## Mypy
 
@@ -112,8 +94,7 @@ The [.pre-commit-config.yaml] file contains hooks to run
 
 - built-in `pre-commit` checks
 - Automatic use of the walrus operator
-- `ruff` for linting (fixes fixable issues)
-- `black` for formatting (fixes fixable issues)
+- `ruff` for linting and formatting (fixes fixable issues)
 - `mypy` type-hinting errors
 - `poetry` dependency status (`poetry.lock` and requirements files are up-to-date)
 
@@ -131,8 +112,6 @@ pre-commit run -a
 ```
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
-
-[watchers.xml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pycharm/watchers.xml
 
 [pre-commit]: https://pre-commit.com/
 
