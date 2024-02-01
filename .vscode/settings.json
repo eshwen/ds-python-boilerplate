@@ -15,11 +15,6 @@
         "--ignore=E712,W503"
     ],
 
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length 120"
-    ],
-
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {

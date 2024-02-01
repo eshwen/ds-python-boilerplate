@@ -4,7 +4,7 @@ Several pipelines are included to execute automatically on various triggers:
 
 | What                                             | When                                 | How                   |
 |--------------------------------------------------|--------------------------------------|-----------------------|
-| Check code with `black`, `ruff`, and `mypy`      | On PR creation and subsequent pushes | [quality-check.yml]   |
+| Check code with `ruff` and `mypy`                | On PR creation and subsequent pushes | [quality-check.yml]   |
 | Unit test with `pytest`                          | On PR creation and subsequent pushes | [test.yml]            |
 | Build the API documentation                      | On the creation of a new release     | [api-docs.yml]        |
 | Check for dependency updates and vulnerabilities | On a schedule (check the file)       | [dependabot.yml]      |
