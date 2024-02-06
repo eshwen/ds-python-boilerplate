@@ -725,26 +725,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#black" class="md-nav__link">
-    Black
-  </a>
-  
-    <nav class="md-nav" aria-label="Black">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pycharm-integration_1" class="md-nav__link">
-    PyCharm integration
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mypy" class="md-nav__link">
     Mypy
   </a>
@@ -1041,26 +1021,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#black" class="md-nav__link">
-    Black
-  </a>
-  
-    <nav class="md-nav" aria-label="Black">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pycharm-integration_1" class="md-nav__link">
-    PyCharm integration
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mypy" class="md-nav__link">
     Mypy
   </a>
@@ -1125,31 +1085,18 @@ like <code>flake8</code>, <code>isort</code> (automatic import sorting), and <co
 <p>To automatically fix any issues, run</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>ruff<span class="w"> </span>--fix<span class="w"> </span>my_project/<span class="w"> </span>tests/
 </code></pre></div>
+<p>Ruff now contains a formatter to replace <a href="https://black.readthedocs.io/en/stable/index.html">Black</a>. It ensures consistently-formatted, highly readable code.</p>
+<p>To automatically format your code, run</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>ruff<span class="w"> </span>format<span class="w"> </span>my_project/<span class="w"> </span>tests/
+</code></pre></div>
+<p>To instead just show what <code>ruff</code> would change, run</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos="1 "></span></a>ruff<span class="w"> </span>format<span class="w"> </span>--diff<span class="w"> </span>my_project/<span class="w"> </span>tests/
+</code></pre></div>
 <h3 id="pycharm-integration">PyCharm integration<a class="headerlink" href="#pycharm-integration" title="Permanent link">⚓︎</a></h3>
 <p>You can also install the <a href="https://plugins.jetbrains.com/plugin/20574-ruff">Ruff plugin for PyCharm</a> to run it automatically on file changes. In <strong>Preferences</strong> |
 <strong>Tools</strong> | <strong>Ruff</strong>, configure it as you like.</p>
 <p>To aid in documentation, in PyCharm go to <strong>Preferences</strong> | <strong>Tools</strong> | <strong>Python Integrated Tools</strong>. Under
 <strong>Docstrings</strong>, select the docstring format as Google.</p>
-<h2 id="black">Black<a class="headerlink" href="#black" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://black.readthedocs.io/en/stable/index.html">Black</a> is a widely-used tool to ensure consistently-formatted code.</p>
-<p>To automatically reformat your code, run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>black<span class="w"> </span>my_project/<span class="w"> </span>tests/
-</code></pre></div>
-<p>To instead just show what <code>black</code> would change, run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos="1 "></span></a>black<span class="w"> </span>--diff<span class="w"> </span>my_project/<span class="w"> </span>tests/
-</code></pre></div>
-<h3 id="pycharm-integration_1">PyCharm integration<a class="headerlink" href="#pycharm-integration_1" title="Permanent link">⚓︎</a></h3>
-<p><code>black</code> is integrated into PyCharm as of v2023.2. Go to <strong>Settings</strong> | <strong>Tools</strong> | <strong>Black</strong> to configure.</p>
-<details class="tip">
-<summary>For older versions</summary>
-<p>PyCharm supports file watchers, which automatically run a command when a file is saved. This is useful for
-transparently formatting code.</p>
-<p>To include <code>black</code> as a file watcher, go to <strong>Settings</strong> | <strong>Tools</strong> | <strong>File Watchers</strong> and import the
-<a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pycharm/watchers.xml">watchers.xml</a>. This will automatically apply formatting to Python files and Jupyter notebooks. You may need to
-edit the <strong>Program</strong> path to point to your <code>black</code> executable.</p>
-</details>
-<p>Otherwise, to set it up yourself, follow the instructions
-at <a href="https://black.readthedocs.io/en/stable/integrations/editors.html">https://black.readthedocs.io/en/stable/integrations/editors.html</a>.</p>
 <h2 id="mypy">Mypy<a class="headerlink" href="#mypy" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://mypy.readthedocs.io/en/stable/">Mypy</a> is a static type checker, examining object relationships and ensuring that they're used correctly (i.e., that
 type hints are correct).</p>
@@ -1185,8 +1132,7 @@ you can try again.</p>
 <ul>
 <li>built-in <code>pre-commit</code> checks</li>
 <li>Automatic use of the walrus operator</li>
-<li><code>ruff</code> for linting (fixes fixable issues)</li>
-<li><code>black</code> for formatting (fixes fixable issues)</li>
+<li><code>ruff</code> for linting and formatting (fixes fixable issues)</li>
 <li><code>mypy</code> type-hinting errors</li>
 <li><code>poetry</code> dependency status (<code>poetry.lock</code> and requirements files are up-to-date)</li>
 </ul>

@@ -1120,8 +1120,10 @@ environment manager, such as conda.</p>
 </code></pre></div>
 <p>Dependencies can be segmented into different groups. See <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
 <p class="annotate">It is recommended to maintain dependencies with Poetry, and export them (1) to <code>requirements.txt</code>
-and <code>requirements-dev.txt</code> if needed, e.g.,</p>
+and <code>requirements-dev.txt</code> if needed (2), e.g.,</p>
 <ol>
+<li>Exporting dependencies may require the plugin <code>poetry-plugin-export</code>. Install it
+   with <code>poetry self add poetry-plugin-export</code></li>
 <li>Check out <a href="../../tooling/quality/#pre-commit">quality#pre-commit</a> for a pre-commit hook to do this
    automatically.</li>
 </ol>
