@@ -1,4 +1,5 @@
 site_name: My Project
+site_url: https://eshwen.github.io/ds-python-boilerplate/
 repo_url: https://github.com/eshwen/ds-python-boilerplate
 repo_name: eshwen/ds-python-boilerplate
 
@@ -14,10 +15,10 @@ nav:
       - Conda: getting-started/conda.md
       - Development Container: getting-started/dev-container.md
   - Tooling:
-    - Quality: tooling/quality.md
-    - Testing: tooling/testing.md
-    - Documentation: tooling/documentation.md
-    - Pipelines: tooling/pipelines.md
+      - Quality: tooling/quality.md
+      - Testing: tooling/testing.md
+      - Documentation: tooling/documentation.md
+      - Pipelines: tooling/pipelines.md
   - Code Reference: reference/
   - Changelog: changelog.md
 
@@ -43,6 +44,9 @@ plugins:
   - literate-nav:
       nav_file: SUMMARY.md
   - section-index
+  - mike:
+      alias_type: symlink
+      canonical_version: latest
 
 theme:
   name: material
@@ -112,3 +116,5 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/eshwen-bhal-phd-714557195/
       name: Eshwen Bhal on LinkedIn
+  version:
+    provider: mike
