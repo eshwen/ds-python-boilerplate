@@ -52,7 +52,7 @@ ruff = "^0.1.15"
 
 # Type hinting
 mypy = "^1.8.0"
-pandera = { version = "^0.17.2", extras = ["mypy"] }
+pandera = { version = "*", extras = ["mypy"] }
 
 # Jupyter notebooks
 jupyter = "*"
