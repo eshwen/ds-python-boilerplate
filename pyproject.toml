@@ -10,7 +10,7 @@ authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.10"
+python = ">=3.10,<3.13"
 
 # Terminal colours
 colorama = "*"
@@ -28,10 +28,10 @@ pydantic-settings = "^2.1.0"
 pandera = "^0.17.2"
 
 # SQL databases
-SQLAlchemy = "*"
+SQLAlchemy = "^2.0.0"
 
 # APIs
-fastapi = "^0.103.2"
+fastapi = "^0.109.2"
 uvicorn = "*"
 requests = "^2.31.0"
 
@@ -52,7 +52,7 @@ ruff = "^0.1.15"
 
 # Type hinting
 mypy = "^1.8.0"
-pandera = { version = "^0.17.2", extras = ["mypy"] }
+pandera = { version = "*", extras = ["mypy"] }
 
 # Jupyter notebooks
 jupyter = "*"
@@ -60,7 +60,7 @@ jupyterlab = "*"
 voila = "*"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.4.0"
+pytest = "^8.0.1"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
@@ -75,7 +75,7 @@ termynal = "^0.11.0"
 mkdocs-gen-files = "^0.5.0"
 mkdocs-literate-nav = "^0.6.1"
 mkdocs-section-index = "^0.3.8"
-git-changelog = "^2.4.0"
+mike = "^2.0.0"
 
 [tool.mypy]
 python_version = "3.10"

@@ -29,8 +29,10 @@ poetry self update
 Then, navigate to the project's root directory, and create the `virtualenv` environment with
 
 ```shell
-poetry env use 3.10
+poetry env use 3.10  # (1)
 ```
+
+1. This project also supports 3.11 and 3.12 if you want to use those instead.
 
 In future sessions (on the CLI), you can enter the environment by navigating to the project's root directory and running
 
@@ -119,10 +121,12 @@ cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry ad
 Dependencies can be segmented into different groups. See [pyproject.toml].
 
 It is recommended to maintain dependencies with Poetry, and export them (1) to ``requirements.txt``
-and ``requirements-dev.txt`` if needed, e.g.,
+and ``requirements-dev.txt`` if needed (2), e.g.,
 { .annotate }
 
-1. Check out [quality#pre-commit](../tooling/quality.md#pre-commit) for a pre-commit hook to do this
+1. Exporting dependencies may require the plugin `poetry-plugin-export`. Install it
+   with `poetry self add poetry-plugin-export`
+2. Check out [quality#pre-commit](../tooling/quality.md#pre-commit) for a pre-commit hook to do this
    automatically.
 
 ```shell
