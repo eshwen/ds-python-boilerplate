@@ -15,13 +15,17 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.10", "3.11", "3.12" ]
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Test
         uses: eshwen/adrenaline/test-python@v0.3.0
         with:
-          python-version: '3.10'
+          python-version: ${{ matrix.python-version }}
           path: 'my_project/'
 
       - name: Upload coverage report to Codecov

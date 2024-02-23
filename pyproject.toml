@@ -10,7 +10,7 @@ authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.10"
+python = ">=3.10,<3.13"
 
 # Terminal colours
 colorama = "*"
@@ -28,7 +28,7 @@ pydantic-settings = "^2.1.0"
 pandera = "^0.17.2"
 
 # SQL databases
-SQLAlchemy = "*"
+SQLAlchemy = "^2.0.0"
 
 # APIs
 fastapi = "^0.109.2"
@@ -52,7 +52,7 @@ ruff = "^0.1.15"
 
 # Type hinting
 mypy = "^1.8.0"
-pandera = { version = "^0.17.2", extras = ["mypy"] }
+pandera = { version = "*", extras = ["mypy"] }
 
 # Jupyter notebooks
 jupyter = "*"

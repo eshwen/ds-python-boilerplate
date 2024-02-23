@@ -29,8 +29,10 @@ poetry self update
 Then, navigate to the project's root directory, and create the `virtualenv` environment with
 
 ```shell
-poetry env use 3.10
+poetry env use 3.10  # (1)
 ```
+
+1. This project also supports 3.11 and 3.12 if you want to use those instead.
 
 In future sessions (on the CLI), you can enter the environment by navigating to the project's root directory and running
 
