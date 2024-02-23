@@ -26,7 +26,7 @@ jobs:
         uses: eshwen/adrenaline/test-python@v0.4.0
         with:
           python-version: ${{ matrix.python-version }}
-          path: 'my_project/'
+          pkg-name: 'my_project/'
 
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v3
