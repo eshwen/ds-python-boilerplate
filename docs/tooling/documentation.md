@@ -1,27 +1,24 @@
 # Documentation
 
-This repository uses Google-Style for docstrings. They are checked automatically by `ruff`.
-See [linting and formatting](linting-formatting.md) for more information.
+This repository uses Google-Style for docstrings. They are checked automatically by `ruff`. See [quality](quality.md)
+for more information.
 
 ## API documentation
 
-API documentation is built with MkDocs using the Material theme. To build a static copy locally, run
+API documentation is built with MkDocs using the Material theme. The [mike] package wraps MkDocs and allows versioned
+sets of docs to be created. To build a static copy locally and render it live on a local server, run
 
-```shell
-git-changelog -p github -o CHANGELOG.md  # (1)
-mkdocs build
-```
+=== "MkDocs standalone"
 
-1. This generates the changelog.
+    ```shell
+    mkdocs serve
+    ```
 
-Then open the homepage HTML file under `site/index.html`.
+=== "MkDocs with mike"
 
-Or, to render it live on a local server, run
-
-```shell
-git-changelog -p github -o CHANGELOG.md
-mkdocs serve
-```
+    ```shell
+    mike serve
+    ```
 
 For a Sphinx implementation of documentation, see <https://github.com/eshwen/ds-python-boilerplate/releases/tag/v0.1.1>.
 
@@ -59,3 +56,5 @@ TODO: Add extension and plugin descriptions.
 [mkdocstrings]: https://mkdocstrings.github.io/
 
 [gen_ref_pages.py]: https://github.com/eshwen/ds-python-boilerplate/blob/main/docs/gen_ref_pages.py
+
+[mike]: https://github.com/jimporter/mike
