@@ -23,7 +23,7 @@ pandas = { version = "^2.1.3", extras = ["performance", "visualisation", "comput
 scikit-learn = "*"
 
 # Data validation
-pydantic = "^2.3.0"
+pydantic = "^2.6.3"
 pydantic-settings = "^2.1.0"
 pandera = "^0.17.2"
 
