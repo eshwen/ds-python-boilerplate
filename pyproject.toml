@@ -25,7 +25,7 @@ scikit-learn = "*"
 # Data validation
 pydantic = "^2.6.3"
 pydantic-settings = "^2.1.0"
-pandera = "^0.18.0"
+pandera = "^0.18.3"
 
 # SQL databases
 SQLAlchemy = "^2.0.0"
