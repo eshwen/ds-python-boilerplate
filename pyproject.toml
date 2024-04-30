@@ -60,7 +60,7 @@ jupyterlab = "*"
 voila = "*"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.0.2"
+pytest = "^8.2.0"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
