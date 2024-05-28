@@ -33,7 +33,7 @@ SQLAlchemy = "^2.0.0"
 # APIs
 fastapi = "^0.110.0"
 uvicorn = "*"
-requests = "^2.31.0"
+requests = "^2.32.0"
 
 # Stats
 statsmodels = "*"
