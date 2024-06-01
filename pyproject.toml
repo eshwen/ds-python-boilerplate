@@ -48,7 +48,7 @@ PyYAML = "*"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
-ruff = "^0.1.15"
+ruff = "^0.4.5"
 
 # Type hinting
 mypy = "^1.8.0"
@@ -90,8 +90,12 @@ plugins = [
 [tool.ruff]
 target-version = "py310"
 line-length = 120
-ignore-init-module-imports = true
 
+extend-exclude = [
+    ".venv",
+]
+
+[tool.ruff.lint]
 select = [
     "D",
     "E",
@@ -117,11 +121,7 @@ ignore = [
     "F401", # F401 complains when an import is unused in an __init__ file
 ]
 
-extend-exclude = [
-    ".venv",
-]
-
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "__init__.py" = [
     "D104", # D104 complains when there is no docstring in a module
 ]
@@ -130,15 +130,15 @@ extend-exclude = [
     "D103", # D103 complains when there is no docstring in a function
 ]
 
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
 [tool.ruff.format]
 # Like Black
 quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
-
-[tool.ruff.pydocstyle]
-convention = "google"
 
 [tool.pytest.ini_options]
 minversion = "7.0"
