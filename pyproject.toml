@@ -31,7 +31,7 @@ pandera = "^0.18.3"
 SQLAlchemy = "^2.0.0"
 
 # APIs
-fastapi = "^0.110.0"
+fastapi = "^0.111.0"
 uvicorn = "*"
 requests = "^2.32.3"
 
