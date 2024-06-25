@@ -25,13 +25,13 @@ scikit-learn = "*"
 # Data validation
 pydantic = "^2.7.1"
 pydantic-settings = "^2.2.1"
-pandera = "^0.18.3"
+pandera = ">=0.18.3, <1"
 
 # SQL databases
 SQLAlchemy = "^2.0.0"
 
 # APIs
-fastapi = "^0.110.0"
+fastapi = ">=0.110.0, <1"
 uvicorn = "*"
 requests = "^2.32.3"
 
