@@ -17,6 +17,7 @@ colorama = "*"
 
 # Data processing
 pandas = { version = "^2.1.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
+numpy = "<2"  # TODO: Remove this once libraries like pandera are updated to support the 2.0 changes
 
 # Machine learning
 #tensorflow-macos = "*"
