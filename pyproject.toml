@@ -24,7 +24,7 @@ numpy = "<2"  # TODO: Remove this once libraries like pandera are updated to sup
 scikit-learn = "*"
 
 # Data validation
-pydantic = "^2.7.1"
+pydantic = "^2.8.0"
 pydantic-settings = "^2.2.1"
 pandera = ">=0.18.3, <1"
 
