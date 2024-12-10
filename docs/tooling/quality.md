@@ -13,13 +13,13 @@ like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring c
 To only check your code, run
 
 ```shell
-ruff my_project/ tests/
+ruff check my_project/ tests/
 ```
 
 To automatically fix any issues, run
 
 ```shell
-ruff --fix my_project/ tests/
+ruff check --fix my_project/ tests/
 ```
 
 Ruff now contains a formatter to replace [Black]. It ensures consistently-formatted, highly readable code.
