@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Test
-        uses: eshwen/adrenaline/test-python@v0.5.0
+        uses: eshwen/adrenaline/test-python@v0.6.0
         with:
           python-version: ${{ matrix.python-version }}
           pkg-name: 'my_project/'
