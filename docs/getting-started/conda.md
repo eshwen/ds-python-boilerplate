@@ -30,7 +30,7 @@
     ```
 
     1. Stops automatically activating the `base` env when opening the terminal.
-    2. This project also supports 3.11 and 3.12 if you want to use those instead.
+    2. This project also supports 3.11 - 3.13 if you want to use those instead.
 
 4. And finally, install the requirements:
 

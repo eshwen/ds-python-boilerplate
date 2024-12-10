@@ -32,7 +32,7 @@ Then, navigate to the project's root directory, and create the `virtualenv` envi
 poetry env use 3.10  # (1)
 ```
 
-1. This project also supports 3.11 and 3.12 if you want to use those instead.
+1. This project also supports 3.11 - 3.13 if you want to use those instead.
 
 In future sessions (on the CLI), you can enter the environment by navigating to the project's root directory and running
 
