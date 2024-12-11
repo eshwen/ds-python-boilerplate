@@ -10,14 +10,13 @@ authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.13"
+python = ">=3.10,<3.14"
 
 # Terminal colours
 colorama = "*"
 
 # Data processing
 pandas = { version = "^2.1.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
-numpy = "<2"  # TODO: Remove this once libraries like pandera are updated to support the 2.0 changes
 
 # Machine learning
 #tensorflow-macos = "*"
@@ -49,7 +48,7 @@ PyYAML = "*"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
-ruff = "^0.4.5"
+ruff = "^0.8.2"
 
 # Type hinting
 mypy = "^1.8.0"
