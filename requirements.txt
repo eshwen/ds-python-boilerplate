@@ -1,6 +1,6 @@
 adbc-driver-manager==1.3.0 ; python_version >= "3.10" and python_version < "3.14"
 adbc-driver-postgresql==1.3.0 ; python_version >= "3.10" and python_version < "3.14"
-adbc-driver-sqlite==1.3.0 ; python_version >= "3.10" and python_version < "3.14"
+adbc-driver-sqlite==1.4.0 ; python_version >= "3.10" and python_version < "3.14"
 annotated-types==0.7.0 ; python_version >= "3.10" and python_version < "3.14"
 anyio==4.7.0 ; python_version >= "3.10" and python_version < "3.14"
 bottleneck==1.4.2 ; python_version >= "3.10" and python_version < "3.14"
