@@ -106,7 +106,7 @@ pluggy==1.5.0 ; python_version >= "3.10" and python_version < "3.14"
 pre-commit==3.8.0 ; python_version >= "3.10" and python_version < "3.14"
 prometheus-client==0.21.1 ; python_version >= "3.10" and python_version < "3.14"
 prompt-toolkit==3.0.48 ; python_version >= "3.10" and python_version < "3.14"
-psutil==6.1.0 ; python_version >= "3.10" and python_version < "3.14"
+psutil==7.0.0 ; python_version >= "3.10" and python_version < "3.14"
 ptyprocess==0.7.0 ; python_version >= "3.10" and python_version < "3.14" and (os_name != "nt" or sys_platform != "win32" and sys_platform != "emscripten")
 pure-eval==0.2.3 ; python_version >= "3.10" and python_version < "3.14"
 pycparser==2.22 ; python_version >= "3.10" and python_version < "3.14"
