@@ -22,7 +22,7 @@ importlib-resources==6.4.5 ; python_version >= "3.10" and python_version < "3.14
 joblib==1.4.2 ; python_version >= "3.10" and python_version < "3.14"
 kiwisolver==1.4.7 ; python_version >= "3.10" and python_version < "3.14"
 llvmlite==0.44.0rc1 ; python_version >= "3.10" and python_version < "3.14"
-matplotlib==3.10.0 ; python_version >= "3.10" and python_version < "3.14"
+matplotlib==3.10.1 ; python_version >= "3.10" and python_version < "3.14"
 multimethod==1.12 ; python_version >= "3.10" and python_version < "3.14"
 mypy-extensions==1.0.0 ; python_version >= "3.10" and python_version < "3.14"
 numba==0.61.0rc1 ; python_version >= "3.10" and python_version < "3.14"
