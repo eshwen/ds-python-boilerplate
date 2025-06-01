@@ -33,3 +33,9 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Test docs
+        if: always()
+        run: |
+          poetry run mkdocs build --strict
+        shell: bash
