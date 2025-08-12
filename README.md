@@ -10,6 +10,9 @@
 [![Pytest badge]](https://docs.pytest.org/en/stable/)
 [![Built with Material for MkDocs]](https://squidfunk.github.io/mkdocs-material/)
 
+[![Pandas badge]](https://pandas.pydata.org/docs/index.html)
+[![Pydantic v2]](https://pydantic.dev)
+
 [![CodeQL](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml)
 [![Coverage](https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU)](https://codecov.io/gh/eshwen/ds-python-boilerplate)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml)
@@ -19,3 +22,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 [Pytest badge]: https://img.shields.io/badge/pytest-tested-ffffff?logo=pytest
 
 [Built with Material for MkDocs]: https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white
+
+[Pandas badge]: https://img.shields.io/badge/pandas-%23150458.svg?logo=pandas&logoColor=white&labelColor=grey
+
+[Pydantic v2]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pydantic/pydantic/main/docs/badge/v2.json
