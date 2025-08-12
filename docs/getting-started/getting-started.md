@@ -5,7 +5,6 @@ scientist may find useful.
 
 ## Programs
 
-- Docker
 - Visual Studio Code/PyCharm
 - GitHub Desktop (optional)
 
@@ -17,7 +16,6 @@ scientist may find useful.
 
     # Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install --cask docker
     brew install --cask visual-studio-code  # or brew install --cask pycharm
     brew install --cask github
     ```

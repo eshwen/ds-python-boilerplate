@@ -12,7 +12,6 @@ nav:
   - Getting Started:
       - Installation: getting-started/getting-started.md
       - Poetry: getting-started/poetry.md
-      - Development Container: getting-started/dev-container.md
   - Tooling:
       - Quality: tooling/quality.md
       - Testing: tooling/testing.md
