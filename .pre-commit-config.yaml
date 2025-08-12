@@ -6,11 +6,11 @@ exclude: |
 default_language_version:
   python: python3.10
 
-default_stages: [ pre-commit, pre-push, commit, push ]
+default_stages: [ pre-commit, pre-push ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
