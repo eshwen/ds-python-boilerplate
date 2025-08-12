@@ -66,14 +66,10 @@ pytest-mock = "*"
 pytest-cov = "*"
 
 [tool.poetry.group.docs.dependencies]
-mkdocs = "^1.4.0"
-pymdown-extensions = "^10.8"
 mkdocs-material = "^9.5.16"
-mkdocstrings = { version = "^0.25.2", extras = ["python"] }
-mkgendocs = "^0.9.2"
+mkdocstrings = { version = "^0.30.0", extras = ["python"] }
 termynal = "^0.12.2"
-mkdocs-gen-files = "^0.5.0"
-mkdocs-literate-nav = "^0.6.1"
+mkdocs-api-autonav = "^0.3.0"
 mkdocs-section-index = "^0.3.8"
 mike = "^2.0.0"
 

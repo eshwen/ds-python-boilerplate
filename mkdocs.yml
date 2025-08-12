@@ -19,7 +19,6 @@ nav:
       - Testing: tooling/testing.md
       - Documentation: tooling/documentation.md
       - Pipelines: tooling/pipelines.md
-  - Code Reference: reference/
 
 plugins:
   - mkdocstrings:
@@ -28,7 +27,7 @@ plugins:
         python:
           options:
             show_source: true
-          import:
+          inventories:
             - https://numpy.org/doc/stable/objects.inv
             - https://docs.python.org/3/objects.inv
             - https://pandas.pydata.org/pandas-docs/stable/objects.inv
@@ -37,11 +36,9 @@ plugins:
       lang: en
   - autorefs
   - termynal
-  - gen-files:
-      scripts:
-        - docs/gen_ref_pages.py
-  - literate-nav:
-      nav_file: SUMMARY.md
+  - api-autonav:
+      modules: [ 'my_project' ]
+      nav_section_title: Code Reference
   - section-index
   - mike:
       alias_type: symlink
