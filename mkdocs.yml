@@ -27,7 +27,7 @@ plugins:
         python:
           options:
             show_source: true
-          import:
+          inventories:
             - https://numpy.org/doc/stable/objects.inv
             - https://docs.python.org/3/objects.inv
             - https://pandas.pydata.org/pandas-docs/stable/objects.inv
