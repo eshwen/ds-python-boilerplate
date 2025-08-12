@@ -1,5 +1,3 @@
-permissions:
-  contents: read
 name: Test Python Project
 
 on:
@@ -13,6 +11,9 @@ on:
 concurrency:
   group: test-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   test:
