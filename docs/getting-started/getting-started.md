@@ -5,8 +5,7 @@ scientist may find useful.
 
 ## Programs
 
-- Docker
-- Visual Studio Code/PyCharm
+- PyCharm/Visual Studio Code
 - GitHub Desktop (optional)
 
 === ":material-apple: macOS"
@@ -17,8 +16,7 @@ scientist may find useful.
 
     # Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install --cask docker
-    brew install --cask visual-studio-code  # or brew install --cask pycharm
+    brew install --cask pycharm  # or brew install --cask visual-studio-code
     brew install --cask github
     ```
     See <https://github.com/eshwen/macOS-setup> for more useful setup tips.

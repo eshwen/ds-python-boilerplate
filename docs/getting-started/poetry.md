@@ -103,43 +103,6 @@ Now you should have a static path to a specific Python install.
     2. Click **Add New Interpreter** -> **Add Local Interpreter...** -> **Poetry Environment**
     3. Check **Existing environment**. The environment you just created should appear in the dropdown menu
 
-## Creating your own configuration
-
-To create your own Poetry configuration in [pyproject.toml], run
-
-```shell
-poetry init
-```
-
-and follow the instructions. Then to port any dependencies from ``requirements.txt`` and ``requirements-dev.txt``, run
-
-```shell
-cat requirements.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add
-cat requirements-dev.txt | grep -E '^[^# ]' | cut -d= -f1 | xargs -n 1 poetry add --group dev
-```
-
-Dependencies can be segmented into different groups. See [pyproject.toml].
-
-It is recommended to maintain dependencies with Poetry, and export them (1) to ``requirements.txt``
-and ``requirements-dev.txt`` if needed (2), e.g.,
-{ .annotate }
-
-1. Exporting dependencies may require the plugin `poetry-plugin-export`. Install it
-   with `poetry self add poetry-plugin-export`
-2. Check out [quality#pre-commit](../tooling/quality.md#pre-commit) for a pre-commit hook to do this
-   automatically.
-
-```shell
-poetry export --without-hashes -f requirements.txt -o requirements.txt
-poetry export --without-hashes --only dev -f requirements.txt -o requirements-dev.txt
-```
-
-This repo separates development dependencies into dev, tests, and docs groups. To export these, run
-
-```shell
-poetry export --without-hashes --only dev,test,docs -f requirements.txt -o requirements-dev.txt
-```
-
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
 [pyenv]: https://github.com/pyenv/pyenv
