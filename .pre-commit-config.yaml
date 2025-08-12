@@ -42,11 +42,10 @@ repos:
           - 'pydantic~=2.10.3'  # Must match requirements.txt
 
   - repo: https://github.com/python-poetry/poetry
-    rev: '1.8.0'
+    rev: '2.1.4'
     hooks:
       - id: poetry-check
       - id: poetry-lock
-        args: [ --no-update ]
 
   - repo: https://github.com/python-poetry/poetry-plugin-export
     rev: '1.8.0'
