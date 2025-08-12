@@ -7,9 +7,15 @@
 
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Pytest badge]](https://docs.pytest.org/en/stable/)
+[![Built with Material for MkDocs]](https://squidfunk.github.io/mkdocs-material/)
 
 [![CodeQL](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml)
 [![Coverage](https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU)](https://codecov.io/gh/eshwen/ds-python-boilerplate)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml)
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
+
+[Pytest badge]: https://img.shields.io/badge/pytest-tested-ffffff?logo=pytest
+
+[Built with Material for MkDocs]: https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white
