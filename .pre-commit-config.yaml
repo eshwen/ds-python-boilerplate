@@ -6,11 +6,11 @@ exclude: |
 default_language_version:
   python: python3.10
 
-default_stages: [ pre-commit, pre-push, commit, push ]
+default_stages: [ pre-commit, pre-push ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
@@ -27,19 +27,19 @@ repos:
       - id: auto-walrus
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.8.2'  # Should match poetry.lock
+    rev: 'v0.12.8'  # Should match poetry.lock
     hooks:
-      - id: ruff
+      - id: ruff-check
         args: [ --fix, --exit-non-zero-on-fix ]
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.13.0  # Should match poetry.lock
+    rev: v1.17.1  # Should match poetry.lock
     hooks:
       - id: mypy
         additional_dependencies:
-          - 'pandera~=0.21.1'  # Should match poetry.lock
-          - 'pydantic~=2.10.3'  # Should match poetry.lock
+          - 'pandera[mypy]~=0.25.0'  # Should match poetry.lock
+          - 'pydantic~=2.11.7'  # Should match poetry.lock
 
   - repo: https://github.com/python-poetry/poetry
     rev: '2.1.4'
