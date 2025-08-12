@@ -37,7 +37,7 @@ poetry env use 3.10  # (1)
 In future sessions (on the CLI), you can enter the environment by navigating to the project's root directory and running
 
 ```shell
-poetry shell
+poetry env activate
 ```
 
 ### Decoupling Python and Poetry installs
