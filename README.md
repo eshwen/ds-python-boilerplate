@@ -14,6 +14,7 @@
 [![Pre-commit badge]](https://pre-commit.com/)
 
 [![Pandas badge]](https://pandas.pydata.org/docs/index.html)
+[![Polars badge]](https://pola.rs)
 [![Pydantic v2]](https://pydantic.dev)
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
@@ -41,3 +42,5 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 [Pandas badge]: https://img.shields.io/badge/pandas-%23150458.svg?logo=pandas&logoColor=white&labelColor=grey
 
 [Pydantic v2]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pydantic/pydantic/main/docs/badge/v2.json
+
+[Polars badge]: https://img.shields.io/badge/polars-0075FF?logo=polars&logoColor=white&labelColor=grey
