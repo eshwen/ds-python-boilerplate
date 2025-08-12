@@ -11,7 +11,7 @@
 [![Checked with mypy badge]](http://mypy-lang.org/)
 [![Pytest badge]](https://docs.pytest.org/en/stable/)
 [![Built with Material for MkDocs]](https://squidfunk.github.io/mkdocs-material/)
-[![Pre-commit badge]](https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml)
+[![Pre-commit badge]](https://pre-commit.com/)
 
 [![Pandas badge]](https://pandas.pydata.org/docs/index.html)
 [![Pydantic v2]](https://pydantic.dev)
