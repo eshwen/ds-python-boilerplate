@@ -1,17 +1,22 @@
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry]
+[project]
 name = "my_project"
 version = "0.10.2"
 description = "Boilerplate for data science projects in Python"
-authors = ["Eshwen Bhal, PhD <milanman.eshb@gmail.com>"]
+authors = [
+    { name = "Eshwen Bhal, PhD", email = "milanman.eshb@gmail.com" },
+]
 readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.poetry]
+requires-poetry = ">=2.0"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.14"
-
 # Terminal colours
 colorama = "*"
 
