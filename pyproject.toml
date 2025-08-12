@@ -66,7 +66,6 @@ pytest-mock = "*"
 pytest-cov = "*"
 
 [tool.poetry.group.docs.dependencies]
-mkdocs = "^1.4.0"
 mkdocs-material = "^9.5.16"
 mkdocstrings = { version = "^0.30.0", extras = ["python"] }
 termynal = "^0.12.2"
