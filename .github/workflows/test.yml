@@ -23,7 +23,7 @@ jobs:
         python-version: [ "3.10", "3.11", "3.12", "3.13" ]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Test
         uses: eshwen/adrenaline/test-python@v0.6.0

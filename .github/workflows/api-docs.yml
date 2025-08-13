@@ -17,7 +17,7 @@ jobs:
       actions: 'write'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: eshwen/adrenaline/builder@v0.6.0
         with:
           python-version: '3.10'
