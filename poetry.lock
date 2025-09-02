@@ -5123,14 +5123,14 @@ typing = ["mypy (>=1.6,<2.0)", "traitlets (>=5.11.1)"]
 
 [[package]]
 name = "termynal"
-version = "0.12.3"
+version = "0.13.1"
 description = "A lightweight and modern animated terminal window"
 optional = false
 python-versions = ">=3.9"
 groups = ["docs"]
 files = [
-    {file = "termynal-0.12.3-py3-none-any.whl", hash = "sha256:000babdcaa082141aa14c5cd106af1f2327f6590e7825342ce051ce79defcbc1"},
-    {file = "termynal-0.12.3.tar.gz", hash = "sha256:5e8a623906da2aa6d140502b181a6d868e590f45546fbf77a145b9d1be305b49"},
+    {file = "termynal-0.13.1-py3-none-any.whl", hash = "sha256:7a1605a4d4ed38bf851bf25f842aafa52ef29786d52762aecee59622ed030592"},
+    {file = "termynal-0.13.1.tar.gz", hash = "sha256:c7abecfdbda3ccdeee2723049a70f0e2e7f63e1973bb9b8f0b3fe6c1bfb391cd"},
 ]
 
 [package.dependencies]
@@ -5756,4 +5756,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "fcaa30f852f8ca929efcd4115b18ec0c4c2dec50a9002309a87c84db8df3c14c"
+content-hash = "3eafc2078da2e3af06074fbcf376eb2dfe0d1a48c307aba673d65876cf0f7618"
