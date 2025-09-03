@@ -72,7 +72,7 @@ pytest-mock = "*"
 pytest-cov = "*"
 
 [tool.poetry.group.docs.dependencies]
-mkdocs-material = "^9.5.16"
+mkdocs-material = "^9.6.18"
 mkdocstrings = { version = "^0.30.0", extras = ["python"] }
 termynal = "^0.13.1"
 mkdocs-api-autonav = "^0.3.0"
