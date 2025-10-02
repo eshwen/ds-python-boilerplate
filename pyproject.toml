@@ -21,7 +21,7 @@ requires-poetry = ">=2.0"
 colorama = "*"
 
 # Data processing
-pandas = { version = "^2.3.2", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
+pandas = { version = "^2.3.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
 polars = "^1.33.0"
 
 # Machine learning
