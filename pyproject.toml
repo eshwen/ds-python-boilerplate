@@ -21,7 +21,7 @@ requires-poetry = ">=2.0"
 colorama = "*"
 
 # Data processing
-pandas = { version = "^2.3.2", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
+pandas = { version = "^2.3.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
 polars = "^1.33.0"
 
 # Machine learning
@@ -66,7 +66,7 @@ jupyterlab = "*"
 voila = "*"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.2.0"
+pytest = "^8.4.2"
 pytest-asyncio = "*"
 pytest-mock = "*"
 pytest-cov = "*"
@@ -75,7 +75,7 @@ pytest-cov = "*"
 mkdocs-material = "^9.6.18"
 mkdocstrings = { version = "^0.30.0", extras = ["python"] }
 termynal = "^0.13.1"
-mkdocs-api-autonav = "^0.3.0"
+mkdocs-api-autonav = "^0.4.0"
 mkdocs-section-index = "^0.3.8"
 mike = "^2.0.0"
 
