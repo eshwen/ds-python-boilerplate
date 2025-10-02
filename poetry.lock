@@ -2491,14 +2491,14 @@ min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4) ; platform
 
 [[package]]
 name = "mkdocs-api-autonav"
-version = "0.3.1"
+version = "0.4.0"
 description = "Autogenerate API docs with mkdocstrings, including nav"
 optional = false
 python-versions = ">=3.9"
 groups = ["docs"]
 files = [
-    {file = "mkdocs_api_autonav-0.3.1-py3-none-any.whl", hash = "sha256:363cdf24ec12670971049291b72806ee55ae6560611ffd6ed2fdeb69c43e6d4f"},
-    {file = "mkdocs_api_autonav-0.3.1.tar.gz", hash = "sha256:5d37ad53a03600acff0f7d67fad122a38800d172777d3c4f8c0dfbb9b58e8c29"},
+    {file = "mkdocs_api_autonav-0.4.0-py3-none-any.whl", hash = "sha256:87474e7919664fca75648a05e79de238dd5b39a0f711910d3638626b016acfe3"},
+    {file = "mkdocs_api_autonav-0.4.0.tar.gz", hash = "sha256:3527b0e5cf1b682bd374a3ce699ac12d6288f5fcaf93877f34a6b14c79740637"},
 ]
 
 [package.dependencies]
@@ -5774,4 +5774,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "45078208df039a913b5fd682e2466a0bc2c13582ecb2891df3bab2d263ddd1f4"
+content-hash = "9c04dbc37296cb85f47aa82c71fb02623c76abbc9fec0657f08302978090a95a"
