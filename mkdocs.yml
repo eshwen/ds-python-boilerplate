@@ -51,6 +51,7 @@ theme:
     - navigation.sections
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
