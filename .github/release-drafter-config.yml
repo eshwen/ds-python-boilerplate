@@ -61,6 +61,7 @@ autolabeler:
     files:
       - '.github/workflows/*.yml'
       - .github/actions/**'
+      - .github/release-drafter-config.yml
   - label: 'python'
     files:
       - '*.py'
