@@ -51,6 +51,7 @@ autolabeler:
     files:
       - '*.md'
       - 'docs/**'
+      - mkdocs.yml
     branch:
       - '/docs{0,1}\/.+/'
   - label: 'enhancement'
@@ -60,6 +61,7 @@ autolabeler:
     files:
       - '.github/workflows/*.yml'
       - .github/actions/**'
+      - .github/release-drafter-config.yml
   - label: 'python'
     files:
       - '*.py'
