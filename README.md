@@ -19,7 +19,7 @@
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
 
-[Documentation badge]: https://img.shields.io/badge/docs-Documentation%20--%20GitHub%20Pages-brightgreen?style=flat&logo=readthedocs
+[Documentation badge]: https://img.shields.io/badge/Documentation-%20GitHub-brightgreen?logo=refinedgithub
 
 [CodeQL badge]: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg
 
