@@ -29,7 +29,7 @@ polars = "^1.33.0"
 scikit-learn = "*"
 
 # Data validation
-pydantic = "^2.10.4"
+pydantic = "^2.12.5"
 pydantic-settings = "^2.2.1"
 pandera = ">=0.18.3, <1"
 
