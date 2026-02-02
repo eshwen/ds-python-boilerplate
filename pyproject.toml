@@ -34,7 +34,7 @@ pydantic-settings = "^2.12.0"
 pandera = ">=0.18.3, <1"
 
 # SQL databases
-SQLAlchemy = "^2.0.0"
+SQLAlchemy = "^2.0.46"
 
 # APIs
 fastapi = ">=0.110.0, <1"
