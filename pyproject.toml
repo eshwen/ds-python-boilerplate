@@ -30,7 +30,7 @@ scikit-learn = "*"
 
 # Data validation
 pydantic = "^2.12.5"
-pydantic-settings = "^2.2.1"
+pydantic-settings = "^2.12.0"
 pandera = ">=0.18.3, <1"
 
 # SQL databases
