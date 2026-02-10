@@ -25,7 +25,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 
 [Coverage badge]: https://codecov.io/gh/eshwen/ds-python-boilerplate/branch/main/graph/badge.svg?token=M7NHFR7QTU
 
-[Python badge]: https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue?logo=Python&logoColor=yellow&link=https%3A%2F%2Fwww.python.org%2F
+[Python badge]: https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue?logo=Python&logoColor=yellow&link=https%3A%2F%2Fwww.python.org%2F
 
 [Poetry badge]: https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json
 
