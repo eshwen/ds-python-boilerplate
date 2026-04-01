@@ -24,7 +24,7 @@ jobs:
           install-dev-deps: true
 
       - name: Get version number
-        uses: nowsprinting/check-version-format-action@v4
+        uses: nowsprinting/check-version-format-action@v5
         id: version
         with:
           prefix: 'v'
