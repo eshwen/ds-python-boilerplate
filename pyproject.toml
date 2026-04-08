@@ -22,7 +22,7 @@ colorama = "*"
 
 # Data processing
 pandas = { version = "^2.3.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
-polars = "^1.33.0"
+polars = "^1.39.3"
 
 # Machine learning
 #tensorflow-macos = "*"
