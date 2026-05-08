@@ -38,7 +38,7 @@ repos:
     hooks:
       - id: mypy
         additional_dependencies:
-          - 'pandera[mypy]~=0.25.0'  # Should match poetry.lock
+          - 'pandera[mypy]~=0.31.1'  # Should match poetry.lock
           - 'pydantic~=2.11.7'  # Should match poetry.lock
 
   - repo: https://github.com/python-poetry/poetry
