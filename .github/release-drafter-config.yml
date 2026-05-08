@@ -59,9 +59,7 @@ autolabeler:
       - '/feature\/.+/'
   - label: 'github_actions'
     files:
-      - '.github/workflows/*.yml'
-      - .github/actions/**'
-      - .github/release-drafter-config.yml
+      - '.github/**'
   - label: 'python'
     files:
       - '*.py'
