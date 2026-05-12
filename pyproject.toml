@@ -22,7 +22,7 @@ colorama = "*"
 
 # Data processing
 pandas = { version = "^2.3.3", extras = ["performance", "visualisation", "computation", "excel", "sql-other"] }
-polars = "^1.39.3"
+polars = "^1.40.1"
 
 # Machine learning
 #tensorflow-macos = "*"
@@ -30,8 +30,8 @@ scikit-learn = "*"
 
 # Data validation
 pydantic = "^2.13.3"
-pydantic-settings = "^2.12.0"
-pandera = ">=0.18.3, <1"
+pydantic-settings = "^2.14.1"
+pandera = ">=0.31.1,<1"
 
 # SQL databases
 SQLAlchemy = "^2.0.49"
@@ -54,7 +54,7 @@ PyYAML = "*"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.6.0"
-ruff = "^0.14.14"
+ruff = "^0.15.0"
 
 # Type hinting
 mypy = "^1.8.0"
@@ -74,7 +74,7 @@ pytest-cov = "*"
 [tool.poetry.group.docs.dependencies]
 mkdocs-material = "^9.7.3"
 mkdocstrings = { version = "^1.0.4", extras = ["python"] }
-termynal = "^0.13.1"
+termynal = "^0.14.0"
 mkdocs-api-autonav = "^0.4.0"
 mkdocs-section-index = "^0.3.12"
 mike = "^2.0.0"
