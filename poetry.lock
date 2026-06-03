@@ -5818,14 +5818,14 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 
 [[package]]
 name = "voila"
-version = "0.5.11"
+version = "0.5.12"
 description = "Voilà turns Jupyter notebooks into standalone web applications"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.10"
 groups = ["dev"]
 files = [
-    {file = "voila-0.5.11-py3-none-any.whl", hash = "sha256:cfae6f64d68ff7cb666cb3abaff06451e841c026fc650a7f0e6298c6fea1609a"},
-    {file = "voila-0.5.11.tar.gz", hash = "sha256:12057fe409298024a104b75bbb1050576b89f42fe6e8fead8f5d1f79ace66b19"},
+    {file = "voila-0.5.12-py3-none-any.whl", hash = "sha256:31bc3d58c286910e05be9769e63125e5226215c1dc7b907768bb7c66828b2af0"},
+    {file = "voila-0.5.12.tar.gz", hash = "sha256:33d81577775e22d85fad989e9d115774f3cacf1ec21a92d81e9cf3c2a7d5bc3a"},
 ]
 
 [package.dependencies]
