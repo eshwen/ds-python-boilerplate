@@ -27,7 +27,7 @@ repos:
       - id: auto-walrus
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.15.12'  # Should match poetry.lock
+    rev: 'v0.15.15'  # Should match poetry.lock
     hooks:
       - id: ruff-check
         args: [ --fix, --exit-non-zero-on-fix ]
@@ -42,7 +42,7 @@ repos:
           - 'pydantic~=2.11.7'  # Should match poetry.lock
 
   - repo: https://github.com/python-poetry/poetry
-    rev: '2.4.0'
+    rev: '2.4.1'
     hooks:
       - id: poetry-check
       - id: poetry-lock
