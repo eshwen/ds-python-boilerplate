@@ -77,7 +77,7 @@ mkdocstrings = { version = "^1.0.4", extras = ["python"] }
 termynal = "^0.14.0"
 mkdocs-api-autonav = "^0.4.0"
 mkdocs-section-index = "^0.3.12"
-mike = "^2.0.0"
+mike = "^2.2.0"
 
 [tool.mypy]
 python_version = "3.10"
