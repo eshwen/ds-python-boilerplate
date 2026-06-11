@@ -10,7 +10,7 @@ Unit testing is very straightforward with [pytest]. The configuration is stored 
 Run with
 
 ```shell
-pytest my_project/
+pytest
 ```
 
 To get a nice coverage report (instead of the summary as part of the default configuration), run with

@@ -13,13 +13,13 @@ like `flake8`, `isort` (automatic import sorting), and `pydocstyle` (docstring c
 To only check your code, run
 
 ```shell
-ruff check my_project/ tests/
+ruff check src/ tests/
 ```
 
 To automatically fix any issues, run
 
 ```shell
-ruff check --fix my_project/ tests/
+ruff check --fix src/ tests/
 ```
 
 Ruff now contains a formatter to replace [Black]. It ensures consistently-formatted, highly readable code.
@@ -27,13 +27,13 @@ Ruff now contains a formatter to replace [Black]. It ensures consistently-format
 To automatically format your code, run
 
 ```shell
-ruff format my_project/ tests/
+ruff format src/ tests/
 ```
 
 To instead just show what `ruff` would change, run
 
 ```shell
-ruff format --diff my_project/ tests/
+ruff format --diff src/ tests/
 ```
 
 ### PyCharm integration
@@ -52,7 +52,7 @@ type hints are correct).
 Run with
 
 ```shell
-mypy my_project/
+mypy src/
 ```
 
 ### Stubs
@@ -96,7 +96,7 @@ The [.pre-commit-config.yaml] file contains hooks to run
 - Automatic use of the walrus operator
 - `ruff` for linting and formatting (fixes fixable issues)
 - `mypy` type-hinting errors
-- `poetry` dependency status (`poetry.lock` and requirements files are up-to-date)
+- `uv` lock state (`uv.lock` is up-to-date, and the project environment is synced)
 
 To use pre-commit, install the hooks with
 

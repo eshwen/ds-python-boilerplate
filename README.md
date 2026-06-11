@@ -5,7 +5,7 @@
 [![Coverage badge]](https://codecov.io/gh/eshwen/ds-python-boilerplate)
 
 [![Python badge]](https://python.org)
-[![Poetry badge]](https://python-poetry.org/)
+[![uv badge]](https://github.com/astral-sh/uv)
 
 [![Ruff badge]](https://github.com/astral-sh/ruff)
 [![Checked with mypy badge]](http://mypy-lang.org/)
@@ -27,7 +27,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 
 [Python badge]: https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue?logo=Python&logoColor=yellow&link=https%3A%2F%2Fwww.python.org%2F
 
-[Poetry badge]: https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json
+[uv badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json
 
 [Ruff badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
 

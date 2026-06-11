@@ -11,7 +11,7 @@ nav:
       - See Also: see-also.md
   - Getting Started:
       - Installation: getting-started/getting-started.md
-      - Poetry: getting-started/poetry.md
+      - uv: getting-started/uv.md
   - Tooling:
       - Quality: tooling/quality.md
       - Testing: tooling/testing.md
@@ -36,7 +36,7 @@ plugins:
   - autorefs
   - termynal
   - api-autonav:
-      modules: [ 'my_project' ]
+      modules: [ 'src/my_project' ]
       nav_section_title: Code Reference
   - section-index
   - mike:
