@@ -2290,7 +2290,7 @@ dependencies = [
     { name = "colorama" },
     { name = "fastapi" },
     { name = "matplotlib" },
-    { name = "pandas", extra = ["computation", "excel", "performance", "sql-other"] },
+    { name = "pandas", extra = ["computation", "excel", "performance", "plot", "sql-other"] },
     { name = "pandera" },
     { name = "plotly" },
     { name = "polars" },
@@ -2353,7 +2353,7 @@ requires-dist = [
     { name = "colorama" },
     { name = "fastapi", specifier = ">=0.136.1,<1" },
     { name = "matplotlib" },
-    { name = "pandas", extras = ["performance", "visualisation", "computation", "excel", "sql-other"], specifier = ">=2.3.3,<3" },
+    { name = "pandas", extras = ["performance", "plot", "computation", "excel", "sql-other"], specifier = ">=2.3.3,<3" },
     { name = "pandera", specifier = ">=0.31.1,<1" },
     { name = "plotly" },
     { name = "polars", specifier = ">=1.40.1,<2" },
@@ -3023,6 +3023,9 @@ performance = [
     { name = "bottleneck" },
     { name = "numba" },
     { name = "numexpr" },
+]
+plot = [
+    { name = "matplotlib" },
 ]
 sql-other = [
     { name = "adbc-driver-postgresql" },
