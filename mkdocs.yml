@@ -36,7 +36,7 @@ plugins:
   - autorefs
   - termynal
   - api-autonav:
-      modules: [ 'my_project' ]
+      modules: [ 'src/my_project' ]
       nav_section_title: Code Reference
   - section-index
   - mike:
