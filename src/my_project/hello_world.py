@@ -42,5 +42,6 @@ def do_a_dataframe_thing(df: pd.DataFrame, arr: np.ndarray | None = None) -> pd.
 
     """
     if arr is not None and arr.size > 0:
-        return df[arr]
+        result: pd.DataFrame = df.loc[arr]
+        return result
     return df
