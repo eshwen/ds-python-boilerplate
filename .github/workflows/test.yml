@@ -25,11 +25,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Pin Python version for this matrix entry
+        run: echo "${{ matrix.python-version }}" > .python-version
+
       - name: Test
-        uses: eshwen/adrenaline/poetry/test-python@v0.8.0
+        uses: eshwen/adrenaline/uv/test-python@v0.8.2
         with:
-          python-version: ${{ matrix.python-version }}
-          pkg-name: 'my_project/'
+          python-version-file: .python-version
+          pkg-name: my_project
           args: '--cov-report xml'
 
       - name: Upload coverage report to Codecov
@@ -40,5 +43,5 @@ jobs:
       - name: Test docs
         if: always()
         run: |
-          poetry run mkdocs build --strict
+          uv run mkdocs build --strict
         shell: bash
