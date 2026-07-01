@@ -59,7 +59,7 @@ type = [
     "pandera[mypy]",
 ]
 test = [
-    "pytest>=9.0.3,<10",
+    "pytest>=9.1.1,<10",
     "pytest-asyncio",
     "pytest-mock",
     "pytest-cov",
