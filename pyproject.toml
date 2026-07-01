@@ -30,7 +30,7 @@ dependencies = [
     # APIs
     "fastapi>=0.136.1,<1",
     "uvicorn",
-    "requests>=2.33.0,<3",
+    "requests>=2.34.2,<3",
     # Stats
     "statsmodels",
     # Visualisation
