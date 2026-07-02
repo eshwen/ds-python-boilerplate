@@ -2378,7 +2378,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.13.3,<3" },
     { name = "pydantic-settings", specifier = ">=2.14.2,<3" },
     { name = "pyyaml" },
-    { name = "requests", specifier = ">=2.33.0,<3" },
+    { name = "requests", specifier = ">=2.34.2,<3" },
     { name = "scikit-learn" },
     { name = "seaborn" },
     { name = "sqlalchemy", specifier = ">=2.0.49,<3" },
