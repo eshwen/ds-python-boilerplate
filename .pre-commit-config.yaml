@@ -38,11 +38,11 @@ repos:
     hooks:
       - id: mypy
         additional_dependencies:
-          - 'pandera[mypy]~=0.31.1'  # Should match uv.lock
+          - 'pandera[mypy]~=0.32.1'  # Should match uv.lock
           - 'pydantic~=2.13.4'  # Should match uv.lock
 
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.11.19
+    rev: 0.11.26
     hooks:
       - id: uv-lock
       - id: uv-sync
