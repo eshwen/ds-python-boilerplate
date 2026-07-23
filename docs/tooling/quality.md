@@ -44,31 +44,25 @@ You can also install the [Ruff plugin for PyCharm] to run it automatically on fi
 To aid in documentation, in PyCharm go to **Preferences** | **Tools** | **Python Integrated Tools**. Under
 **Docstrings**, select the docstring format as Google.
 
-## Mypy
+## pyrefly
 
-[Mypy] is a static type checker, examining object relationships and ensuring that they're used correctly (i.e., that
-type hints are correct).
+[pyrefly] is a fast static type checker written in Rust (by Meta). It examines object relationships and ensures that
+they're used correctly (i.e., that type hints are correct). It's configured under `[tool.pyrefly]` in [pyproject.toml].
 
 Run with
 
 ```shell
-mypy src/
+pyrefly check src/
 ```
 
 ### Stubs
 
 Some third-party libraries do not have type hints. In these cases, we can use stubs. These are _`.pyi` files_ that
 provide (among other things) a statically-typed skeleton for the library. These should be automatically picked up by
-Mypy, and should complain if the necessary stubs aren't installed. Further information on stubs can be found in the
-Mypy docs: <https://mypy.readthedocs.io/en/stable/stubs.html>.
+pyrefly, and it should complain if the necessary stubs aren't installed.
 
-If you need to install any stub packages, add them to the developer dependencies. You may also need to add them to the
-Mypy hook if you're using pre-commit (see [.pre-commit-config.yaml]).
-
-??? tip
-
-    Run the hook first, and see if it complains about any missing stubs. If you include a Mypy plugin (like
-    `pydantic.mypy`) under `[tool.mypy]` in [pyproject.toml], you will likely need to add the package for the hook.
+If you need to install any stub packages, add them to the developer dependencies (the `type` group in
+[pyproject.toml]).
 
 ### Typing extensions
 
@@ -95,7 +89,7 @@ The [.pre-commit-config.yaml] file contains hooks to run
 - built-in `pre-commit` checks
 - Automatic use of the walrus operator
 - `ruff` for linting and formatting (fixes fixable issues)
-- `mypy` type-hinting errors
+- `pyrefly` type-hinting errors
 - `uv` lock state (`uv.lock` is up-to-date, and the project environment is synced)
 
 To use pre-commit, install the hooks with
@@ -119,7 +113,7 @@ pre-commit run -a
 
 [Black]: https://black.readthedocs.io/en/stable/index.html
 
-[Mypy]: https://mypy.readthedocs.io/en/stable/
+[pyrefly]: https://pyrefly.org/
 
 [.pre-commit-config.yaml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/.pre-commit-config.yaml
 
