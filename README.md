@@ -8,7 +8,7 @@
 [![uv badge]](https://github.com/astral-sh/uv)
 
 [![Ruff badge]](https://github.com/astral-sh/ruff)
-[![Checked with mypy badge]](http://mypy-lang.org/)
+[![pyrefly badge]](https://github.com/facebook/pyrefly)
 [![Pytest badge]](https://docs.pytest.org/en/stable/)
 [![Built with Material for MkDocs]](https://squidfunk.github.io/mkdocs-material/)
 [![Pre-commit badge]](https://pre-commit.com/)
@@ -31,7 +31,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 
 [Ruff badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
 
-[Checked with mypy badge]: http://www.mypy-lang.org/static/mypy_badge.svg
+[pyrefly badge]: https://img.shields.io/endpoint?url=https://pyrefly.org/badge.json
 
 [Pre-commit badge]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
 

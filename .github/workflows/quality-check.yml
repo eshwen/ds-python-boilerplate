@@ -17,6 +17,7 @@ permissions:
 
 jobs:
   lint:
-    uses: eshwen/adrenaline/.github/workflows/python-quality-check-uv.yml@v0.8.2
+    uses: eshwen/adrenaline/.github/workflows/python-quality-check-uv.yml@v0.9.0
     with:
       path: src/
+      type-checker: pyrefly
