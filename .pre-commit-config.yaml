@@ -33,13 +33,11 @@ repos:
         args: [ --fix, --exit-non-zero-on-fix ]
       - id: ruff-format
 
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v2.1.0  # Should match uv.lock
+  - repo: https://github.com/facebook/pyrefly-pre-commit
+    rev: 1.1.1  # Note: this is the version of the pre-commit hook, NOT the pyrefly version used for type checking
     hooks:
-      - id: mypy
-        additional_dependencies:
-          - 'pandera[mypy]~=0.32.1'  # Should match uv.lock
-          - 'pydantic~=2.13.4'  # Should match uv.lock
+      - id: pyrefly-check
+        pass_filenames: false
 
   - repo: https://github.com/astral-sh/uv-pre-commit
     rev: 0.11.26
