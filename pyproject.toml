@@ -50,7 +50,7 @@ dev = [
     { include-group = "jupyter" },
 ]
 lint = [
-    "pre-commit>=4.6.0,<5",
+    "pre-commit>=4.6.2,<5",
     "ruff>=0.16.0,<0.17",
 ]
 type = [
