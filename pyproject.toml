@@ -22,7 +22,7 @@ dependencies = [
     #"tensorflow-macos",
     "scikit-learn",
     # Data validation
-    "pydantic>=2.13.3,<3",
+    "pydantic>=2.13.5,<3",
     "pydantic-settings>=2.14.2,<3",
     "pandera>=0.32.1,<1",
     # SQL databases
