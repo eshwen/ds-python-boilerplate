@@ -87,7 +87,7 @@ preset = "strict"
 project-includes = ["src"]
 project-excludes = ["**/tests/"]
 python-interpreter-path = ".venv/bin/python3"
-python-version = "3.10"
+python-version = "3.11"
 
 [tool.pyrefly.errors]
 implicit-any-type-argument = "ignore"
