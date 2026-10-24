@@ -11,7 +11,7 @@ authors = [
     { name = "Eshwen Bhal, PhD", email = "milanman.eshb@gmail.com" },
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     # Terminal colours
     "colorama",
