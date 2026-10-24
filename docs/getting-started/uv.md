@@ -28,7 +28,7 @@ uv can install and manage Python interpreters for you, so there's no need for a 
 the Python version this project supports:
 
 ```shell
-uv python install 3.10  # (1)
+uv python install 3.11  # (1)
 ```
 
 1. This project also supports 3.11 - 3.14 if you want to use those instead.
@@ -36,7 +36,7 @@ uv python install 3.10  # (1)
 To pin a specific Python version for the project, create a `.python-version` file in the project root:
 
 ```shell
-uv python pin 3.10
+uv python pin 3.11
 ```
 
 uv will then use that version whenever it creates or syncs the virtualenv.

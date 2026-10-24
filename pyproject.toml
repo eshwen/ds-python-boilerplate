@@ -1,5 +1,5 @@
 [build-system]
-requires = ["uv_build>=0.12.0,<0.13"]
+requires = ["uv_build>=0.12.0,<0.14"]
 build-backend = "uv_build"
 
 
@@ -11,13 +11,13 @@ authors = [
     { name = "Eshwen Bhal, PhD", email = "milanman.eshb@gmail.com" },
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     # Terminal colours
     "colorama",
     # Data processing
     "pandas[performance,plot,computation,excel,sql-other]>=2.3.3,<3",
-    "polars>=1.42.1,<2",
+    "polars>=1.44.1,<2",
     # Machine learning
     #"tensorflow-macos",
     "scikit-learn",
@@ -69,7 +69,7 @@ jupyter = [
     "voila",
 ]
 docs = [
-    "mkdocs-material>=9.7.6,<10",
+    "mkdocs-material>=9.7.7,<10",
     "mkdocstrings[python]>=1.0.4,<2",
     "termynal>=0.14.0,<0.15",
     "mkdocs-api-autonav>=0.4.0,<0.5",
@@ -79,7 +79,7 @@ docs = [
 
 
 [tool.uv]
-required-version = ">=0.12.0,<0.13"
+required-version = ">=0.12.0,<0.14"
 
 
 [tool.pyrefly]
@@ -87,7 +87,7 @@ preset = "strict"
 project-includes = ["src"]
 project-excludes = ["**/tests/"]
 python-interpreter-path = ".venv/bin/python3"
-python-version = "3.10"
+python-version = "3.11"
 
 [tool.pyrefly.errors]
 implicit-any-type-argument = "ignore"
@@ -98,7 +98,7 @@ unannotated-return = "error"
 
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py311"
 line-length = 120
 
 extend-exclude = [
