@@ -28,6 +28,8 @@ uv run mkdocs build --strict   # CI runs this; warnings fail the build
 uv run mkdocs serve            # local preview
 ```
 
+A Claude Code `PreToolUse` hook (`.claude/hooks/check-before-commit.sh`) blocks any `git commit` until `pre-commit run` (staged files) and `pytest` pass.
+
 ## Conventions enforced by tooling
 
 - **Docstrings**: Google style, checked by ruff's `D` rules (required on public functions/modules in `src/`; relaxed in `tests/` and `__init__.py`). Docstrings feed the generated API reference, so cross-references like `[pandas.DataFrame][]` resolve via the mkdocstrings inventories in `mkdocs.yml` — keep them valid or `mkdocs build --strict` fails.
