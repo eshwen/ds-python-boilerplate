@@ -16,7 +16,7 @@ dependencies = [
     # Terminal colours
     "colorama",
     # Data processing
-    "pandas[performance,plot,computation,excel,sql-other]>=2.3.3,<3",
+    "pandas[excel]>=3.0.0,<4",
     "polars>=1.44.1,<2",
     # Machine learning
     #"tensorflow-macos",
