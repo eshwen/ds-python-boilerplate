@@ -1775,7 +1775,7 @@ dev = [
     { name = "jupyter" },
     { name = "jupyterlab" },
     { name = "pandas-stubs", specifier = ">=2.3.3" },
-    { name = "pre-commit", specifier = ">=4.6.2,<5" },
+    { name = "pre-commit", specifier = ">=4.7.0,<5" },
     { name = "pyrefly", specifier = ">=1.1.1,<2" },
     { name = "pytest", specifier = ">=9.1.1,<10" },
     { name = "pytest-asyncio" },
@@ -1798,7 +1798,7 @@ jupyter = [
     { name = "voila" },
 ]
 lint = [
-    { name = "pre-commit", specifier = ">=4.6.2,<5" },
+    { name = "pre-commit", specifier = ">=4.7.0,<5" },
     { name = "ruff", specifier = ">=0.16.0,<0.17" },
 ]
 test = [
