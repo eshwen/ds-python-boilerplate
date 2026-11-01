@@ -1755,7 +1755,7 @@ requires-dist = [
     { name = "colorama" },
     { name = "fastapi", specifier = ">=0.141.1,<1" },
     { name = "matplotlib" },
-    { name = "pandas", extras = ["excel"], specifier = ">=3.0.0,<4" },
+    { name = "pandas", extras = ["excel"], specifier = ">=3.1.0,<4" },
     { name = "pandera", specifier = ">=0.32.1,<1" },
     { name = "plotly" },
     { name = "polars", specifier = ">2.0.0,<3" },
