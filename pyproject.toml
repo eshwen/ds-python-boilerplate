@@ -17,7 +17,7 @@ dependencies = [
     "colorama",
     # Data processing
     "pandas[excel]>=3.0.0,<4",
-    "polars>=1.44.1,<2",
+    "polars>2.0.0,<3",
     # Machine learning
     #"tensorflow-macos",
     "scikit-learn",
