@@ -31,7 +31,7 @@ the Python version this project supports:
 uv python install 3.11  # (1)
 ```
 
-1. This project also supports 3.11 - 3.14 if you want to use those instead.
+1. This project also supports 3.12 - 3.15 if you want to use those instead.
 
 To pin a specific Python version for the project, create a `.python-version` file in the project root:
 
