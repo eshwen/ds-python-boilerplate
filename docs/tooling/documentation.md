@@ -67,6 +67,12 @@ Hello world!
 
 - [mike]: deploys versioned docs to the `gh-pages` branch, and adds a version selector to the site
 
+The `markdown_extensions` section of [mkdocs.yml] turns on the Markdown features Material supports, like admonitions,
+content tabs, code annotations and icons. See the [Material reference] for how to use them. One to know about is
+`pymdownx.snippets`: `docs/index.md` uses it to pull in `README.md`, so the README is also the docs homepage.
+
+[Material reference]: https://squidfunk.github.io/mkdocs-material/reference/
+
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
 [mkdocs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml
