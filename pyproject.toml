@@ -1,5 +1,5 @@
 [build-system]
-requires = ["uv_build>=0.12.0,<0.14"]
+requires = ["uv_build>=0.13.6,<0.14"]
 build-backend = "uv_build"
 
 
@@ -16,8 +16,8 @@ dependencies = [
     # Terminal colours
     "colorama",
     # Data processing
-    "pandas[performance,plot,computation,excel,sql-other]>=2.3.3,<3",
-    "polars>=1.44.1,<2",
+    "pandas[excel]>=3.0.0,<4",
+    "polars>2.0.0,<3",
     # Machine learning
     #"tensorflow-macos",
     "scikit-learn",
@@ -50,7 +50,7 @@ dev = [
     { include-group = "jupyter" },
 ]
 lint = [
-    "pre-commit>=4.6.2,<5",
+    "pre-commit>=4.7.0,<5",
     "ruff>=0.17.3,<0.18",
 ]
 type = [
