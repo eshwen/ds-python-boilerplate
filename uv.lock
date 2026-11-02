@@ -3955,7 +3955,7 @@ wheels = [
 
 [[package]]
 name = "voila"
-version = "0.5.12"
+version = "0.5.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jupyter-client" },
@@ -3967,9 +3967,9 @@ dependencies = [
     { name = "traitlets" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6f/da/478c53170ec881727dc9061ac0e0f108e594027744522da72721e6384cc1/voila-0.5.12.tar.gz", hash = "sha256:33d81577775e22d85fad989e9d115774f3cacf1ec21a92d81e9cf3c2a7d5bc3a", size = 5345362, upload-time = "2026-04-22T09:11:51.468Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/d0/b9deb400465f944518781bf6f08dace6e410fea0ca002263b2021428799b/voila-0.5.13.tar.gz", hash = "sha256:e7a01973b085888df9a0bf50207fc252f700675011a4d053ab1f94be219b55a7", size = 5397879, upload-time = "2026-09-04T13:36:24.481Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/5b/97ff9ac0890e135c69e8a3178532d8b0dd8ced3d50ec6f74c227508308d1/voila-0.5.12-py3-none-any.whl", hash = "sha256:31bc3d58c286910e05be9769e63125e5226215c1dc7b907768bb7c66828b2af0", size = 4511971, upload-time = "2026-04-22T09:11:48.702Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/42/0bd99be672149877668f80de1c4f66de204dfa7bd5f737b9bec495240c9e/voila-0.5.13-py3-none-any.whl", hash = "sha256:75dc515f0f814182088317923c2f15d22a5355766bb5eb04ae2370ce2e2f3652", size = 4563905, upload-time = "2026-09-04T13:36:21.811Z" },
 ]
 
 [[package]]
