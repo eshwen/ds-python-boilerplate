@@ -13,6 +13,8 @@ Run with
 uv run pytest
 ```
 
+Async tests run without a decorator, since `asyncio_mode = "auto"` is set for `pytest-asyncio`.
+
 Coverage is measured on every run (with branch coverage), and the run fails if total coverage drops below 90%. The
 threshold is set by `fail_under` under `[tool.coverage.report]` in [pyproject.toml].
 

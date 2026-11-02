@@ -48,11 +48,12 @@ To aid in documentation, in PyCharm go to **Preferences** | **Tools** | **Python
 
 [pyrefly] is a fast static type checker written in Rust (by Meta). It examines object relationships and ensures that
 they're used correctly (i.e., that type hints are correct). It's configured under `[tool.pyrefly]` in [pyproject.toml].
+It uses the `strict` preset on `src/` only; tests aren't type checked.
 
 Run with
 
 ```shell
-pyrefly check src/
+pyrefly check
 ```
 
 ### Stubs

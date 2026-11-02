@@ -19,6 +19,17 @@
 
 Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.
 
+## Using this template
+
+1. Rename the package. `my_project` appears in
+    - `src/my_project/` and the test imports
+    - `pyproject.toml`: `[project].name` and `[tool.coverage.run].source`
+    - `mkdocs.yml`: the `api-autonav` plugin's `modules`
+    - `.github/workflows/test.yml`: `pkg-name`
+2. Prune the runtime `dependencies` in `pyproject.toml`. They're a starter set covering common data science tasks, so
+   remove what you don't need with `uv remove <package>`.
+3. Set up the repository for the CI pipelines (see the Pipelines page of the docs).
+
 [Documentation badge]: https://img.shields.io/badge/Documentation-%20GitHub-brightgreen?logo=refinedgithub
 
 [CodeQL badge]: https://github.com/eshwen/ds-python-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg
