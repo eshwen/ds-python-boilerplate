@@ -805,6 +805,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -821,6 +839,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-for-a-new-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup for a new repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1008,6 +1078,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-for-a-new-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup for a new repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1039,35 +1150,66 @@
 <tbody>
 <tr>
 <td>Check code with <code>ruff</code> and <code>pyrefly</code></td>
-<td>On PR creation and subsequent pushes</td>
+<td>On PRs to <code>main</code> and pushes to <code>main</code></td>
 <td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/quality-check.yml">quality-check.yml</a></td>
 </tr>
 <tr>
-<td>Unit test with <code>pytest</code></td>
-<td>On PR creation and subsequent pushes</td>
+<td>Unit test with <code>pytest</code> on Python 3.11-3.15, and build docs</td>
+<td>On PRs to <code>main</code> and pushes to <code>main</code></td>
 <td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/test.yml">test.yml</a></td>
 </tr>
 <tr>
-<td>Build the API documentation</td>
-<td>On the creation of a new release</td>
-<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a></td>
+<td>Scan for security vulnerabilities with CodeQL</td>
+<td>On PRs, pushes to <code>main</code>, and weekly</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/codeql-analysis.yml">codeql-analysis.yml</a></td>
 </tr>
 <tr>
-<td>Check for dependency updates and vulnerabilities</td>
-<td>On a schedule (check the file)</td>
-<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml">dependabot.yml</a></td>
+<td>Label PRs for the release notes</td>
+<td>On PR creation and subsequent pushes</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter-label.yml">release-drafter-label.yml</a></td>
 </tr>
 <tr>
 <td>Update the draft of the next release</td>
 <td>On pushes to <code>main</code></td>
-<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter.yml">release-drafter.yml</a></td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/release-drafter-draft.yml">release-drafter-draft.yml</a></td>
+</tr>
+<tr>
+<td>Deploy the versioned docs to GitHub Pages</td>
+<td>On publishing a release</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a></td>
+</tr>
+<tr>
+<td>Open PRs for updates to uv, GitHub Actions, and pre-commit</td>
+<td>Monthly</td>
+<td><a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/dependabot.yml">dependabot.yml</a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="shared-actions">Shared actions<a class="headerlink" href="#shared-actions" title="Permanent link">⚓︎</a></h2>
+<p>The quality and test pipelines don't define their steps here. They call a reusable workflow and composite actions from
+<a href="https://github.com/eshwen/adrenaline">eshwen/adrenaline</a>, so the same steps can be shared between projects:</p>
+<ul>
+<li><code>uv/builder</code>: sets up Python and uv, then installs the project from <code>uv.lock</code> with <code>uv sync --locked</code></li>
+<li><code>python-quality-check-uv.yml</code>: runs <code>ruff check</code>, <code>ruff format --diff</code> and <code>pyrefly check</code> on <code>src/</code></li>
+<li><code>uv/test-python</code>: runs <code>pytest</code> with coverage for the package given by <code>pkg-name</code></li>
+</ul>
+<p>They're pinned to a release tag, which Dependabot bumps. If you rename the package, update <code>pkg-name</code> in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/test.yml">test.yml</a>.</p>
+<h2 id="releases">Releases<a class="headerlink" href="#releases" title="Permanent link">⚓︎</a></h2>
+<p><a href="https://github.com/release-drafter/release-drafter">Release Drafter</a> keeps a draft release up to date as PRs are merged. PRs are labelled automatically from their branch
+name, title and changed files (see <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/release-drafter-config.yml">release-drafter-config.yml</a>), and the labels decide</p>
+<ul>
+<li>which section of the release notes a PR appears in, e.g., <code>bug</code> under "Bug Fixes"</li>
+<li>the next version number: a <code>major</code> or <code>minor</code> label bumps that part of the version; anything else is a patch</li>
+</ul>
+<p>Publishing the draft triggers <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a>, which deploys the docs with mike as <code>&lt;major&gt;.&lt;minor&gt;</code>, aliased to <code>latest</code>.</p>
+<h2 id="setup-for-a-new-repository">Setup for a new repository<a class="headerlink" href="#setup-for-a-new-repository" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Add a <code>CODECOV_TOKEN</code> repository secret for the coverage upload in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/test.yml">test.yml</a></li>
+<li>Create a <code>gh-pages</code> branch and set it as the GitHub Pages source. The docs deployment pushes to this branch</li>
+</ul>
 <details class="note">
 <summary>TODO</summary>
 <ul>
-<li>Add CodeQL pipeline.</li>
 <li>Flesh out dependabot more (package sets, etc.)</li>
 </ul>
 </details>

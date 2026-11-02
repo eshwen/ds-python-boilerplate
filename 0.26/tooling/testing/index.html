@@ -1101,6 +1101,7 @@ and break other functionality if coverage is not appropriate.</p>
 <p>Run with</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>uv<span class="w"> </span>run<span class="w"> </span>pytest
 </code></pre></div>
+<p>Async tests run without a decorator, since <code>asyncio_mode = "auto"</code> is set for <code>pytest-asyncio</code>.</p>
 <p>Coverage is measured on every run (with branch coverage), and the run fails if total coverage drops below 90%. The
 threshold is set by <code>fail_under</code> under <code>[tool.coverage.report]</code> in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
 <p>To run a subset of tests, select them by keyword with <code>-k</code>. Add <code>--no-cov</code> so the partial run doesn't fail the coverage

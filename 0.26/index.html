@@ -433,6 +433,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homepage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -449,6 +467,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-this-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using this template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1006,6 +1054,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-this-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using this template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1039,6 +1106,19 @@
 <a href="https://pola.rs"><img alt="Polars badge" src="https://img.shields.io/badge/polars-0075FF?logo=polars&amp;logoColor=white&amp;labelColor=grey" /></a>
 <a href="https://pydantic.dev"><img alt="Pydantic v2" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pydantic/pydantic/main/docs/badge/v2.json" /></a></p>
 <p>Boilerplate for data science projects in Python. Check out the docs by clicking the badge above.</p>
+<h2 id="using-this-template">Using this template<a class="headerlink" href="#using-this-template" title="Permanent link">⚓︎</a></h2>
+<ol>
+<li>Rename the package. <code>my_project</code> appears in<ul>
+<li><code>src/my_project/</code> and the test imports</li>
+<li><code>pyproject.toml</code>: <code>[project].name</code> and <code>[tool.coverage.run].source</code></li>
+<li><code>mkdocs.yml</code>: the <code>api-autonav</code> plugin's <code>modules</code></li>
+<li><code>.github/workflows/test.yml</code>: <code>pkg-name</code></li>
+</ul>
+</li>
+<li>Prune the runtime <code>dependencies</code> in <code>pyproject.toml</code>. They're a starter set covering common data science tasks, so
+   remove what you don't need with <code>uv remove &lt;package&gt;</code>.</li>
+<li>Set up the repository for the CI pipelines (see the Pipelines page of the docs).</li>
+</ol>
 
 
 

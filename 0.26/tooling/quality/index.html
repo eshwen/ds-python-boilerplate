@@ -1254,9 +1254,10 @@ like <code>flake8</code>, <code>isort</code> (automatic import sorting), and <co
 <strong>Docstrings</strong>, select the docstring format as Google.</p>
 <h2 id="pyrefly">pyrefly<a class="headerlink" href="#pyrefly" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://pyrefly.org/">pyrefly</a> is a fast static type checker written in Rust (by Meta). It examines object relationships and ensures that
-they're used correctly (i.e., that type hints are correct). It's configured under <code>[tool.pyrefly]</code> in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.</p>
+they're used correctly (i.e., that type hints are correct). It's configured under <code>[tool.pyrefly]</code> in <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml">pyproject.toml</a>.
+It uses the <code>strict</code> preset on <code>src/</code> only; tests aren't type checked.</p>
 <p>Run with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>pyrefly<span class="w"> </span>check<span class="w"> </span>src/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>pyrefly<span class="w"> </span>check
 </code></pre></div>
 <h3 id="stubs">Stubs<a class="headerlink" href="#stubs" title="Permanent link">⚓︎</a></h3>
 <p>Some third-party libraries do not have type hints. In these cases, we can use stubs. These are <em><code>.pyi</code> files</em> that
