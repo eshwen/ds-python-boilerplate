@@ -6,3 +6,24 @@
 .md-content code.doc-symbol-parameter::after { content: "param"; }
 .md-content code.doc-symbol-type_alias::after { content: "type"; }
 .md-content code.doc-symbol-type_parameter::after { content: "type-param"; }
+
+/*
+ * Scroll-driven entrance animations. Browsers without animation-timeline just show the content.
+ * Admonitions are only animated as top-level blocks, which skips the API reference's many nested ones.
+ */
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+        .md-typeset > :is(.admonition, details) {
+            animation: fade-up linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 60%;
+        }
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+}
