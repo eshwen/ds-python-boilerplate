@@ -33,7 +33,9 @@ They're pinned to a release tag, which Dependabot bumps. If you rename the packa
 name, title and changed files (see [release-drafter-config.yml]), and the labels decide
 
 - which section of the release notes a PR appears in, e.g., `bug` under "Bug Fixes"
-- the next version number: a `major` or `minor` label bumps that part of the version; anything else is a patch
+- the next version number: an `enhancement` label (applied to `feature/` branches) bumps the minor version; anything
+  else is a patch. A `major` label would bump the major version, but the repository doesn't define one, so that stays
+  a deliberate manual step
 
 Publishing the draft triggers [api-docs.yml], which deploys the docs with mike as `<major>.<minor>`, aliased to `latest`.
 

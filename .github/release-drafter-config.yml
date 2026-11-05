@@ -27,7 +27,7 @@ version-resolver:
       - 'major'
   minor:
     labels:
-      - 'minor'
+      - 'enhancement'
   patch:
     labels:
       - 'patch'
