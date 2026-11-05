@@ -3,6 +3,7 @@ site_name = "My Project"
 site_url = "https://eshwen.github.io/ds-python-boilerplate/"
 repo_url = "https://github.com/eshwen/ds-python-boilerplate"
 repo_name = "eshwen/ds-python-boilerplate"
+edit_uri = "blob/main/docs/"
 extra_css = ["css/extra.css", "css/code_select.css"]
 
 nav = [
@@ -75,6 +76,8 @@ features = [
     "navigation.tabs",
     "navigation.tracking",
     "navigation.sections",
+    "navigation.indexes",
+    "content.action.edit",
     "content.code.copy",
     "content.code.annotate",
     "content.tabs.link",
