@@ -3,7 +3,7 @@ site_name = "My Project"
 site_url = "https://eshwen.github.io/ds-python-boilerplate/"
 repo_url = "https://github.com/eshwen/ds-python-boilerplate"
 repo_name = "eshwen/ds-python-boilerplate"
-extra_css = ["css/code_select.css"]
+extra_css = ["css/extra.css", "css/code_select.css"]
 
 nav = [
     { "Home" = [
@@ -38,6 +38,7 @@ name = "Eshwen Bhal on LinkedIn"
 provider = "mike"
 
 [project.plugins.mkdocstrings]
+enable_inventory = true
 default_handler = "python"
 
 [project.plugins.mkdocstrings.handlers.python]
@@ -51,6 +52,10 @@ inventories = [
 
 [project.plugins.mkdocstrings.handlers.python.options]
 show_source = true
+show_symbol_type_heading = true
+docstring_section_style = "table"
+modernize_annotations = true
+filters = ["!^_"]  # Hide private members and magic methods
 
 [project.plugins.search]
 

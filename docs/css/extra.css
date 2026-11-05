@@ -1,0 +1,8 @@
+/* Zensical spells out symbol types in page content; use mkdocstrings' own abbreviations instead */
+.md-content code.doc-symbol-attribute::after { content: "attr"; }
+.md-content code.doc-symbol-function::after { content: "func"; }
+.md-content code.doc-symbol-method::after { content: "meth"; }
+.md-content code.doc-symbol-module::after { content: "mod"; }
+.md-content code.doc-symbol-parameter::after { content: "param"; }
+.md-content code.doc-symbol-type_alias::after { content: "type"; }
+.md-content code.doc-symbol-type_parameter::after { content: "type-param"; }

@@ -45,9 +45,11 @@ All plugins are installed as Python packages in the `docs` group of [pyproject.t
 of [zensical.toml].
 
 - [mkdocstrings]: generates API documentation from docstrings, like Sphinx's `autodoc`
-    - Uses the Python handler, with `show_source` enabled
+    - Uses the Python handler, showing each object's source and type, with docstring sections as tables. Private
+      members and magic methods are hidden
     - Loads object inventories for Python, NumPy, pandas, SQLAlchemy and Polars, so docstrings can link to external
       objects, e.g., `[pandas.DataFrame][]`
+    - Publishes this project's own `objects.inv`, so other projects' docs can link to it
 - [mkdocs-autorefs]: resolves cross-references between pages and to API objects (installed as a dependency of
   mkdocstrings)
 - [mkdocs-api-autonav]: automatically generates an API page for every module in `src/my_project` and adds them to the
