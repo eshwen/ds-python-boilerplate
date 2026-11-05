@@ -1,3 +1,7 @@
+---
+icon: lucide/workflow
+---
+
 # Pipelines
 
 Several pipelines are included to execute automatically on various triggers:

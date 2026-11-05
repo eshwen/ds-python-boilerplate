@@ -1,3 +1,7 @@
+---
+icon: lucide/package
+---
+
 # uv
 
 ## Install uv

@@ -1,3 +1,7 @@
+---
+icon: lucide/link
+---
+
 # See Also
 
 Here are some shameless plugs of useful and/or interesting things I've made:

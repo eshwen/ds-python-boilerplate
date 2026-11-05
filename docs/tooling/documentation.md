@@ -1,3 +1,7 @@
+---
+icon: lucide/book-open
+---
+
 # Documentation
 
 This repository uses Google-Style for docstrings. They are checked automatically by `ruff`. See [quality](quality.md)

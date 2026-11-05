@@ -1,3 +1,7 @@
+---
+icon: lucide/shield-check
+---
+
 # Quality
 
 Quality checks are important for usable, readable code. They're often afterthoughts, but it's easy to configure and

@@ -1,3 +1,7 @@
+---
+icon: lucide/flask-conical
+---
+
 # Testing
 
 Testing is an important part of any software development to ensure everything works intended. Critical code may change

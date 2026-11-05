@@ -1,3 +1,7 @@
+---
+icon: lucide/lightbulb
+---
+
 # Helpful articles
 
 - Python versions in
