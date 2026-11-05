@@ -93,6 +93,8 @@ toggle.name = "Switch to light mode"
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "indigo"
+accent = "deep orange"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
@@ -100,6 +102,8 @@ toggle.name = "Switch to dark mode"
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "blue"
+accent = "orange"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
