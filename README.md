@@ -10,7 +10,7 @@
 [![Ruff badge]](https://github.com/astral-sh/ruff)
 [![pyrefly badge]](https://github.com/facebook/pyrefly)
 [![Pytest badge]](https://docs.pytest.org/en/stable/)
-[![Built with Material for MkDocs]](https://squidfunk.github.io/mkdocs-material/)
+[![Built with Zensical]](https://zensical.org/)
 [![Pre-commit badge]](https://pre-commit.com/)
 
 [![Pandas badge]](https://pandas.pydata.org/docs/index.html)
@@ -48,7 +48,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 
 [Pytest badge]: https://img.shields.io/badge/pytest-tested-ffffff?logo=pytest
 
-[Built with Material for MkDocs]: https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white
+[Built with Zensical]: https://img.shields.io/badge/Zensical-FFA656?logo=zensical&logoColor=black
 
 [Pandas badge]: https://img.shields.io/badge/pandas-%23150458.svg?logo=pandas&logoColor=white&labelColor=grey
 

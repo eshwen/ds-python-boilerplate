@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A boilerplate/template for Python data science projects. The actual code (`src/my_project/hello_world.py`) is a placeholder; the value is in the tooling configuration (`pyproject.toml`, `.pre-commit-config.yaml`, `zensical.toml`, `.github/workflows/`) and the MkDocs site under `docs/` that explains it. Changes are often dependency bumps (Dependabot) or tooling updates rather than feature work.
+A boilerplate/template for Python data science projects. The actual code (`src/my_project/hello_world.py`) is a placeholder; the value is in the tooling configuration (`pyproject.toml`, `.pre-commit-config.yaml`, `zensical.toml`, `.github/workflows/`) and the Zensical docs site under `docs/` that explains it. Changes are often dependency bumps (Dependabot) or tooling updates rather than feature work.
 
 ## Commands
 
@@ -12,7 +12,7 @@ Managed with `uv` (version pinned via `[tool.uv] required-version`). Python 3.11
 
 ```shell
 uv sync                  # main deps + dev group (lint, type, test, jupyter)
-uv sync --all-groups     # also installs the docs group (needed for mkdocs)
+uv sync --all-groups     # also installs the docs group (needed for zensical)
 
 uv run pytest                                                   # all tests, with coverage (fails under 90%)
 uv run pytest -k test_hello_world --no-cov                      # single test
@@ -24,15 +24,15 @@ uv run ruff format src/ tests/
 uv run pyrefly check     # type check (scope comes from [tool.pyrefly] config)
 uv run pre-commit run -a # everything pre-commit runs, incl. uv-lock/uv-sync
 
-uv run mkdocs build --strict   # CI runs this; warnings fail the build
-uv run mkdocs serve            # local preview
+uv run zensical build --strict   # CI runs this; warnings fail the build
+uv run zensical serve            # local preview
 ```
 
 A Claude Code `PreToolUse` hook (`.claude/hooks/check-before-commit.sh`) blocks any `git commit` until `pre-commit run` (staged files) and `pytest` pass.
 
 ## Conventions enforced by tooling
 
-- **Docstrings**: Google style, checked by ruff's `D` rules (required on public functions/modules in `src/`; relaxed in `tests/` and `__init__.py`). Docstrings feed the generated API reference, so cross-references like `[pandas.DataFrame][]` resolve via the mkdocstrings inventories in `zensical.toml` — keep them valid or `mkdocs build --strict` fails.
+- **Docstrings**: Google style, checked by ruff's `D` rules (required on public functions/modules in `src/`; relaxed in `tests/` and `__init__.py`). Docstrings feed the generated API reference, so cross-references like `[pandas.DataFrame][]` resolve via the mkdocstrings inventories in `zensical.toml` — keep them valid or `zensical build --strict` fails.
 - **Typing**: pyrefly runs in `strict` preset on `src/` only (tests excluded); unannotated return types are errors. Missing stubs go in the `type` dependency group.
 - **Tests**: files must be named `test_*.py` (pre-commit `name-tests-test --pytest-test-first`). `asyncio_mode = "auto"`, so async tests need no decorator. Coverage uses branch coverage with `fail_under = 90`.
 - Line length is 120. Ruff also enforces pandas-vet (`PD`), pathlib (`PTH`), pylint (`PL`) and pyupgrade (`UP`) rules.

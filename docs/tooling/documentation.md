@@ -5,8 +5,8 @@ for more information.
 
 ## API documentation
 
-API documentation is built with MkDocs using the Material theme. The [mike] package wraps MkDocs and allows versioned
-sets of docs to be created. The docs dependencies live in their own `docs` group in [pyproject.toml], so install them
+API documentation is built with [Zensical], the successor to Material for MkDocs. The [mike] package wraps Zensical
+and allows versioned sets of docs to be created. The docs dependencies live in their own `docs` group in [pyproject.toml], so install them
 first with
 
 ```shell
@@ -15,23 +15,23 @@ uv sync --all-groups
 
 To build a static copy locally and render it live on a local server, run
 
-=== "MkDocs standalone"
+=== "Zensical standalone"
 
     ```shell
-    uv run mkdocs serve
+    uv run zensical serve
     ```
 
-=== "MkDocs with mike"
+=== "Zensical with mike"
 
     ```shell
     uv run mike serve
     ```
 
-The CI pipeline builds the docs with `mkdocs build --strict`, so any warnings (e.g., broken cross-references) will fail
+The CI pipeline builds the docs with `zensical build --strict`, so any warnings (e.g., broken cross-references) will fail
 the build. Run it locally to check before pushing:
 
 ```shell
-uv run mkdocs build --strict
+uv run zensical build --strict
 ```
 
 When a new release is published, the docs are deployed to GitHub Pages with mike under the release's `<major>.<minor>`
@@ -54,8 +54,8 @@ of [zensical.toml].
   navigation under a "Code Reference" section, so no hand-written API pages are needed
 - [mike]: deploys versioned docs to the `gh-pages` branch, and adds a version selector to the site
 
-The `markdown_extensions` section of [zensical.toml] turns on the Markdown features Material supports, like admonitions,
-content tabs, code annotations and icons. See the [Material reference] for how to use them. One to know about is
+The `markdown_extensions` section of [zensical.toml] turns on the Markdown features Zensical supports, like admonitions,
+content tabs, code annotations and icons. See the [Zensical docs] for how to use them. One to know about is
 `pymdownx.snippets`: `docs/index.md` uses it to pull in `README.md`, so the README is also the docs homepage.
 
 `docs/css/code_select.css` makes the prompt and output of `console` code blocks unselectable, so highlighting a
@@ -67,7 +67,9 @@ $ python hello_world.py
 Hello world!
 ```
 
-[Material reference]: https://squidfunk.github.io/mkdocs-material/reference/
+[Zensical]: https://zensical.org/
+
+[Zensical docs]: https://zensical.org/docs/
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
@@ -79,4 +81,4 @@ Hello world!
 
 [mkdocs-api-autonav]: https://github.com/tlambert03/mkdocs-api-autonav
 
-[mike]: https://github.com/jimporter/mike
+[mike]: https://github.com/squidfunk/mike
