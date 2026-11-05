@@ -1,3 +1,7 @@
+---
+icon: lucide/rocket
+---
+
 # Installation
 
 Check out the different methods of installing the project on the left-hand sidebar. Below are some programs that a data

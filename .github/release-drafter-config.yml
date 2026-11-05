@@ -52,7 +52,7 @@ autolabeler:
     files:
       - '*.md'
       - 'docs/**'
-      - mkdocs.yml
+      - zensical.toml
     branch:
       - '/docs{0,1}\/.+/'
   - label: 'enhancement'

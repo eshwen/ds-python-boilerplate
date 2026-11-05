@@ -1,3 +1,7 @@
+---
+icon: lucide/file-text
+---
+
 # General Python tips
 
 - Use the built-in `pathlib` library for local file handling over `os.path`

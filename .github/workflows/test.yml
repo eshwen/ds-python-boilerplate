@@ -43,5 +43,5 @@ jobs:
       - name: Test docs
         if: always()
         run: |
-          uv run mkdocs build --strict
+          uv run zensical build --strict
         shell: bash
