@@ -1,0 +1,119 @@
+[project]
+site_name = "My Project"
+site_url = "https://eshwen.github.io/ds-python-boilerplate/"
+repo_url = "https://github.com/eshwen/ds-python-boilerplate"
+repo_name = "eshwen/ds-python-boilerplate"
+extra_css = ["css/code_select.css"]
+
+nav = [
+    { "Home" = [
+        { "Homepage" = "index.md" },
+        { "Helpful Articles" = "helpful-articles.md" },
+        { "General Python Tips" = "general-python-tips.md" },
+        { "See Also" = "see-also.md" },
+    ] },
+    { "Getting Started" = [
+        { "Installation" = "getting-started/getting-started.md" },
+        { "uv" = "getting-started/uv.md" },
+    ] },
+    { "Tooling" = [
+        { "Quality" = "tooling/quality.md" },
+        { "Testing" = "tooling/testing.md" },
+        { "Documentation" = "tooling/documentation.md" },
+        { "Pipelines" = "tooling/pipelines.md" },
+    ] },
+]
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/eshwen"
+name = "eshwen on GitHub"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/eshwen-bhal-phd-714557195/"
+name = "Eshwen Bhal on LinkedIn"
+
+[project.extra.version]
+provider = "mike"
+
+[project.plugins.mkdocstrings]
+default_handler = "python"
+
+[project.plugins.mkdocstrings.handlers.python]
+inventories = [
+    "https://numpy.org/doc/stable/objects.inv",
+    "https://docs.python.org/3/objects.inv",
+    "https://pandas.pydata.org/pandas-docs/stable/objects.inv",
+    "https://docs.sqlalchemy.org/en/20/objects.inv",
+    "https://docs.pola.rs/api/python/stable/objects.inv",
+]
+
+[project.plugins.mkdocstrings.handlers.python.options]
+show_source = true
+
+[project.plugins.search]
+
+[project.plugins.autorefs]
+
+[project.plugins.api-autonav]
+modules = ["src/my_project"]
+nav_section_title = "Code Reference"
+
+[project.plugins.mike]
+alias_type = "symlink"
+canonical_version = "latest"
+
+[project.theme]
+variant = "classic"
+features = [
+    "navigation.tabs",
+    "navigation.tracking",
+    "navigation.sections",
+    "content.code.copy",
+    "content.code.annotate",
+    "content.tabs.link",
+]
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+primary = "light blue"
+accent = "orange"
+toggle.icon = "material/brightness-auto"
+toggle.name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "light blue"
+accent = "orange"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "light blue"
+accent = "orange"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions]
+toc.permalink = "⚓︎"
+attr_list = { }
+md_in_html = { }
+tables = { }
+admonition = { }
+pymdownx.magiclink = { }
+pymdownx.snippets.check_paths = true
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.linenums = true
+pymdownx.highlight.linenums_style = "pymdownx-inline"
+pymdownx.superfences = { }
+pymdownx.tabbed.alternate_style = true
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.details = { }

@@ -24,7 +24,7 @@ Boilerplate for data science projects in Python. Check out the docs by clicking 
 1. Rename the package. `my_project` appears in
     - `src/my_project/` and the test imports
     - `pyproject.toml`: `[project].name` and `[tool.coverage.run].source`
-    - `mkdocs.yml`: the `api-autonav` plugin's `modules`
+    - `zensical.toml`: the `api-autonav` plugin's `modules`
     - `.github/workflows/test.yml`: `pkg-name`
 2. Prune the runtime `dependencies` in `pyproject.toml`. They're a starter set covering common data science tasks, so
    remove what you don't need with `uv remove <package>`.

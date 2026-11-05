@@ -42,7 +42,7 @@ For a Sphinx implementation of documentation, see <https://github.com/eshwen/ds-
 ### Extensions and plugins
 
 All plugins are installed as Python packages in the `docs` group of [pyproject.toml] and enabled in the `plugins` section
-of [mkdocs.yml].
+of [zensical.toml].
 
 - [mkdocstrings]: generates API documentation from docstrings, like Sphinx's `autodoc`
     - Uses the Python handler, with `show_source` enabled
@@ -54,7 +54,7 @@ of [mkdocs.yml].
   navigation under a "Code Reference" section, so no hand-written API pages are needed
 - [mike]: deploys versioned docs to the `gh-pages` branch, and adds a version selector to the site
 
-The `markdown_extensions` section of [mkdocs.yml] turns on the Markdown features Material supports, like admonitions,
+The `markdown_extensions` section of [zensical.toml] turns on the Markdown features Material supports, like admonitions,
 content tabs, code annotations and icons. See the [Material reference] for how to use them. One to know about is
 `pymdownx.snippets`: `docs/index.md` uses it to pull in `README.md`, so the README is also the docs homepage.
 
@@ -71,7 +71,7 @@ Hello world!
 
 [pyproject.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/pyproject.toml
 
-[mkdocs.yml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/mkdocs.yml
+[zensical.toml]: https://github.com/eshwen/ds-python-boilerplate/blob/main/zensical.toml
 
 [mkdocstrings]: https://mkdocstrings.github.io/
 
