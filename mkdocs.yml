@@ -31,20 +31,18 @@ plugins:
             - https://pandas.pydata.org/pandas-docs/stable/objects.inv
             - https://docs.sqlalchemy.org/en/20/objects.inv
             - https://docs.pola.rs/api/python/stable/objects.inv
-  - search:
-      lang: en
+  - search
   - autorefs
-  - termynal
   - api-autonav:
       modules: [ 'src/my_project' ]
       nav_section_title: Code Reference
-  - section-index
   - mike:
       alias_type: symlink
       canonical_version: latest
 
 theme:
   name: material
+  variant: classic
   features:
     - navigation.tabs
     - navigation.tracking
@@ -100,8 +98,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
   - pymdownx.details
 
 extra:

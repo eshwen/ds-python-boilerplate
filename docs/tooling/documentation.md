@@ -52,24 +52,20 @@ of [mkdocs.yml].
   mkdocstrings)
 - [mkdocs-api-autonav]: automatically generates an API page for every module in `src/my_project` and adds them to the
   navigation under a "Code Reference" section, so no hand-written API pages are needed
-- [mkdocs-section-index]: maps each package's `__init__.py` to its section's index page, so clicking a section in the
-  navigation shows the package's documentation
-- [termynal]: animated terminal code blocks similar to the FastAPI docs. Add `<!-- termynal -->` above a code block to
-  use it:
-
-<!-- termynal -->
-
-```bash
-$ python hello_world.py
----> Transmitting greeting...
-Hello world!
-```
-
 - [mike]: deploys versioned docs to the `gh-pages` branch, and adds a version selector to the site
 
 The `markdown_extensions` section of [mkdocs.yml] turns on the Markdown features Material supports, like admonitions,
 content tabs, code annotations and icons. See the [Material reference] for how to use them. One to know about is
 `pymdownx.snippets`: `docs/index.md` uses it to pull in `README.md`, so the README is also the docs homepage.
+
+`docs/css/code_select.css` makes the prompt and output of `console` code blocks unselectable, so highlighting a
+command doesn't copy the `$` or what it printed:
+
+```console
+$ python hello_world.py
+---> Transmitting greeting...
+Hello world!
+```
 
 [Material reference]: https://squidfunk.github.io/mkdocs-material/reference/
 
@@ -82,9 +78,5 @@ content tabs, code annotations and icons. See the [Material reference] for how t
 [mkdocs-autorefs]: https://mkdocstrings.github.io/autorefs/
 
 [mkdocs-api-autonav]: https://github.com/tlambert03/mkdocs-api-autonav
-
-[mkdocs-section-index]: https://github.com/oprypin/mkdocs-section-index
-
-[termynal]: https://github.com/daxartio/termynal
 
 [mike]: https://github.com/jimporter/mike
