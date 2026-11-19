@@ -1,3 +1,5 @@
+# Standalone Claude Code hook script (invoked via `python3`), not a package module.
+# ruff: noqa: INP001
 """Stop hook: lint / format / type-check changed Python on turn end.
 
 Fires when Claude finishes a turn. If any Python files changed versus HEAD
@@ -47,7 +49,7 @@ def _changed_py_files(root: Path) -> list[str]:
         ["git", "ls-files", "--others", "--exclude-standard", "--", "*.py"],
     ):
         try:
-            result = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=30, check=False)
+            result = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=30, check=False)  # noqa: S603
         except (OSError, subprocess.SubprocessError):
             continue
         files.update(line for line in result.stdout.splitlines() if line.strip())
@@ -65,7 +67,7 @@ def _tool(root: Path, name: str) -> list[str]:
 def _run(root: Path, cmd: list[str], timeout: int) -> tuple[int, str]:
     """Run a check; return (exit code, trimmed combined output)."""
     try:
-        proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, check=False)
+        proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, check=False)  # noqa: S603
     except subprocess.TimeoutExpired:
         return 1, f"`{' '.join(cmd)}` timed out after {timeout}s."
     except OSError as exc:

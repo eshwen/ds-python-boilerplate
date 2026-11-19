@@ -1,3 +1,5 @@
+# Standalone Claude Code hook script (invoked via `python3`), not a package module.
+# ruff: noqa: INP001
 """PreToolUse(Bash) hook: gate git commits on pre-commit and pytest.
 
 Fires before every Bash command. If the command creates a git commit
@@ -89,7 +91,7 @@ def _tool(root: Path, name: str, *args: str) -> list[str]:
 def _run(cmd: list[str], root: Path, timeout: int) -> tuple[int, str]:
     """Run a step; return (exit code, trimmed combined output)."""
     try:
-        proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, check=False)
+        proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, check=False)  # noqa: S603
     except subprocess.TimeoutExpired:
         return 1, f"`{' '.join(cmd)}` timed out after {timeout}s."
     except OSError as exc:
