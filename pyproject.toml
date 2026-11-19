@@ -174,7 +174,10 @@ ignore = [
 "tests/*" = [
     "D100",
     "D103",
+    "S101",
 ]
+# Standalone hook scripts run with fixed commands, not a package
+".claude/hooks/*" = ["INP001", "S603"]
 
 
 [tool.ruff.lint.pydocstyle]
