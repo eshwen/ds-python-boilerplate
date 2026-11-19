@@ -58,7 +58,7 @@ type = [
     "pandas-stubs>=2.3.3",
 ]
 test = [
-    "pytest>=9.1.1,<10",
+    "pytest>=9.2.0,<10",
     "pytest-asyncio",
     "pytest-mock",
     "pytest-cov",
