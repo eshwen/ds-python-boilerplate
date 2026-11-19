@@ -119,21 +119,21 @@ select = [
 ]
 
 ignore = [
-    "ARG001", # ARG001 complains when a function has an unused argument
-    "ARG002", # ARG002 complains when a method has an unused argument
-    'D301', # D301 complains when a docstring has a backslash and isn't a raw string
-    'D107', # D107 complains when there is no docstring in an __init__ method
-    "F401", # F401 complains when an import is unused in an __init__ file
+    "ARG001",
+    "ARG002",
+    'D301',
+    'D107',
+    "F401",
 ]
 
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = [
-    "D104", # D104 complains when there is no docstring in a module
+    "D104",
 ]
 "tests/*" = [
-    "D100", # D100 complains when there is no docstring in a module
-    "D103", # D103 complains when there is no docstring in a function
+    "D100",
+    "D103",
 ]
 
 
