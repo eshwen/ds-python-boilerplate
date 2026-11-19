@@ -28,7 +28,7 @@ uv run zensical build --strict   # CI runs this; warnings fail the build
 uv run zensical serve            # local preview
 ```
 
-A Claude Code `PreToolUse` hook (`.claude/hooks/before_commit.py`) blocks any `git commit` until `pre-commit run --all-files` and then `pytest` pass.
+Lint, format, type, and test checks are enforced by Claude Code hooks (`.claude/hooks/` wired in `.claude/settings.json`), so you normally don't run them by hand. A `Stop` hook runs `ruff check` / `ruff format --check` on changed Python files and `pyrefly check` (whole project) when you finish a turn, and blocks until they pass. A `PreToolUse` hook runs `pre-commit run --all-files` then `pytest` before any `git commit`, and blocks the commit if either fails.
 
 ## Conventions enforced by tooling
 
