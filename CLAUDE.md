@@ -28,7 +28,7 @@ uv run zensical build --strict   # CI runs this; warnings fail the build
 uv run zensical serve            # local preview
 ```
 
-A Claude Code `PreToolUse` hook (`.claude/hooks/check-before-commit.sh`) blocks any `git commit` until `pre-commit run` (staged files) and `pytest` pass.
+A Claude Code `PreToolUse` hook (`.claude/hooks/before_commit.py`) blocks any `git commit` until `pre-commit run --all-files` and then `pytest` pass.
 
 ## Conventions enforced by tooling
 
