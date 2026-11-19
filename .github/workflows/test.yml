@@ -25,13 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Pin Python version for this matrix entry
-        run: echo "${{ matrix.python-version }}" > .python-version
-
       - name: Test
         uses: eshwen/adrenaline/uv/test-python@v0.10.0
         with:
-          python-version-file: .python-version
+          python-version: ${{ matrix.python-version }}
           pkg-name: my_project
           args: '--cov-report xml'
 

@@ -69,11 +69,6 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
-docs/_source/modules.rst
-docs/_source/my_project.*
-
 # PyBuilder
 target/
 
@@ -134,5 +129,5 @@ dmypy.json
 # PyCharm
 .idea/
 
-# Ruff
-.ruff_cache/
+# Claude Code personal/local settings
+.claude/settings.local.json
