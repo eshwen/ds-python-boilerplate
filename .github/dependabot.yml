@@ -21,3 +21,7 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    # sync-with-uv keeps these revs matched to uv.lock, so they're bumped there instead
+    ignore:
+      - dependency-name: "https://github.com/astral-sh/ruff-pre-commit"
+      - dependency-name: "https://github.com/facebook/pyrefly-pre-commit"
