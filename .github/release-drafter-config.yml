@@ -2,6 +2,10 @@ name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
 
 categories:
+  - title: '🚨 Breaking Changes'
+    labels:
+      - 'breaking'
+      - 'major'
   - title: '🚀 Features'
     labels:
       - 'feature'
@@ -12,11 +16,15 @@ categories:
       - 'bugfix'
       - 'bug'
   - title: '🧰 Maintenance'
-    label: 'documentation'
+    labels:
+      - 'documentation'
+      - 'testing'
   - title: '⬆️ Dependencies'
     collapse-after: 3
     labels:
       - 'dependencies'
+      - 'github_actions'
+      - 'pre_commit'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
@@ -25,6 +33,7 @@ version-resolver:
   major:
     labels:
       - 'major'
+      - 'breaking'
   minor:
     labels:
       - 'enhancement'
@@ -41,9 +50,6 @@ autolabeler:
       - '/fix/i'
   - label: 'dependencies'
     files:
-      - 'poetry.lock'
-      - 'requirements.txt'
-      - 'requirements-dev.txt'
       - 'uv.lock'
   - label: 'docker'
     files:
@@ -67,6 +73,13 @@ autolabeler:
   - label: 'pre_commit'
     files:
       - '.pre-commit-config.yaml'
+  - label: 'testing'
+    files:
+      - 'tests/**'
+  - label: 'claude'
+    files:
+      - '.claude/**'
+      - 'CLAUDE.md'
 
 template: |
   ## Changes
