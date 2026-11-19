@@ -1290,7 +1290,9 @@
 name, title and changed files (see <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/release-drafter-config.yml">release-drafter-config.yml</a>), and the labels decide</p>
 <ul>
 <li>which section of the release notes a PR appears in, e.g., <code>bug</code> under "Bug Fixes"</li>
-<li>the next version number: a <code>major</code> or <code>minor</code> label bumps that part of the version; anything else is a patch</li>
+<li>the next version number: an <code>enhancement</code> label (applied to <code>feature/</code> branches) bumps the minor version; anything
+  else is a patch. A <code>major</code> label would bump the major version, but the repository doesn't define one, so that stays
+  a deliberate manual step</li>
 </ul>
 <p>Publishing the draft triggers <a href="https://github.com/eshwen/ds-python-boilerplate/blob/main/.github/workflows/api-docs.yml">api-docs.yml</a>, which deploys the docs with mike as <code>&lt;major&gt;.&lt;minor&gt;</code>, aliased to <code>latest</code>.</p>
 <h2 id="setup-for-a-new-repository">Setup for a new repository<a class="headerlink" href="#setup-for-a-new-repository" title="Permanent link">⚓︎</a></h2>
