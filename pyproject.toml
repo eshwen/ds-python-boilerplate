@@ -80,6 +80,11 @@ docs = [
 required-version = ">=0.12.0,<0.14"
 
 
+[tool.sync-with-uv.repo-to-package]
+# The hook pins pyrefly to its own rev, so keep that matched to uv.lock like ruff
+"https://github.com/facebook/pyrefly-pre-commit" = "pyrefly"
+
+
 [tool.pyrefly]
 preset = "strict"
 project-includes = ["src"]
